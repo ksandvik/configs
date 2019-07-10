@@ -1,0 +1,30 @@
+[user]
+	name = K Sandvik
+	email = sandvik@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	safecrlf = true
+
+[alias]
+	c = commit
+	s = status
+	st = status
+	lg = log --oneline
+	last = log -1 HEAD
+	f = push --force-with-lease
+	# https://stackoverflow.com/a/11688523/472927
+	ss = "!f() { git stash show stash^{/$*} -p; }; f"
+	sa = "!f() { git stash apply stash^{/$*}; }; f"
+	sl = stash list
+
+[push]
+	default = simple
+
+[help]
+	autocorrect = 1
+
+[diff]
+	algorithm = patience
+	compactionHeuristic = true
