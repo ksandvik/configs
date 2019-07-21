@@ -14,6 +14,7 @@ export EDITOR=vim
 # GENERAL COMMANDS
 alias c=clear
 alias t=telnet
+alias cat=bat
 
 # This assumes EXA is installed
 alias l='exa'
@@ -33,4 +34,3 @@ alias filesizes='du -hcd2 .'
 [ -f ~/.zsh/mac.zsh ] && source ~/.zsh/mac.zsh
 [ -f ~/.zsh/work.zsh ] && source ~/.zsh/work.zsh
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
-
