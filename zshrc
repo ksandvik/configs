@@ -33,4 +33,5 @@ alias filesizes='du -hcd2 .'
 # LOAD VARIOUS SEPARATE ZSH SETTINGS IF FILE EXISTS
 [ -f ~/.zsh/mac.zsh ] && source ~/.zsh/mac.zsh
 [ -f ~/.zsh/work.zsh ] && source ~/.zsh/work.zsh
+[ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/mac-ssd.zsh
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
