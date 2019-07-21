@@ -7,7 +7,7 @@ preexec () { echo -ne "\e[0m" }
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # EDITORS
-alias v=vim
+alias v=nvim
 alias c=code
 export EDITOR=vim
 
