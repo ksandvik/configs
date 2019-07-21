@@ -9,7 +9,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # EDITORS
 alias v=nvim
 alias c=code
-export EDITOR=vim
+export EDITOR=nvim
 
 # GENERAL COMMANDS
 alias c=clear
