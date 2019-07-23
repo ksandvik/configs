@@ -22,8 +22,8 @@ set nocompatible
 
 " MISC
 set viminfo='20,\"50
-set undolevels=100
-set history=50
+set undolevels=500
+set history=100
 set hidden
 set wildmenu
 set showcmd
