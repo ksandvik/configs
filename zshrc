@@ -3,6 +3,11 @@
 PROMPT="%F{green}%~ %# %F{yellow}"
 preexec () { echo -ne "\e[0m" }
 
+# KEY BINDINGS
+bindkey '\eOH'  beginning-of-line
+bindkey '\eOF'  end-of-line
+
+
 # RUST
 export PATH="$HOME/.cargo/bin:$PATH"
 
