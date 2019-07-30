@@ -11,6 +11,10 @@ bindkey '\eOF'  end-of-line
 # RUST
 export PATH="$HOME/.cargo/bin:$PATH"
 
+function rr () {
+	rustc $1.rs && ./$1
+}
+
 # EDITORS
 alias v=nvim
 alias c=code
