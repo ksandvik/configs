@@ -1,11 +1,7 @@
 " KS MAIN VIMRC FILE
 
 
-" BASIC SETTINGS
-" FCX code formatting: 4 offset, tab always indent.
-
 " FORMATTING
-
 syntax on
 "set bs=4
 set ts=4
@@ -18,7 +14,6 @@ set ch=2
 set backspace=indent,eol,start
 set autoindent
 set nocompatible
-
 
 " MISC
 set viminfo='20,\"50
@@ -45,23 +40,21 @@ set mouse=a
 "colo peachpuff
 
 " SEARCH
-"set hlsearch
-"set incsearch
-"set ignorecase
-"set smartcase
-"highlight Search term=reverse ctermbg=2
-"highlight Search guibg=LightBlue
-"highlight Search term=reverse
-
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+highlight Search term=reverse ctermbg=2
+highlight Search guibg=LightBlue
+highlight Search term=reverse
 
 "AUTOCOMMANDS
 "autocmd FileType * set formatoptions=tcql nocindent comments&
 autocmd BufRead *.txt set tw=78
 
-
 " MAPPINGS
 map Q qg
-imap jj <esc>                           " quick way to go to ESCAPE mode
+inoremap jj <Esc>
 
 " ABBREVIATIONS
 abbr #i #include
@@ -87,7 +80,6 @@ abbr #d #define
   set cinkeys=0{,0},:,!^F,o,O,e
   " Perforce checkout
   map <C-c> :!/cygdrive/c/bin/p4 edit %<CR>
-
 
 "==== gvimrc ====
   " set the font to use
