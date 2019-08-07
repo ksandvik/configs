@@ -56,6 +56,10 @@ autocmd BufRead *.txt set tw=78
 map Q qg
 inoremap jj <Esc>
 
+" Jump to start and end of line using the home row keys
+map H ^
+map L $
+
 " ABBREVIATIONS
 abbr #i #include
 abbr #d #define
