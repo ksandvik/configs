@@ -102,3 +102,6 @@ colo peachpuff
 
 "winpos 200 20
 "winsize 100 80
+
+Plug 'entrez/roku.vim'
+
