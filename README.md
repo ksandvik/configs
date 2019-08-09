@@ -17,5 +17,6 @@ cargo install dua-cli   	# disk usage cli tool
 cargo install cargo-sweep	# clean up old cruft
 cargo install cargo-tree	# visualization of crate dependencies
 cargo install bat		# more fun cat
+cargo install flamegraph	# Flame graph performance generation
 ```
 
