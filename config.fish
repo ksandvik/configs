@@ -6,6 +6,7 @@ abbr -a e nvim
 abbr -a c clear
 abbr -a m make
 abbr -a mi 'make install'
+abbr -a cat bat
 
 # GIT
 abbr -a gd 'git diff'
