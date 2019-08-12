@@ -83,6 +83,19 @@ Plug 'entrez/roku.vim'
 " show match number for incsearch
 Plug 'osyo-manga/vim-anzu'
 
+" Lightline 
+Plug 'itchyny/lightline.vim'
+
+let g:lightline = {
+      \ 'component_function': {
+      \   'filename': 'LightlineFilename',
+      \ },
+\ }
+function! LightlineFilename()
+  return expand('%:t') !=# '' ? @% : '[No Name]'
+endfunction
+
+
 " Initialize plugin system
 call plug#end()
 
