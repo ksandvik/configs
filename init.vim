@@ -2,6 +2,9 @@
 " space as mapleader
 let mapleader = "\<Space>"
 
+" default encoding utf-8
+set encoding=utf-8
+
 " ; as :
 nnoremap ; :
 
@@ -16,6 +19,7 @@ nnoremap k gk
 " FORMATTING
 " get syntax
 syntax on
+set autoindent
 set number " Show current absolute line
 
 " FILES
@@ -30,7 +34,6 @@ nnoremap <right> :bn<CR>
 
 " <leader><leader> toggles between buffers
 nnoremap <leader><leader> <c-^>
-
 
 " FOLDING
 " Folding - always open up all folds when opening file
@@ -65,7 +68,6 @@ Plug 'entrez/roku.vim'
 
 " show match number for incsearch
 Plug 'osyo-manga/vim-anzu'
-
 
 " Initialize plugin system
 call plug#end()
