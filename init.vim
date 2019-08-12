@@ -16,6 +16,12 @@ map L $
 nnoremap j gj
 nnoremap k gk
 
+
+" STATE, UNDO
+" Permanent undo
+set undodir=~/.vimdid
+set undofile
+
 " FORMATTING
 " get syntax
 syntax on
