@@ -21,6 +21,8 @@ map L $
 nnoremap j gj
 nnoremap k gk
 
+set backspace=2 " backspace over newlines
+
 " STATE, UNDO
 " Permanent undo
 set undodir=~/.vimdid
