@@ -8,7 +8,7 @@ set encoding=utf-8
 " KEY REMAPPINGS
 " ; as :
 nnoremap ; :
-
+    
 " jj as ESC
 inoremap jj <Esc>
 vnoremap jj <Esc>
@@ -34,6 +34,9 @@ set number " Show current absolute line
 
 " FILES
 map <C-p> :files<CR>
+
+" quick save
+nmap <leader>w :w<CR>
 
 " BUFFERS
 nmap <leader>; :buffers<CR>
