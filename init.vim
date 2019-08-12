@@ -97,6 +97,8 @@ function! LightlineFilename()
   return expand('%:t') !=# '' ? @% : '[No Name]'
 endfunction
 
+" Rust
+Plug 'rust-lang/rust.vim'
 
 " Initialize plugin system
 call plug#end()
