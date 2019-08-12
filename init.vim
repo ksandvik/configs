@@ -19,14 +19,18 @@ syntax on
 set number " Show current absolute line
 
 " FILES
-" map <C-p> :Files<CR>
+map <C-p> :files<CR>
 
 " BUFFERS
-nmap <leader>; :Buffers<CR>
+nmap <leader>; :buffers<CR>
 
 " Left and right can switch buffers
 nnoremap <left> :bp<CR>
 nnoremap <right> :bn<CR>
+
+" <leader><leader> toggles between buffers
+nnoremap <leader><leader> <c-^>
+
 
 " FOLDING
 " Folding - always open up all folds when opening file
