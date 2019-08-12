@@ -1,7 +1,17 @@
-
-" INIT COMMANDS
+" BASIC INITIAL COMMANDS
 " space as mapleader
 let mapleader = "\<Space>"
+
+" ; as :
+nnoremap ; :
+
+" Jump to start and end of line using the home row keys
+map H ^
+map L $
+
+" Move by line
+nnoremap j gj
+nnoremap k gk
 
 " FORMATTING
 " get syntax
@@ -55,6 +65,4 @@ Plug 'osyo-manga/vim-anzu'
 
 " Initialize plugin system
 call plug#end()
-
-
 
