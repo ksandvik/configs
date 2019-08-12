@@ -46,6 +46,20 @@ nnoremap <leader><leader> <c-^>
 set foldmethod=indent
 set foldlevel=20
 
+" SEARCH
+" Proper search
+set incsearch
+set ignorecase
+set smartcase
+set gdefault
+
+" Search results centered 
+nnoremap <silent> n nzz
+nnoremap <silent> N Nzz
+nnoremap <silent> * *zz
+nnoremap <silent> # #zz
+nnoremap <silent> g* g*zz
+
 " VIMPLUG
 " Install vimplug
 if !executable('curl')
