@@ -3,6 +3,9 @@ abbr l 'exa -l'
 
 abbr -a c cargo
 abbr -a e nvim
+abbr -a c clear
+abbr -a m make
+abbr -a mi 'make install'
 
 # GIT
 abbr -a gd 'git diff'
