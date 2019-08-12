@@ -60,7 +60,8 @@ nnoremap <silent> # #zz
 nnoremap <silent> g* g*zz
 
 " GUI
-set colorcolumn=80 "colored column
+set colorcolumn=80 " colored column
+set mouse=a " enable mouse in terminal
 
 
 " VIMPLUG
