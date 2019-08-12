@@ -5,8 +5,13 @@ let mapleader = "\<Space>"
 " default encoding utf-8
 set encoding=utf-8
 
+" KEY REMAPPINGS
 " ; as :
 nnoremap ; :
+
+" jj as ESC
+inoremap jj <Esc>
+vnoremap jj <Esc>
 
 " Jump to start and end of line using the home row keys
 map H ^
