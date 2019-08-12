@@ -22,13 +22,11 @@ end
 
 
 function fish_prompt
-	set_color black
-	echo -n "["(date "+%y-%m-%d")"] "
-	set_color blue
-	echo -n (hostname)
+	set_color red
+	echo -n ""(date "+%y-%m-%d")"|"
+	set_color magenta
+	printf '%s@%s|' (whoami) (hostname | cut -d . -f 1)
 	if [ $PWD != $HOME ]
-		set_color black
-		echo -n ':'
 		set_color yellow
 		echo -n (basename $PWD)
 	end
