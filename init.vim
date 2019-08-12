@@ -16,7 +16,6 @@ map L $
 nnoremap j gj
 nnoremap k gk
 
-
 " STATE, UNDO
 " Permanent undo
 set undodir=~/.vimdid
@@ -59,6 +58,10 @@ nnoremap <silent> N Nzz
 nnoremap <silent> * *zz
 nnoremap <silent> # #zz
 nnoremap <silent> g* g*zz
+
+" GUI
+set colorcolumn=80 "colored column
+
 
 " VIMPLUG
 " Install vimplug
