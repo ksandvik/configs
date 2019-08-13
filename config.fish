@@ -37,4 +37,8 @@ function fish_prompt
 	set_color normal
 end
 
-
+# GIT
+# Pull all dirs and subdirectories for updates
+function gitpull
+ 	find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;
+end
