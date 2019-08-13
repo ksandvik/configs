@@ -97,6 +97,9 @@ function! LightlineFilename()
   return expand('%:t') !=# '' ? @% : '[No Name]'
 endfunction
 
+" Hi-lite yank
+Plug 'machakann/vim-highlightedyank'
+
 " Rust
 Plug 'rust-lang/rust.vim'
 
