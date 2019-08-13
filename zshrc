@@ -18,7 +18,7 @@ function rr () {
 }
 
 # EDITORS
-alias v=nvim
+alias e=nvim
 alias c=code
 export EDITOR=nvim
 export PAGER=bat
@@ -47,3 +47,7 @@ alias filesizes='du -hcd2 .'
 [ -f ~/.zsh/work.zsh ] && source ~/.zsh/work.zsh
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/mac-ssd.zsh
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
+
+
+# START FISH!
+fish
