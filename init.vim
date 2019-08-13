@@ -1,4 +1,8 @@
 " BASIC INITIAL COMMANDS
+
+" Can't use fish from nvim just now (not POSIX compliant)
+set shell=/bin/zsh
+
 " space as mapleader
 let mapleader = "\<Space>"
 
