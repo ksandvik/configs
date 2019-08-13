@@ -17,9 +17,10 @@ vnoremap jj <Esc>
 map H ^
 map L $
 
-" Move by line
-nnoremap j gj
-nnoremap k gk
+" Always center when moving 
+nnoremap j jzz
+nnoremap k kzz
+nnoremap G Gzz
 
 set backspace=2 " backspace over newlines
 
