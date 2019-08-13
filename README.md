@@ -6,18 +6,6 @@ Install base installation via
 ```
 curl https://sh.rustup.rs -sSf | sh
 ```
-Install then the following other rust crates
+Install and update the rust crates with updateCrates script.
 
-```
-cargo install exa       	# better ls
-cargo install ripgrep		# fast grep
-cargo install fd-find   	# fast find
-cargo install hexyl		# visual hex dump
-cargo install dua-cli   	# disk usage cli tool
-cargo install cargo-sweep	# clean up old cruft
-cargo install cargo-tree	# visualization of crate dependencies
-cargo install bat		# more fun cat
-cargo install flamegraph	# Flame graph performance generation
-cargo install cargo-update	# update packages with cargo install-update -a
-```
 
