@@ -40,5 +40,5 @@ end
 # GIT
 # Pull all dirs and subdirectories for updates
 function gitpull
- 	find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;
+	find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull
 end
