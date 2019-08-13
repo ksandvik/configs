@@ -21,6 +21,7 @@ function rr () {
 alias v=nvim
 alias c=code
 export EDITOR=nvim
+export PAGER=bat
 
 # GENERAL COMMANDS
 alias c=clear
