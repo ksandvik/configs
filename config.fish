@@ -37,8 +37,3 @@ function fish_prompt
 	set_color normal
 end
 
-# GIT
-# Pull all dirs and subdirectories for updates
-function gitpull
-	find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull
-end
