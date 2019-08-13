@@ -11,7 +11,7 @@
 	c = commit
 	s = status
 	st = status
-	lg = log --oneline
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	last = log -1 HEAD
 	f = push --force-with-lease
 	# https://stackoverflow.com/a/11688523/472927
