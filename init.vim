@@ -43,7 +43,7 @@ set number " Show current absolute line
 map <C-p> :files<CR>
 
 " quick save
-nmap <leader>w :w<CR>
+nmap <leader>s :w<CR>
 
 " BUFFERS
 nmap <leader>; :buffers<CR>
