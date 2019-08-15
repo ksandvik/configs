@@ -1,4 +1,9 @@
 #!/bin/zsh
+# 
+# Update stable rustc with:
+# rustup update stable
+#
+
 echo "Install missing crates...."
 
 cargo install exa  2>/dev/null      	# better ls
