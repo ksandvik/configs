@@ -2,7 +2,7 @@
 abbr l 'exa -l'
 
 abbr -a c cargo
-abbr -a e nvim
+abbr -a v nvim
 abbr -a c clear
 abbr -a m make
 abbr -a mi 'make install'
