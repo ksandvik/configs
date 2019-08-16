@@ -12,6 +12,10 @@ abbr -a cat bat
 abbr -a gd 'git diff'
 abbr -a g git
 
+# SSH
+# Start ssh agent when logging in.
+eval (ssh-agent -c)
+
 # AUTOJUMP
 begin
     set --local AUTOJUMP_PATH $HOME/.autojump/share/autojump/autojump.fish
