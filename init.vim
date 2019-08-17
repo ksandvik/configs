@@ -75,6 +75,7 @@ nnoremap <silent> # #zz
 nnoremap <silent> g* g*zz
 
 " GUI
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
 set colorcolumn=80 " colored column
 set noshowmode
 
