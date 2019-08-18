@@ -17,6 +17,7 @@ cargo install bat 2>/dev/null		# more fun cat
 cargo install flamegraph 2>/dev/null	# Flame graph performance generation
 cargo install cargo-update 2>/dev/null	# update packages with cargo install-update -a
 cargo install cargo-edit		# Mostly useful to update to latest dependencies
+cargo +nightly install racer		# Racer for Rust autocompletion
 
 echo "Update installed crates..."
 
