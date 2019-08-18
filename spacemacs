@@ -261,7 +261,14 @@ values."
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
+   dotspacemacs-line-numbers '(:disabled-for-modes
+                               text-mode
+                               dired-mode
+                               markdown-mode
+                               org-mode
+                               pdf-view-mode
+                               :relative t)
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'evil
