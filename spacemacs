@@ -52,6 +52,7 @@ values."
      spell-checking
      syntax-checking
      rust
+     neotree
      ;; version-control
      )
    ;; List of additional packages that will be installed without being
