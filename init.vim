@@ -13,9 +13,9 @@ set encoding=utf-8
 " ; as :
 nnoremap ; :
     
-" jj as ESC
-inoremap jj <Esc>
-vnoremap jj <Esc>
+" jk as ESC
+inoremap jk <Esc>
+vnoremap jk <Esc>
 
 " Jump to start and end of line using the home row keys
 map H ^
