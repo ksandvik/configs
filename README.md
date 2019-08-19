@@ -15,6 +15,7 @@ Install and update the rust crates with updateRust script.
 
 * Better TOML 
 * Bracket Pair Colorizer
+* Brightscript Language
 * C/C++
 * C++ Intellisense
 * Code Spell Checker
