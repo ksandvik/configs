@@ -12,13 +12,15 @@ Install and update the rust crates with updateRust script.
 ## Visual Studio Code Setup
 
 ### plugins
-* Rust (rls)
+
+* Better TOML 
+* Bracket Pair Colorizer
 * C/C++
 * C++ Intellisense
 * Code Spell Checker
-* fish-vscode, fish-ide
 * docs-markdown
 * File Name search
+* fish-vscode, fish-ide
 * Gitconfig syntax
 * GitHub Pull requests 
 * GitLens
@@ -27,9 +29,19 @@ Install and update the rust crates with updateRust script.
 * Path Intellisense
 * Perforce for VS Code 
 * Project Manager
+* Rainbow CSV
+* Rust (rls)
+* scope4code
+* Sort lines
 * SSH FS 
+* Text Tables 
+* Todo tree
 * Vim
 * Visual Studio Intellicode
+* XML Language Support 
+
+
+
 
 
 
