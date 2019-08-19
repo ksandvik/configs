@@ -27,7 +27,8 @@ end
 
 function fish_prompt
 	set_color yellow
-	echo (pwd)
+	echo -n (pwd)
+    echo " dir "
 	set_color red
 	echo -n ""(date "+%y-%m-%d")"|"
 	set_color magenta
