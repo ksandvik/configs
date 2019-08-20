@@ -26,22 +26,22 @@ begin
 end
 
 function fish_prompt
-	set_color yellow
-	echo -n (pwd)
+    set_color yellow
+    echo -n (pwd)
     echo " dir "
-	set_color red
-	echo -n ""(date "+%y-%m-%d")"|"
-	set_color magenta
-	printf '%s@%s|' (whoami) (hostname | cut -d . -f 1)
-	if [ $PWD != $HOME ]
-		set_color yellow
-		echo -n (basename $PWD)
-	end
-	set_color green
-	printf '%s ' (__fish_git_prompt)
-	set_color red
-	echo -n '~> '
-	set_color normal
+    set_color red
+    echo -n ""(date "+%y-%m-%d")"|"
+    set_color magenta
+    printf '%s@%s|' (whoami) (hostname | cut -d . -f 1)
+    if [ $PWD != $HOME ]
+        set_color yellow
+        echo -n (basename $PWD)
+    end
+    set_color green
+    printf '%s ' (__fish_git_prompt)
+    set_color red
+    echo -n '~> '
+    set_color normal
 end
 
 # GIT
@@ -52,13 +52,13 @@ function gitpull
         cd $dir
         git status -sb 2>/dev/null
         if [ $status -eq 0 ]
-        set_color red
-        echo "Updating $dir…"
-        set_color normal
-        git stash --quiet
-        git pull
-        git stash apply --quiet
+            set_color red
+            echo "Updating $dir…"
+            set_color normal
+            git stash --quiet
+            git pull
+            git stash apply --quiet
         end
-    cd ..
+        cd ..
     end
 end
