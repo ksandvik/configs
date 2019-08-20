@@ -1,13 +1,16 @@
 # configs
+
 zsh, .git, other configs.
 
 ## Rust Setup
+
 Install base installation via
-```
+
+``` 
 curl https://sh.rustup.rs -sSf | sh
 ```
-Install and update the rust crates with updateRust script.
 
+Install and update the rust crates with updateRust script.
 
 ## Visual Studio Code Setup
 
@@ -40,16 +43,3 @@ Install and update the rust crates with updateRust script.
 * Vim
 * Visual Studio Intellicode
 * XML Language Support 
-
-
-
-
-
-
-
-
-
-
-
-
-
