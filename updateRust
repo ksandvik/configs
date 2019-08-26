@@ -1,27 +1,27 @@
 #!/bin/zsh
-# 
+#
 # Update stable rustc with:
 # rustup update stable
 #
 
 echo "Install missing crates...."
 
-cargo install exa  2>/dev/null      	# better ls
-cargo install ripgrep 2>/dev/null	# fast grep
-cargo install fd-find 2>/dev/null  	# fast find
-cargo install hexyl 2>/dev/null		# visual hex dump
-cargo install dua-cli 2>/dev/null   	# disk usage cli tool
-cargo install cargo-sweep 2>/dev/null	# clean up old cruft
-cargo install cargo-tree 2>/dev/null	# visualization of crate dependencies
-cargo install bat 2>/dev/null		# more fun cat
-cargo install flamegraph 2>/dev/null	# Flame graph performance generation
-cargo install cargo-update 2>/dev/null	# update packages with cargo install-update -a
-cargo install cargo-edit		# Mostly useful to update to latest dependencies
-cargo +nightly install racer		# Racer for Rust autocompletion
+cargo install exa 2>/dev/null          # better ls
+cargo install ripgrep 2>/dev/null      # fast grep
+cargo install fd-find 2>/dev/null      # fast find
+cargo install hexyl 2>/dev/null        # visual hex dump
+cargo install dua-cli 2>/dev/null      # disk usage cli tool
+cargo install cargo-sweep 2>/dev/null  # clean up old cruft
+cargo install cargo-tree 2>/dev/null   # visualization of crate dependencies
+cargo install bat 2>/dev/null          # more fun cat
+cargo install flamegraph 2>/dev/null   # Flame graph performance generation
+cargo install cargo-update 2>/dev/null # update packages with cargo install-update -a
+cargo install cargo-edit               # Mostly useful to update to latest dependencies
+cargo +nightly install racer           # Racer for Rust autocompletion
+cargo install sd                       # Nice tool to edit files online and more.
 
 echo "Update installed crates..."
 
 cargo install-update -a
 
 echo "Done!"
-
