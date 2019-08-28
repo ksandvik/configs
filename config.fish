@@ -8,6 +8,7 @@ abbr -a c clear
 abbr -a m make
 abbr -a mi 'make install'
 abbr -a cat bat
+abbr -a llast 'exa -l | sed 5q'
 
 # GIT
 abbr -a gd 'git diff'
