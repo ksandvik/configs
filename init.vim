@@ -82,6 +82,7 @@ set noshowmode
 " VIMPLUG
 
 " Install plugins.
+" Use :PlugInstall to load in the plugins at runtime.
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Brightscript
