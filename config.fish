@@ -1,6 +1,8 @@
 # ENVIROMENT
 ## GLOBAL
 
+set -gx EDITOR nvim
+
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
 	source $HOME/.localdev.fish
@@ -21,6 +23,7 @@ abbr -a lt 'exa -l | sed 10q'
 # GIT
 abbr -a gd 'git diff'
 abbr -a g git
+abbr -a gc 'git checkout'
 
 # SSH
 # Start ssh agent when logging in.
