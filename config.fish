@@ -81,3 +81,14 @@ function posix-source
   		set -gx $arr[1] $arr[2]
 	end
 end
+
+# Type d to move up to top parent dir which is a repository
+function d
+	while test $PWD != "/"
+		if test -d .git
+			break
+		end
+		cd ..
+	end
+    pwd
+end
