@@ -19,6 +19,7 @@ abbr -a m make
 abbr -a mi 'make install'
 abbr -a cat bat
 abbr -a lt 'exa -l | sed 10q'
+abbr -a el 'ls -t | sed 1q | xargs $EDITOR'
 
 # GIT
 abbr -a gd 'git diff'
