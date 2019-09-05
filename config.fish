@@ -1,4 +1,12 @@
-# GENERAL
+# ENVIROMENT
+## GLOBAL
+
+## PER DEV UNIT
+if [ -f $HOME/.localdev.fish ]
+	source $HOME/.localdev.fish
+end
+
+# ABBREVIATIONS
 abbr l 'exa -l'
 
 abbr -a c cargo
