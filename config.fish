@@ -113,3 +113,7 @@ function gitpull
     end
 end
 
+# search through all notes for entries
+function no
+    rg $argv -L -C 3 -N  ~/code/notes
+end 
