@@ -113,7 +113,48 @@ function gitpull
     end
 end
 
+<<<<<<< Updated upstream
 # search through all notes for entries
 function no
     rg $argv -L -C 3 -N  ~/code/notes
 end 
+=======
+# GIT
+# update all git dir and subdir repos.
+function gitpull
+	echo "update git repos (git pull)..."
+	for dir in ./*/
+    		cd $dir
+    		git status -sb 2>/dev/null
+    		if [ $status -eq 0 ]
+        	set_color red
+        	echo "Updating $dir…"
+        	set_color normal
+  		git stash --quiet
+  		git pull
+  		git stash apply --quiet
+    	end
+    	cd ..
+	end
+end
+
+# GIT
+# update all git dir and subdir repos.
+function gitpull
+    echo "update git repos (git pull)..."
+    for dir in ./*/
+        cd $dir
+        git status -sb 2>/dev/null
+        if [ $status -eq 0 ]
+        set_color red
+        echo "Updating $dir…"
+        set_color normal
+        git stash --quiet
+        git pull
+        git stash apply --quiet
+        end
+    cd ..
+    end
+end
+
+>>>>>>> Stashed changes
