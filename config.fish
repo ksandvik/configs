@@ -58,7 +58,7 @@ end
 
 # GIT
 # update all git dir and subdir repos.
-function gitpull
+function gitpulls
     echo "update git repos (git pull)..."
     for dir in ./*/
         cd $dir
