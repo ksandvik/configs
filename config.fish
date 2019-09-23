@@ -42,6 +42,7 @@ function fish_prompt
     set_color yellow
     echo (pwd)
     set_color red
+    set_color -b black
     echo -n ""(date "+%y-%m-%d")"|"
     set_color magenta
     printf '%s@%s|' (whoami) (hostname | cut -d . -f 1)
