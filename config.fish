@@ -56,6 +56,22 @@ function fish_prompt
     set_color normal
 end
 
+function fish_title
+  switch $_
+    case fish
+      echo (prompt_pwd)
+    case vim
+      if test -d .git
+        echo vim \((basename $PWD)\)
+      else
+        echo vim
+      end
+    case '*'
+      echo $_
+  end
+end
+
+
 # GIT
 # update all git dir and subdir repos.
 function gitpulls
