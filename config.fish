@@ -5,7 +5,7 @@ set -gx EDITOR nvim
 
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
-	source $HOME/.localdev.fish
+    source $HOME/.localdev.fish
 end
 
 # ABBREVIATIONS
@@ -58,18 +58,18 @@ function fish_prompt
 end
 
 function fish_title
-  switch $_
-    case fish
-      echo (prompt_pwd)
-    case vim
-      if test -d .git
-        echo vim \((basename $PWD)\)
-      else
-        echo vim
-      end
-    case '*'
-      echo $_
-  end
+    switch $_
+        case fish
+            echo (prompt_pwd)
+        case vim
+            if test -d .git
+                echo vim \((basename $PWD)\)
+            else
+                echo vim
+            end
+        case '*'
+            echo $_
+    end
 end
 
 
@@ -94,24 +94,24 @@ end
 
 # Read environment Variables
 function posix-source
-	for i in (cat $argv)
-		set arr (echo $i |tr = \n)
-  		set -gx $arr[1] $arr[2]
-	end
+    for i in (cat $argv)
+        set arr (echo $i |tr = \n)
+        set -gx $arr[1] $arr[2]
+    end
 end
 
 # Type d to move up to top parent dir which is a repository
 function d
-	while test $PWD != "/"
-		if test -d .git
-			break
-		end
-		cd ..
-	end
+    while test $PWD != "/"
+        if test -d .git
+            break
+        end
+        cd ..
+    end
     pwd
 end
 
 # search through all notes for entries
 function no
-    rg $argv -L -C 3 -N  ~/code/notes
-end 
+    rg $argv -L -C 3 -N ~/code/notes
+end
