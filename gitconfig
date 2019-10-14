@@ -5,7 +5,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
-	safecrlf = true
+	safecrlf = false
 
 [alias]
 	c = commit

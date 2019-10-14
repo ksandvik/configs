@@ -109,6 +109,10 @@ Plug 'machakann/vim-highlightedyank'
 " Rust
 Plug 'rust-lang/rust.vim'
 
+" ripgrep
+Plug 'jremmen/vim-ripgrep'
+let g:rg_command = 'rg --vimgrep -S'
+
 " Initialize plugin system
 call plug#end()
 
