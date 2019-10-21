@@ -44,7 +44,7 @@ function fish_prompt
     echo (pwd)
     set_color red
     set_color -b black
-    echo -n ""(date "+%y-%m-%d")"|"
+    echo -n ""(date "+%H:%M")"|"
     set_color magenta
     printf '%s@%s|' (whoami) (hostname | cut -d . -f 1)
     if [ $PWD != $HOME ]
