@@ -43,3 +43,7 @@ Install and update the rust crates with updateRust script.
 * Vim
 * Visual Studio Intellicode
 * XML Language Support 
+
+## Other Tools
+tig - https://jonas.github.io/tig/
+
