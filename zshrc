@@ -13,6 +13,9 @@ export PATH=$PATH:~/wbin
 # RUST
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# NIM
+PATH=/Users/ksandvik/.nimble/bin:$PATH
+
 function rr () {
 	rustc $1.rs && ./$1
 }
@@ -51,3 +54,5 @@ alias filesizes='du -hcd2 .'
 
 # START FISH!
 fish
+
+source /Users/ksandvik/Library/Preferences/org.dystroy.broot/launcher/bash/br
