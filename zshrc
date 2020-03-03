@@ -13,9 +13,6 @@ export PATH=$PATH:~/wbin
 # RUST
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# NIM
-PATH=/Users/ksandvik/.nimble/bin:$PATH
-
 function rr () {
 	rustc $1.rs && ./$1
 }

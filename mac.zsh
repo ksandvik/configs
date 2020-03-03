@@ -8,6 +8,10 @@ export CLICOLOR=1
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
 
+
+# NIM
+PATH=/Users/ksandvik/.nimble/bin:$PATH
+
 function updateBrew {
         brew update && brew upgrade && brew cleanup
 }
