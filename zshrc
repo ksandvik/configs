@@ -17,6 +17,9 @@ function rr () {
 	rustc $1.rs && ./$1
 }
 
+# NIM
+export PATH="$HOME/.nimble/bin:$PATH"
+
 # EDITORS
 alias e=nvim
 alias c=code
