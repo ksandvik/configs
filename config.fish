@@ -33,6 +33,9 @@ abbr -a gp 'git push'
 # Start ssh agent when logging in.
 eval (ssh-agent -c)
 
+# GO
+set -U fish_user_paths /usr/local/go/bin $fish_user_paths
+
 # AUTOJUMP
 begin
     set --local AUTOJUMP_PATH $HOME/.autojump/share/autojump/autojump.fish
