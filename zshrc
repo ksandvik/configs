@@ -7,11 +7,17 @@ preexec () { echo -ne "\e[0m" }
 bindkey '\eOH'  beginning-of-line
 bindkey '\eOF'  end-of-line
 
+#ICECC
+export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib64/qt5/plugins/platforms
+
 # WORK
 export PATH=$PATH:~/wbin
 
 # RUST
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# TEMP pkgconfig for builds
+# export PATH="/home/corp.roku/ksandvik/depot/firmware/release/main/os/dist/host/bin:$PATH"
 
 function rr () {
 	rustc $1.rs && ./$1
