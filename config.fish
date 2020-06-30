@@ -25,7 +25,9 @@ abbr -a today 'date '+%Y-%m-%d''
 # GIT
 abbr -a gd 'git diff'
 abbr -a g git
-abbr -a gc 'git checkout'
+abbr -a gc 'git commit -am '
+abbr -a gp 'git push'
+
 
 # SSH
 # Start ssh agent when logging in.

@@ -23,6 +23,9 @@ function rr () {
 	rustc $1.rs && ./$1
 }
 
+# NIM
+export PATH="$HOME/.nimble/bin:$PATH"
+
 # EDITORS
 alias e=nvim
 alias c=code
@@ -57,3 +60,5 @@ alias filesizes='du -hcd2 .'
 
 # START FISH!
 fish
+
+source /Users/ksandvik/Library/Preferences/org.dystroy.broot/launcher/bash/br
