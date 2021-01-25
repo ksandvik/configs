@@ -30,7 +30,6 @@ export PATH="$HOME/.nimble/bin:$PATH"
 alias e=nvim
 alias c=code
 export EDITOR=nvim
-export PAGER=bat
 
 # GENERAL COMMANDS
 alias c=clear
