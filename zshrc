@@ -11,7 +11,10 @@ bindkey '\eOF'  end-of-line
 export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib64/qt5/plugins/platforms
 
 # WORK
-export PATH=$PATH:~/wbin
+export PATH=$PATH:~/wbin:
+
+# GOLANG
+export PATH=$PATH:$HOME/go/bin
 
 # RUST
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -56,8 +59,10 @@ alias filesizes='du -hcd2 .'
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/mac-ssd.zsh
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
 
+source /Users/ksandvik/Library/Preferences/org.dystroy.broot/launcher/bash/br
+autoload -U +X bashcompinit && bashcompinit
 
 # START FISH!
 fish
-
-source /Users/ksandvik/Library/Preferences/org.dystroy.broot/launcher/bash/br
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/bit bit
