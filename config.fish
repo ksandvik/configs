@@ -36,9 +36,9 @@ eval (ssh-agent -c)
 # GO
 set -U fish_user_paths /usr/local/go/bin $fish_user_paths
 
-# AUTOJUMP
+# AUTOJUMP - Note MAC path
 begin
-    set --local AUTOJUMP_PATH $HOME/.autojump/share/autojump/autojump.fish
+    set --local AUTOJUMP_PATH /usr/local/share/autojump/autojump.fish
     if test -e $AUTOJUMP_PATH
         source $AUTOJUMP_PATH
     end
