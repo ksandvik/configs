@@ -97,7 +97,7 @@ function d
     pwd
 end
 
-# search through all notes for entries
+# search through all notes for entries - note rg dependency
 function no
     rg $argv -L -C 3 -N ~/code/notes
 end
