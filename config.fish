@@ -11,13 +11,11 @@ end
 # ABBREVIATIONS
 abbr l 'exa -l'
 
-abbr -a c cargo
 abbr -a v nvim
 abbr -a e 'emacs --insecure'
 abbr -a c clear
 abbr -a m make
 abbr -a mi 'make install'
-abbr -a cat bat
 abbr -a lt 'ls -l | sed 10q'
 abbr -a el 'ls -t | sed 1q | xargs $EDITOR'
 abbr -a today 'date '+%Y-%m-%d''
@@ -28,6 +26,7 @@ abbr -a g git
 abbr -a gc 'git commit -am '
 abbr -a gp 'git push'
 abbr -a gitpulls 'find . -name .git -print -execdir git pull origin master \;'
+abbr -a gf 'git diff --color-words=.'
 
 # SSH
 # Start ssh agent when logging in.
