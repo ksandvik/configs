@@ -16,8 +16,8 @@ abbr -a e 'emacs --insecure'
 abbr -a c clear
 abbr -a m make
 abbr -a mi 'make install'
-abbr -a lt 'ls -l | sed 10q'
-abbr -a el 'ls -t | sed 1q | xargs $EDITOR'
+abbr -a lt 'ls -lt | sed 5q'
+abbr -a el 'ls -tt | sed 1q | xargs $EDITOR'
 abbr -a today 'date '+%Y-%m-%d''
 
 # GIT
