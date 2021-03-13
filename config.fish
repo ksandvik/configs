@@ -103,5 +103,5 @@ end
 
  # show info about the functions I have addded to config.fish
 function myfunctions
-    rg function -B 1 -N ~/.config/fish/config.fish
+    rg '^function' -B 1 -N ~/.config/fish/config.fish
 end
