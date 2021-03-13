@@ -89,7 +89,7 @@ end
 
 # Type d to move up to top parent dir which is a repository
 function d
-    while test $PWD != "/"
+    while test $PWD != /
         if test -d .git
             break
         end
