@@ -85,7 +85,7 @@ function posix-source
     end
 end
 
-# Type d to move up to top parent dir which is a repository
+ # Type d to move up to top parent dir which is a repository
 function d
     while test $PWD != "/"
         if test -d .git
@@ -96,7 +96,12 @@ function d
     pwd
 end
 
-# search through all notes for entries - note rg dependency
+ # search through all notes for entries - note rg dependency
 function no
     rg $argv -L -C 3 -N ~/code/notes
+end
+
+ # show info about the functions I have addded to config.fish
+function myfunctions
+    rg function -B 1 -N ~/.config/fish/config.fish
 end
