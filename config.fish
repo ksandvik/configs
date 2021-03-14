@@ -108,7 +108,7 @@ function myfunctions
     rg '^function' -B 1 -N ~/.config/fish/config.fish
 end
 
-# concert all rtf files to text in dir and delete the rtf(d) files
+# concert all rtf files to text in dir and delete the rtf(d) files (MAC)
 function convertRTFtoText
     echo "converting RTF to txt...."
     textutil -convert txt *.rtfd
