@@ -107,3 +107,12 @@ end
 function myfunctions
     rg '^function' -B 1 -N ~/.config/fish/config.fish
 end
+
+# concert all rtf files to text in dir and delete the rtf(d) files
+function convertRTFtoText
+    echo "converting RTF to txt...."
+    textutil -convert txt *.rtfd
+    echo "removing rtf(d) files..."
+    rm -rf *.rtfd
+    echo "Done!"
+end
