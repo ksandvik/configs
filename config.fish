@@ -14,6 +14,7 @@ abbr l 'exa -l'
 abbr -a v nvim
 abbr -a e 'emacs --insecure'
 abbr -a c clear
+abbr -a k 'code .'
 abbr -a m make
 abbr -a mi 'make install'
 abbr -a lt 'ls -lt | sed 5q'
