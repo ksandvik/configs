@@ -20,6 +20,7 @@ abbr -a mi 'make install'
 abbr -a lt 'ls -lt | sed 5q'
 abbr -a el 'ls -tt | sed 1q | xargs $EDITOR'
 abbr -a today 'date '+%Y-%m-%d''
+abbr -a ri 'rg -i '
 
 # GIT
 abbr -a gd 'git diff'
