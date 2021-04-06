@@ -125,3 +125,12 @@ function convertTextToMD
     find . -iname "*.txt" -exec bash -c 'mv "$0" "${0%\.txt}.md"' {} \;
     echo "Done!"
 end
+
+# Make a zip archive with today's date including hour and minute
+function makeziparchive
+    set archiveName $1
+    # echo -n "make archive:"" $1-(date +%Y-%m-%d-%H%M) ".zip
+    echo "make archive: " $archiveName
+    # zip -r $1-(date +%Y-%m-%d-%H%M).zip $1
+    echo  "Done!"
+end

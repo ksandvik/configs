@@ -10,8 +10,11 @@ bindkey '\eOF'  end-of-line
 #ICECC
 export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib64/qt5/plugins/platforms
 
-# WORK
-export PATH=$PATH:~/wbin:
+# PERSONA
+export PATH=$PATH:~/ksbin
+
+# WORK:wq
+export PATH=$PATH:~/wbin
 
 # GOLANG
 export PATH=$PATH:$HOME/go/bin
