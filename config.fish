@@ -1,7 +1,7 @@
 # ENVIROMENT
 ## GLOBAL
 
-set -gx EDITOR nvim
+set -gx EDITOR nano
 
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
