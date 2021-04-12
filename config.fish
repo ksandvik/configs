@@ -26,7 +26,7 @@ abbr -a ri 'rg -i '
 abbr -a gd 'git diff'
 abbr -a g git
 abbr -a gc 'git commit -am '
-abbr -a gp 'git push'
+abbr -a gp 'git pull --rebase'
 abbr -a gitpulls 'find . -name .git -print -execdir git pull origin master \;'
 abbr -a gf 'git diff --color-words=.'
 
