@@ -11,6 +11,7 @@ end
 
 # ABBREVIATIONS
 abbr l 'exa -l -g --icons'
+abbr lt 'exa -l -g --icons -r --sort=modified'
 
 abbr -a v nvim
 abbr -a e 'emacs --insecure'
@@ -18,7 +19,6 @@ abbr -a c clear
 abbr -a k 'code .'
 abbr -a m make
 abbr -a mi 'make install'
-abbr -a lt 'ls -lt | sed 5q'
 abbr -a el 'ls -tt | sed 1q | xargs $EDITOR'
 abbr -a today 'date '+%Y-%m-%d''
 abbr -a ri 'rg -i '
