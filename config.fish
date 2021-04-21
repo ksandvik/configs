@@ -25,6 +25,7 @@ abbr -a el 'ls -tt | sed 1q | xargs $EDITOR'
 abbr -a today 'date '+%Y-%m-%d''
 abbr -a ri 'rg -i '
 abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
+abbr -a peco 'peco --layout=bottom-up'
 
 # GIT
 abbr -a gd 'git diff'
