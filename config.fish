@@ -30,6 +30,7 @@ abbr -a gc 'git commit -am '
 abbr -a gp 'git pull --rebase'
 abbr -a gitpulls 'find . -name .git -print -execdir git pull origin master \;'
 abbr -a gf 'git diff --color-words=.'
+abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 
 # SSH
 # Start ssh agent when logging in.
