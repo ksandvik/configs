@@ -28,7 +28,7 @@ abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
 abbr -a gd 'git diff'
 abbr -a g git
 abbr -a gc 'git commit -am '
-abbr -a gp 'git pull --rebase'
+abbr -a gp 'git push'
 abbr -a gitpulls 'find . -name .git -print -execdir git pull origin master \;'
 abbr -a gf 'git diff --color-words=.'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
