@@ -9,7 +9,7 @@ if [ -f $HOME/.localdev.fish ]
 end
 
 # ABBREVIATIONS
-abbr l 'exa -l'
+abbr l 'exa -l --icons'
 
 abbr -a v nvim
 abbr -a e 'emacs --insecure'
