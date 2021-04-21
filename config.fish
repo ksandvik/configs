@@ -1,7 +1,8 @@
 # ENVIROMENT
 ## GLOBAL
 
-set -gx EDITOR nano
+set -gx TERM xterm-256color
+set -gx EDITOR code
 
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
