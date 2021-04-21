@@ -13,6 +13,8 @@ end
 abbr l 'exa -l -g --icons'
 abbr lt 'exa -l -g --icons -r --sort=modified'
 
+abbr -a cd 'clear; cd'
+abbr -a z 'clear; z'
 abbr -a v nvim
 abbr -a e 'emacs --insecure'
 abbr -a c clear
@@ -32,10 +34,6 @@ abbr -a gp 'git push'
 abbr -a gitpulls 'find . -name .git -print -execdir git pull origin master \;'
 abbr -a gf 'git diff --color-words=.'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
-
-# SSH
-# Start ssh agent when logging in.
-eval (ssh-agent -c)
 
 # GO
 set -U fish_user_paths /usr/local/go/bin $fish_user_paths
