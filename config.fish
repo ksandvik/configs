@@ -13,8 +13,6 @@ end
 abbr l 'exa -l -g --icons'
 abbr lt 'exa -l -g --icons -r --sort=modified'
 
-abbr -a cd 'clear; cd'
-abbr -a z 'clear; z'
 abbr -a v nvim
 abbr -a e 'emacs --insecure'
 abbr -a c clear
