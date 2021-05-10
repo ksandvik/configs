@@ -119,7 +119,7 @@ function convertRTFtoText
     echo "Done!"
 end
 
-# concert all txt files to md (Mardown) files
+# concert all txt files to md (Markdown) files
 function convertTextToMD
     echo "converting text (.txt) to MD (Markdown)...."
     find . -iname "*.txt" -exec bash -c 'mv "$0" "${0%\.txt}.md"' {} \;
