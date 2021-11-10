@@ -24,6 +24,7 @@ abbr -a today 'date '+%Y-%m-%d''
 abbr -a ri 'rg -i '
 abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
 abbr -a peco 'peco --layout=bottom-up'
+abbr -a prettier 'npx prettier --write .'
 
 # GIT
 abbr -a gd 'git diff'
@@ -36,6 +37,10 @@ abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 
 # GO
 set -U fish_user_paths /usr/local/go/bin $fish_user_paths
+
+# TASKWARRIOR
+abbr -a tw 'task'
+abbr -a tweek 'task end.after:today-1wk completed'
 
 # AUTOJUMP - Note MAC path
 begin
