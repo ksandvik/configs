@@ -40,6 +40,7 @@ set -U fish_user_paths /usr/local/go/bin $fish_user_paths
 
 # TASKWARRIOR
 abbr -a tw 'task'
+abbr -a twday 'task end.after:today completed'
 abbr -a twweek 'task end.after:today-1wk completed'
 abbr -a twmonth 'task end.after:today-4wk completed'
 
