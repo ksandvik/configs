@@ -45,14 +45,6 @@ abbr -a twweek 'task end.after:today-1wk completed'
 abbr -a twmonth 'task end.after:today-4wk completed'
 abbr -a twyear 'task end.after:today-52wk completed'
 
-# AUTOJUMP - Note MAC path
-begin
-    set --local AUTOJUMP_PATH /usr/local/share/autojump/autojump.fish
-    if test -e $AUTOJUMP_PATH
-        source $AUTOJUMP_PATH
-    end
-end
-
 # fish prompt
 function fish_prompt
     set_color yellow
