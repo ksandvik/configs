@@ -11,7 +11,7 @@ end
 
 # ABBREVIATIONS
 abbr l 'exa -l -g --icons'
-abbr lt 'exa -l -g --icons -r --sort=modified'
+abbr lt 'exa -l -g --icons -r --color=always --sort=modified'
 
 abbr -a v nvim
 abbr -a e 'emacs --insecure'
