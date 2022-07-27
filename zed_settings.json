@@ -1,0 +1,22 @@
+// ~/.zed/settings.json
+{
+    "theme": "cave-light",
+    "tab_size": 2,
+    "preferred_line_length": 80,
+    "enable_language_server": true,
+    "format_on_save": "language_server",
+    "soft_wrap": "none",
+    "buffer_font_size": 10,
+    "buffer_font_family": "Zed Mono",
+    "vim_mode": false,
+    "projects_online_by_default": true,
+    "hover_popover_enabled": true,
+    "show_completions_on_input": true,
+    "language_overrides": {
+        "C": {
+            "format_on_save": "language_server",
+            "preferred_line_length": 64,
+            "soft_wrap": "preferred_line_length"
+        }
+    }
+}
