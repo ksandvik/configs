@@ -13,6 +13,7 @@ end
 abbr l 'exa -l -g --icons'
 abbr lt 'exa -l -g --icons -r --color=always --sort=modified'
 abbr ct 'cd  "$(\ls -1dt ./*/ | head -n 1)"'
+abbr cz 'cd (fd -t directory | fzf)'
 
 abbr -a v nvim
 abbr -a e 'emacs --insecure'
