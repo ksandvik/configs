@@ -17,6 +17,7 @@ abbr cz 'cd (fd -t directory | fzf)'
 abbr vz 'nvim (fd -t file | fzf)'
 
 abbr -a v nvim
+abbr -a lvim '~/.local/bin/lvim'
 abbr -a e 'emacs --insecure'
 abbr -a c clear
 abbr -a k 'code .'
