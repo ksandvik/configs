@@ -3,6 +3,7 @@
 
 set -gx TERM xterm-256color
 set -gx EDITOR code
+set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
