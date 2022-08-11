@@ -234,7 +234,7 @@ let light_theme = {
 # The default config record. This is where much of your global configuration is setup.
 let-env config = {
   filesize_metric: false
-  table_mode: rounded # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
+  table_mode: none # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
   use_ls_colors: true
   rm_always_trash: false
   color_config: $dark_theme   # if you want a light theme, replace `$dark_theme` to `$light_theme`
@@ -525,5 +525,3 @@ def "cargo search" [ query: string, --limit=10] {
     } 
     | flatten
 }
-
-
