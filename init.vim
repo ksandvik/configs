@@ -3,7 +3,8 @@
 " Can't use fish from nvim just now (not POSIX compliant)
 set shell=/bin/zsh
 
-" space as mapleader
+" space as mapleader - first key in multi-key commands (see below for leader
+" key use.
 let mapleader = "\<Space>"
 
 " default encoding utf-8
@@ -102,9 +103,6 @@ let g:lightline = {
 function! LightlineFilename()
   return expand('%:t') !=# '' ? @% : '[No Name]'
 endfunction
-
-" Hi-lite yank
-Plug 'machakann/vim-highlightedyank'
 
 " Rust
 Plug 'rust-lang/rust.vim'
