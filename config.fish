@@ -3,6 +3,7 @@
 
 set -gx TERM xterm-256color
 set -gx EDITOR code
+set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
@@ -11,9 +12,13 @@ end
 
 # ABBREVIATIONS
 abbr l 'exa -l -g --icons'
-abbr lt 'exa -l -g --icons -r --sort=modified'
+abbr lt 'exa -l -g --icons -r --color=always --sort=modified'
+abbr ct 'cd  "$(\ls -1dt ./*/ | head -n 1)"'
+abbr cz 'cd (fd -t directory | fzf)'
+abbr vz 'nvim (fd -t file | fzf)'
 
 abbr -a v nvim
+abbr -a lvim '~/.local/bin/lvim'
 abbr -a e 'emacs --insecure'
 abbr -a c clear
 abbr -a k 'code .'
@@ -24,6 +29,7 @@ abbr -a today 'date '+%Y-%m-%d''
 abbr -a ri 'rg -i '
 abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
 abbr -a peco 'peco --layout=bottom-up'
+abbr -a prettier 'npx prettier --write .'
 
 # GIT
 abbr -a gd 'git diff'
@@ -37,13 +43,12 @@ abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 # GO
 set -U fish_user_paths /usr/local/go/bin $fish_user_paths
 
-# AUTOJUMP - Note MAC path
-begin
-    set --local AUTOJUMP_PATH /usr/local/share/autojump/autojump.fish
-    if test -e $AUTOJUMP_PATH
-        source $AUTOJUMP_PATH
-    end
-end
+# TASKWARRIOR
+abbr -a tw 'task'
+abbr -a twday 'task end.after:today completed'
+abbr -a twweek 'task end.after:today-1wk completed'
+abbr -a twmonth 'task end.after:today-4wk completed'
+abbr -a twyear 'task end.after:today-52wk completed'
 
 # fish prompt
 function fish_prompt
@@ -119,7 +124,7 @@ function convertRTFtoText
     echo "Done!"
 end
 
-# concert all txt files to md (Mardown) files
+# concert all txt files to md (Markdown) files
 function convertTextToMD
     echo "converting text (.txt) to MD (Markdown)...."
     find . -iname "*.txt" -exec bash -c 'mv "$0" "${0%\.txt}.md"' {} \;

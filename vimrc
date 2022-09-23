@@ -98,8 +98,8 @@ abbr #d #define
 " highlight Cursor guibg=Red guifg=NONE
 
 " my color
-"colo evening
-colo peachpuff
+colo evening
+"colo peachpuff
 "colo taqua
 
 " default window size and position
