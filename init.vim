@@ -86,6 +86,13 @@ set noshowmode
 " Use :PlugInstall to load in the plugins at runtime.
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 " Brightscript
 Plug 'entrez/roku.vim'
 
