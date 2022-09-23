@@ -43,6 +43,10 @@ set number " Show current absolute line
 " FILES
 map <C-p> :files<CR>
 
+" TELESCOPE
+map <C-f> :Telescope find_files<CR>
+map <C-s> :Telescope live_grep<CR>
+
 " quick save
 nmap <leader>s :w<CR>
 
