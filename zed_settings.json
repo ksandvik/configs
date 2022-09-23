@@ -12,8 +12,8 @@
    },
    "soft_wrap": "none",
    "buffer_font_size": 11,
-   "buffer_font_family": "Cascadia Code",
-   "vim_mode": false,
+   "buffer_font_family": "Jetbrains Mono",
+   "vim_mode": true,
    "projects_online_by_default": true,
    "hover_popover_enabled": true,
    "show_completions_on_input": true,
@@ -25,4 +25,3 @@
       }
    }
 }
-

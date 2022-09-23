@@ -8,12 +8,12 @@ export CLICOLOR=1
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
 
+# EMACS
 
-# NIM
-PATH=/Users/ksandvik/.nimble/bin:$PATH
+PATH=/Users/ksandvik/.emacs.d/bin:$PATH
 
 function updateBrew {
-        brew update && brew upgrade && brew cleanup
+	brew update && brew upgrade && brew cleanup
 }
 
 # Shortcuts to Mac Applications
@@ -22,7 +22,7 @@ alias saf="open /Applications/Safari.app"
 # Search using Spotlight
 alias saf="open /Applications/Safari.app"
 
-# Spotify 
+# Spotify
 function fg {
 	mdfind -onlyin . "$1"
 }
@@ -32,7 +32,7 @@ function fn {
 }
 
 # Open man pages with preview
-function psman { man -t $@ | open -f -a Preview;}
+function psman { man -t $@ | open -f -a Preview; }
 
 # If automjump is installed via brew
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
