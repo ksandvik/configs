@@ -38,7 +38,9 @@ set undofile
 " get syntax
 syntax on
 set autoindent
-set number " Show current absolute line
+set number " Enable line numbers
+set relativenumber " Enable relative line numbers
+
 
 " FILES
 map <C-p> :files<CR>
