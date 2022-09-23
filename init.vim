@@ -14,6 +14,7 @@ set encoding=utf-8
 " ; as :
 nnoremap ; :
     
+
 " jk as ESC
 inoremap jk <Esc>
 vnoremap jk <Esc>
@@ -39,8 +40,7 @@ set undofile
 syntax on
 set autoindent
 set number " Enable line numbers
-set relativenumber " Enable relative line numbers
-
+" set relativenumber " Enable relative line numbers
 
 " FILES
 map <C-p> :files<CR>
