@@ -38,6 +38,7 @@ abbr -a gc 'git commit -am '
 abbr -a gp 'git push'
 abbr -a gitpulls 'find . -name .git -print -execdir git pull origin master \;'
 abbr -a gf 'git diff --color-words=.'
+abbr -a gs 'git status'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 
 # GO
