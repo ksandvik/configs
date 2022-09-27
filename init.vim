@@ -13,6 +13,10 @@ set encoding=utf-8
 " KEY REMAPPINGS
 " ; as :
 nnoremap ; :
+
+" Map escape in Terminal
+tnoremap <Esc> <C-\><C-n>
+
     
 
 " jk as ESC
@@ -133,6 +137,9 @@ Plug 'rust-lang/rust.vim'
 " ripgrep
 Plug 'jremmen/vim-ripgrep'
 let g:rg_command = 'rg --vimgrep -S'
+
+" Cheatsheet
+Plug 'sudormrfbin/cheatsheet.nvim'
 
 " Initialize plugin system
 call plug#end()
