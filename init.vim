@@ -10,15 +10,9 @@ let mapleader = "\<Space>"
 " default encoding utf-8
 set encoding=utf-8
 
-" KEY REMAPPINGS
-" ; as :
-nnoremap ; :
-
 " Map escape in Terminal
 tnoremap <Esc> <C-\><C-n>
-
     
-
 " jk as ESC
 inoremap jk <Esc>
 vnoremap jk <Esc>
