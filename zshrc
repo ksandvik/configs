@@ -62,7 +62,7 @@ alias filesizes='du -hcd2 .'
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/mac-ssd.zsh
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
 
-source /Users/ksandvik/Library/Preferences/org.dystroy.broot/launcher/bash/br
+# source /Users/ksandvik/Library/Preferences/org.dystroy.broot/launcher/bash/br
 autoload -U +X bashcompinit && bashcompinit
 
 # START FISH!
