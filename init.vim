@@ -135,6 +135,12 @@ let g:rg_command = 'rg --vimgrep -S'
 " Cheatsheet
 Plug 'sudormrfbin/cheatsheet.nvim'
 
+" Leap
+Plug 'ggandor/leap.nvim'
+
+
 " Initialize plugin system
 call plug#end()
+
+lua require('leap').add_default_mappings()
 
