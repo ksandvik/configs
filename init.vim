@@ -3,6 +3,12 @@
 " Can't use fish from nvim just now (not POSIX compliant)
 set shell=/bin/zsh
 
+" default tab formatting
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
+
 " space as mapleader - first key in multi-key commands (see below for leader
 " key use.
 let mapleader = "\<Space>"
@@ -34,9 +40,7 @@ set undodir=~/.vimdid
 set undofile
 
 " FORMATTING
-" get syntax
 syntax on
-set autoindent
 set number " Enable line numbers
 " set relativenumber " Enable relative line numbers
 
