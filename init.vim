@@ -34,6 +34,10 @@ nnoremap G Gzz
 
 set backspace=2 " backspace over newlines
 
+" CLIPBOARD
+set clipboard+=unnamedplus
+
+
 " STATE, UNDO
 " Permanent undo
 set undodir=~/.vimdid
