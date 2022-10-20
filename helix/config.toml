@@ -1,0 +1,26 @@
+
+theme = "dracula"
+
+[editor]
+mouse = true
+line-number = "absolute"
+cursorline = true
+idle-timeout = 300
+color-modes = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+
+[editor.lsp] 
+display-messages = true
+
+[editor.cursor-shape]
+insert = "underline"
+select = "bar"
+
+[editor.whitespace]
+render = "all"
+
