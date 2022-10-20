@@ -1,5 +1,10 @@
+# KS HELIX SETUP
 
+# THEME
 theme = "dracula"
+#theme = "onelight"
+
+# EDITOR
 
 [editor]
 mouse = true
@@ -7,6 +12,7 @@ line-number = "absolute"
 cursorline = true
 idle-timeout = 300
 color-modes = true
+rulers = [80]
 
 [editor.statusline]
 left = ["mode", "spinner"]
@@ -23,4 +29,24 @@ select = "bar"
 
 [editor.whitespace]
 render = "all"
+
+
+# KEY BINDINGS
+
+[keys.normal.space]
+z = ":quit"
+
+[keys.insert]
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+
+# move cursor in insert mode
+A-h = "move_char_left"
+A-j = "move_line_down"
+A-k = "move_line_up"
+A-l = "move_char_right"
+up =    "move_line_up"
+down =  "move_line_down"
+left =  "move_char_left"
+right = "move_char_right"
+
 
