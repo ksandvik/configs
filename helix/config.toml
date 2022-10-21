@@ -31,7 +31,14 @@ select = "bar"
 render = "all"
 
 
+[editor.indent-guides]
+render = true
+
+
 # KEY BINDINGS
+[keys.normal]
+Z = { Z = ":wq", Q = ":q!" } # save and quit without saving
+G = "goto_file_end"
 
 [keys.normal.space]
 z = ":quit"
