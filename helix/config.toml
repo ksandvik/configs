@@ -40,6 +40,8 @@ render = true
 [keys.normal]
 Z = { Z = ":wq", Q = ":q!" } # save and quit without saving
 G = "goto_file_end"
+j = [ "move_line_down", "align_view_center" ]
+k = [ "move_line_up", "align_view_center" ]
 
 [keys.normal.space]
 z = ":quit"
