@@ -1,6 +1,6 @@
 # KS HELIX SETUP
 # See src helix-term/src/keymap/default.rs for default findings and the functions called.
-# and helix-term/src/commands.rs for mappable commands.
+# and helix-term/src/commands.rs for mappable commands (see static_commands!:).
 
 # THEME
 theme = "dracula"
