@@ -45,6 +45,9 @@ G = "goto_file_end"
 j = [ "move_line_down", "align_view_center" ]
 k = [ "move_line_up", "align_view_center" ]
 
+left = { left = "goto_line_start"}
+right= { right= "goto_line_end"}
+
 [keys.normal.space]
 z = ":quit"
 
@@ -64,4 +67,7 @@ up =    "move_line_up"
 down =  "move_line_down"
 left =  "move_char_left"
 right = "move_char_right"
+left = { left = "goto_line_start"}
+right= { right= "goto_line_end"}
+
 
