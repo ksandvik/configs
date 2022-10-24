@@ -49,6 +49,10 @@ z = ":quit"
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
+# Emacs Bindings in insert mode
+C-a = "goto_line_start"
+C-e = "goto_line_end"
+
 # move cursor in insert mode
 A-h = "move_char_left"
 A-j = "move_line_down"
@@ -58,5 +62,4 @@ up =    "move_line_up"
 down =  "move_line_down"
 left =  "move_char_left"
 right = "move_char_right"
-
 
