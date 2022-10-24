@@ -75,7 +75,7 @@ end
 function fish_title
     switch $_
         case fish
-            echo (prompt_pwd)
+            echo (pwd)
         case vim
             if test -d .git
                 echo vim \((basename $PWD)\)
