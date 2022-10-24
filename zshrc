@@ -22,15 +22,15 @@ export PATH=$PATH:$HOME/go/bin
 # RUST
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# KSBIN
+export PATH="$HOME/ksbin:$PATH"
+
 # TEMP pkgconfig for builds
 # export PATH="/home/corp.roku/ksandvik/depot/firmware/release/main/os/dist/host/bin:$PATH"
 
 function rr () {
 	rustc $1.rs && ./$1
 }
-
-# NIM
-export PATH="$HOME/.nimble/bin:$PATH"
 
 # EDITORS
 alias e=nvim
