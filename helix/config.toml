@@ -1,4 +1,5 @@
 # KS HELIX SETUP
+# See src helix-term/src/keymap/default.rs for default findings and the functions called.
 
 # THEME
 theme = "dracula"
