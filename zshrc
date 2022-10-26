@@ -25,6 +25,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # KSBIN
 export PATH="$HOME/ksbin:$PATH"
 
+# Current PATH
+export PATH=.:$PATH
+
+
 # TEMP pkgconfig for builds
 # export PATH="/home/corp.roku/ksandvik/depot/firmware/release/main/os/dist/host/bin:$PATH"
 

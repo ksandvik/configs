@@ -7,7 +7,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 # Additional Mac paths
-export PATH=~/bin:/usr/local/bin:$PATH:.:/opt/local/bin:/opt/bin
+export PATH=~/bin:/usr/local/bin:$PATH:/opt/local/bin:/opt/bin
 
 # Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1
