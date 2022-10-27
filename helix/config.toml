@@ -18,6 +18,7 @@ true-color = true
 rulers = [80]
 auto-format = false
 auto-info = false
+auto-pairs = false
 
 [editor.statusline]
 left = ["mode", "spinner"]
