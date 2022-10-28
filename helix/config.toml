@@ -51,6 +51,10 @@ k = [ "move_line_up", "align_view_center" ]
 left = { left = "goto_line_start"}
 right= { right= "goto_line_end"}
 
+# cc = replace line contents
+c = { c = ["extend_to_line_bounds", "trim_selections", "change_selection"] }
+
+
 [keys.normal.space]
 z = ":quit"
 
