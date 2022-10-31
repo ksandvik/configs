@@ -1,8 +1,13 @@
-# KS Starship config
 
-format = "$all"
+command_timeout = 2000
+
+[directory]
+style = "bold white"
+
 
 [hostname]
 ssh_only = false
 format = "[$ssh_symbol](bold blue) on [$hostname](bold red) "
+trim_at = ".companyname.com"
+disabled = false
 
