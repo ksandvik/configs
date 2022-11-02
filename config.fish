@@ -54,6 +54,9 @@ abbr -a twyear 'task end.after:today-52wk completed'
 
 # fish prompt
 function fish_prompt
+    set_color white
+    set_color -b blue
+    echo  (pwd)
     set_color magenta
     set_color -b yellow
     printf '%s@%s ' (hostname | cut -d . -f 1)
@@ -63,11 +66,7 @@ function fish_prompt
 
     set_color green
     printf '%s ' (__fish_git_prompt)
-    set_color white
-    set_color -b blue
-    echo -n (pwd)
-    echo -n " "
-    echo -n '~>'
+   echo -n '~>'
     set_color normal
     echo -n ' '
 end
