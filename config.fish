@@ -54,6 +54,7 @@ abbr -a twyear 'task end.after:today-52wk completed'
 
 # fish prompt
 function fish_prompt
+    echo " "
     set_color white
     set_color -b blue
     echo  (pwd)
@@ -69,6 +70,7 @@ function fish_prompt
    echo -n '~>'
     set_color normal
     echo -n ' '
+    echo ""
 end
 
 # fish title for the prompt
