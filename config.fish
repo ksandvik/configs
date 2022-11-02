@@ -3,7 +3,7 @@
 
 set -gx TERM xterm-256color
 set -gx fish_term24bit 1.
-set -gx EDITOR code
+set -gx EDITOR hx
 set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 
 ## PER DEV UNIT
@@ -29,7 +29,6 @@ abbr -a el 'ls -tt | sed 1q | xargs $EDITOR'
 abbr -a today 'date '+%Y-%m-%d''
 abbr -a ri 'rg -i '
 abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
-abbr -a peco 'peco --layout=bottom-up'
 abbr -a prettier 'npx prettier --write .'
 
 # GIT
@@ -37,6 +36,7 @@ abbr -a gd 'git diff'
 abbr -a g git
 abbr -a gc 'git commit -am '
 abbr -a gp 'git push'
+abbr -a gg 'git pull'
 abbr -a gitpulls 'find . -name .git -print -execdir git pull origin master \;'
 abbr -a gf 'git diff --color-words=.'
 abbr -a gs 'git status'
@@ -108,7 +108,7 @@ end
 
 # search through all notes for entries - note rg dependency
 function no
-    rg $argv -L -C 3 -N ~/code/notes
+    rg $argv -I -L -C 3 -N ~/notes
 end
 
 # show info about the functions I have addded to config.fish
