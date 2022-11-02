@@ -2,6 +2,7 @@
 ## GLOBAL
 
 set -gx TERM xterm-256color
+set -gx fish_term24bit 1.
 set -gx EDITOR code
 set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 
@@ -53,22 +54,22 @@ abbr -a twyear 'task end.after:today-52wk completed'
 
 # fish prompt
 function fish_prompt
-    set_color yellow
-    echo (pwd)
-    set_color red
-    set_color -b black
-    echo -n ""(date "+%H:%M")"|"
     set_color magenta
-    printf '%s@%s|' (whoami) (hostname | cut -d . -f 1)
-    if [ $PWD != $HOME ]
-        set_color yellow
-        echo -n (basename $PWD)
-    end
+    set_color -b yellow
+    printf '%s@%s ' (hostname | cut -d . -f 1)
+    set_color yellow
+    set_color -b 7f3
+    echo -n (basename $PWD)
+
     set_color green
     printf '%s ' (__fish_git_prompt)
-    set_color red
-    echo -n '~> '
+    set_color white
+    set_color -b blue
+    echo -n (pwd)
+    echo -n " "
+    echo -n '~>'
     set_color normal
+    echo -n ' '
 end
 
 # fish title for the prompt
