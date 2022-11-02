@@ -58,6 +58,8 @@ function fish_prompt
     set_color white
     set_color -b blue
     echo  (pwd)
+    set_color normal
+    echo ""
     set_color magenta
     set_color -b yellow
     printf '%s@%s ' (hostname | cut -d . -f 1)
