@@ -16,8 +16,8 @@ cursorline = true
 color-modes = true
 true-color = true
 rulers = [80]
-auto-format = false
-auto-info = false
+# auto-format = false
+# auto-info = false
 auto-pairs = false
 
 [editor.statusline]
@@ -43,7 +43,7 @@ render = true
 
 # KEY BINDINGS
 [keys.normal]
-# Z = { Z = ":wq", Q = ":q!" } # save and quit without saving
+Z = { Z = ":wq", Q = ":q!" } # save and quit without saving
 G = "goto_file_end"
 j = [ "move_line_down", "align_view_center" ]
 k = [ "move_line_up", "align_view_center" ]
@@ -53,7 +53,7 @@ left = { left = "goto_line_start"}
 right= { right= "goto_line_end"}
 
 [keys.normal.space]
-# z = ":quit"
+z = ":quit"
 
 [keys.insert]
 j = { j = "normal_mode" } # Maps `jk` to exit insert mode
