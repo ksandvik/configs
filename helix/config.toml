@@ -40,6 +40,8 @@ render = "all"
 [editor.indent-guides]
 render = true
 
+# terminal = { command = "tmux", args = ["split-window"]  }
+
 
 # KEY BINDINGS
 [keys.normal]
