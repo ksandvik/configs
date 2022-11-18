@@ -50,8 +50,9 @@ G = "goto_file_end"
 j = [ "move_line_down", "align_view_center" ]
 k = [ "move_line_up", "align_view_center" ]
 c = ["trim_selections", "change_selection"]
+C-k = "kill_to_line_end"
 
-# left = { left = "goto_line_start"}
+# left
 # right= { right= "goto_line_end"}
 
 [keys.normal.space]
