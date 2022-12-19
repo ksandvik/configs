@@ -3,7 +3,8 @@
 # and helix-term/src/commands.rs for mappable commands (see static_commands!:).
 
 # THEME
-theme = "dracula"
+theme = "ayu_dark"
+# theme = "dracula"
 #theme = "onelight"
 
 # EDITOR
@@ -34,7 +35,7 @@ insert = "underline"
 select = "bar"
 
 [editor.whitespace]
-render = "all"
+render = "none"
 
 
 [editor.indent-guides]
@@ -76,5 +77,4 @@ left =  "move_char_left"
 right = "move_char_right"
 # left = { left = "goto_line_start"}
 # right= { right= "goto_line_end"}
-
 
