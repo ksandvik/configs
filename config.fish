@@ -25,6 +25,7 @@ abbr -a c clear
 abbr -a k 'code .'
 abbr -a m make
 abbr -a mi 'make install'
+abbr -a mr 'make run'
 abbr -a el 'ls -tt | sed 1q | xargs $EDITOR'
 abbr -a today 'date '+%Y-%m-%d''
 abbr -a ri 'rg -i '
@@ -110,6 +111,13 @@ function d
     pwd
 end
 
+# make dir and cd into it
+function mkcd
+    mkdir $argv
+    cd $argv
+end
+
+# NOTES
 # search through all notes for entries - note rg dependency
 function no
     rg $argv -I -L -C 3 -N ~/notes
