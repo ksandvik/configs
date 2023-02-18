@@ -117,6 +117,12 @@ function mkcd
     cd $argv
 end
 
+# cd to dir and code open it
+function cdcode 
+    cd $argv
+    code .
+end
+
 # NOTES
 # search through all notes for entries - note rg dependency
 function no
