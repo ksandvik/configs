@@ -3,9 +3,10 @@
 # and helix-term/src/commands.rs for mappable commands (see static_commands!:).
 
 # THEME
-theme = "ayu_dark"
+theme= "emacs"
+# theme = "ayu_dark"
 # theme = "dracula"
-#theme = "onelight"
+# theme = "onelight"
 
 # EDITOR
 
