@@ -58,6 +58,7 @@ function fish_prompt
     echo " "
     set_color white
     set_color -b blue
+    echo -n '==> '
     echo  (pwd)
     set_color normal
     echo ""
