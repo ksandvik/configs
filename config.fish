@@ -67,7 +67,7 @@ function fish_prompt
     printf '%s@%s ' (hostname | cut -d . -f 1)
     set_color yellow
     set_color -b 7f3
-    echo -n (basename $PWD)
+    # echo -n (basename $PWD)
 
     set_color green
     printf '%s ' (__fish_git_prompt)
