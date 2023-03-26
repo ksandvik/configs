@@ -71,7 +71,7 @@ function fish_prompt
 
     set_color green
     printf '%s ' (__fish_git_prompt)
-   echo -n '=>'
+   echo -n '➤ '
     set_color normal
     echo -n ' '
     echo ""
