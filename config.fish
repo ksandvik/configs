@@ -71,7 +71,7 @@ function fish_prompt
 
     set_color green
     printf '%s ' (__fish_git_prompt)
-   echo -n '~>'
+   echo -n '=>'
     set_color normal
     echo -n ' '
     echo ""
@@ -169,3 +169,8 @@ function makeziparchive
     # zip -r $1-(date +%Y-%m-%d-%H%M).zip $1
     echo  "Done!"
 end
+
+function multicd
+    echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
+end
+abbr --add dotdot --regex '^\.\.+$' --function multicd
