@@ -31,6 +31,7 @@ abbr -a today 'date '+%Y-%m-%d''
 abbr -a ri 'rg -i '
 abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
 abbr -a prettier 'npx prettier --write .'
+abbr -a p 'python3'
 
 # GIT
 abbr -a gd 'git diff'
