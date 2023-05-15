@@ -39,7 +39,7 @@ abbr -a g git
 abbr -a gc 'git commit -am '
 abbr -a gp 'git push'
 abbr -a gg 'git pull'
-abbr -a gitpulls 'find . -name .git -print -execdir git pull origin master \;'
+abbr -a gitpulls 'find . -name .git -print -execdir git pull \;'
 abbr -a gf 'git diff --color-words=.'
 abbr -a gs 'git status'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
@@ -72,7 +72,7 @@ function fish_prompt
 
     set_color green
     printf '%s' (__fish_git_prompt)
-   echo -n '➤ '
+    echo -n '➤ '
     set_color normal
     echo -n ' '
     echo ""
