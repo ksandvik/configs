@@ -31,7 +31,7 @@ abbr -a today 'date '+%Y-%m-%d''
 abbr -a ri 'rg -i '
 abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
 abbr -a prettier 'npx prettier --write .'
-abbr -a p 'python3'
+abbr -a p python3
 
 # GIT
 abbr -a gd 'git diff'
@@ -48,7 +48,7 @@ abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 set -U fish_user_paths /usr/local/go/bin $fish_user_paths
 
 # TASKWARRIOR
-abbr -a tw 'task'
+abbr -a tw task
 abbr -a twday 'task end.after:today completed'
 abbr -a twweek 'task end.after:today-1wk completed'
 abbr -a twmonth 'task end.after:today-4wk completed'
@@ -62,7 +62,7 @@ function fish_prompt
     echo -n '📁  '
     echo -n (pwd)
     echo -n '  '
-    ~/ksbin/ttr.py 
+    ~/ksbin/ttr.py
     set_color normal
     echo ""
     set_color purple
@@ -70,7 +70,6 @@ function fish_prompt
     printf '↳%s@%s' (hostname | cut -d . -f 1)
     set_color yellow
     set_color -b 7f3
-
 
     set_color green
     printf '%s' (__fish_git_prompt)
@@ -122,7 +121,7 @@ function mkcd
 end
 
 # cd to dir and code open it
-function cdcode 
+function cdcode
     cd $argv
     code .
 end
@@ -170,7 +169,7 @@ function makeziparchive
     # echo -n "make archive:"" $1-(date +%Y-%m-%d-%H%M) ".zip
     echo "make archive: " $archiveName
     # zip -r $1-(date +%Y-%m-%d-%H%M).zip $1
-    echo  "Done!"
+    echo "Done!"
 end
 
 function multicd
