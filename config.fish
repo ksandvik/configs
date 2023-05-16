@@ -61,6 +61,7 @@ function fish_prompt
     set_color -b blue
     echo -n '📁  '
     echo  (pwd)
+    ~/ksbin/ttr.py 
     set_color normal
     echo ""
     set_color purple
@@ -68,7 +69,7 @@ function fish_prompt
     printf '↳%s@%s' (hostname | cut -d . -f 1)
     set_color yellow
     set_color -b 7f3
-    # echo -n (basename $PWD)
+
 
     set_color green
     printf '%s' (__fish_git_prompt)
@@ -103,7 +104,7 @@ function posix-source
 end
 
 # Type d to move up to top parent dir which is a repository
-function d
+function dgit
     while test $PWD != /
         if test -d .git
             break
