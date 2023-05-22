@@ -37,7 +37,7 @@ abbr -a p python3
 abbr -a gd 'git diff'
 abbr -a g git
 abbr -a gc 'git commit -am '
-abbr -a gp 'git push'
+abbr -a gp 'git push -q'
 abbr -a gg 'git pull'
 abbr -a gitpulls 'find . -name .git -print -execdir git pull \;'
 abbr -a gf 'git diff --color-words=.'
