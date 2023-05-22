@@ -40,7 +40,6 @@ render = "all"
 [editor.indent-guides]
 render = true
 
-
 # KEY BINDINGS
 [keys.normal]
 # Z = { Z = ":wq", Q = ":q!" } # save and quit without saving
@@ -73,5 +72,3 @@ left =  "move_char_left"
 right = "move_char_right"
 # left = { left = "goto_line_start"}
 # right= { right= "goto_line_end"}
-
-

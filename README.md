@@ -46,4 +46,3 @@ Install and update the rust crates with updateRust script.
 
 ## Other Tools
 tig - https://jonas.github.io/tig/
-
