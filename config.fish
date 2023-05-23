@@ -129,7 +129,7 @@ end
 # NOTES
 # search through all notes for entries - note rg dependency
 function no
-    rg $argv -I -L -C 3 -N ~/notes
+    rg -i -C 4 -N -I $argv  ~/notes
 end
 
 # Only search rust notes
