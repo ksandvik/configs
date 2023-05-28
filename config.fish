@@ -5,6 +5,7 @@ set -gx TERM xterm-256color
 set -gx fish_term24bit 1.
 set -gx EDITOR hx
 set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
+set -gx BAT_THEME Dracula
 
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
@@ -36,13 +37,19 @@ abbr -a p python3
 # GIT
 abbr -a gd 'git diff'
 abbr -a g git
-abbr -a gc git commit -am \"' '
+abbr -a gc 'git commit -am '
 abbr -a gp 'git push -q'
 abbr -a gg 'git pull'
 abbr -a gitpulls 'find . -name .git -print -execdir git pull \;'
 abbr -a gf 'git diff --color-words=.'
 abbr -a gs 'git status'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
+
+# Python
+
+abbr -a pyc 'python3 -m venv .venv'
+abbr -a pyi 'source .venv/bin/activate.fish'
+abbr -a pyo 'deactivate'
 
 # GO
 set -U fish_user_paths /usr/local/go/bin $fish_user_paths
