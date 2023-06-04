@@ -3,7 +3,7 @@
 
 set -gx TERM xterm-256color
 set -gx fish_term24bit 1.
-set -gx EDITOR hx
+set -gx EDITOR code
 set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 set -gx BAT_THEME Dracula
 
@@ -102,7 +102,7 @@ function fish_title
     end
 end
 
-# Read environment Variables
+# Read environment variables
 function posix-source
     for i in (cat $argv)
         set arr (echo $i |tr = \n)
