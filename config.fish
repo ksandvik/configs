@@ -74,7 +74,7 @@ function fish_prompt
     echo ""
     set_color purple
     set_color -b yellow
-    printf '↳%s@%s' (hostname | cut -d . -f 1)
+    printf '└── %s@%s' (hostname | cut -d . -f 1)
     set_color yellow
     set_color -b 7f3
 
