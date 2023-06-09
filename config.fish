@@ -149,6 +149,13 @@ function rne
     $EDITOR ~/notes/ksnotes/rust/
 end
 
+# Convert Fahrenheit to Celcius
+function f2c 
+    set -l fahrenheit $argv[1]
+    set -l celsius (math "($fahrenheit - 32) * 5 / 9")
+    echo $celsius
+end 
+
 # show info about the functions I have addded to config.fish
 function myfunctions
     rg '^function' -B 1 -N ~/.config/fish/config.fish
