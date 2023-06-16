@@ -3,9 +3,9 @@
 # and helix-term/src/commands.rs for mappable commands (see static_commands!:).
 
 # THEME
-theme= "emacs"
+#theme= "emacs"
 # theme = "ayu_dark"
-# theme = "dracula"
+theme = "dracula"
 # theme = "onelight"
 
 # EDITOR
@@ -64,8 +64,8 @@ z = ":quit"
 j = { j = "normal_mode" } # Maps `jk` to exit insert mode
 
 # Emacs Bindings in insert mode
-# C-a = "goto_line_start"
-# C-e = "goto_line_end"
+C-a = "goto_line_start"
+C-e = "goto_line_end"
 
 # move cursor in insert mode
 # A-h = "move_char_left"
