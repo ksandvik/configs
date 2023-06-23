@@ -41,7 +41,7 @@ abbr -a g git
 abbr -a gc 'git commit -am '
 abbr -a gp 'git push -q'
 abbr -a gg 'git pull'
-abbr -a gitpulls 'find . -name .git -print -execdir git pull \; | rg -v Already'
+abbr -a gitpulls "find . -name .git -print -execdir git pull \; | grep -Ev 'Already|remote|Unpacking'"
 abbr -a gf 'git diff --color-words=.'
 abbr -a gs 'git status'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
