@@ -45,12 +45,12 @@ abbr -a gitpulls "find . -name .git -print -execdir git pull \; | grep -Ev 'Alre
 abbr -a gf 'git diff --color-words=.'
 abbr -a gs 'git status'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
+abbr -a gitlocation 'git config --get remote.origin.url'
 
 # Python
-
-abbr -a pyc 'python3 -m venv .venv'
-abbr -a pyi 'source .venv/bin/activate.fish'
-abbr -a pyo 'deactivate'
+abbr -a venvcreate 'python3 -m venv .venv'
+abbr -a venvin 'source .venv/bin/activate.fish'
+abbr -a venvout 'deactivate'
 
 # GO
 set -U fish_user_paths /usr/local/go/bin $fish_user_paths
