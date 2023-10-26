@@ -217,3 +217,4 @@ function __auto_source_venv --on-variable PWD --description "Activate/Deactivate
     deactivate
   end
 end
+set -gx MODULAR_HOME /Users/ksandvik/.modular
