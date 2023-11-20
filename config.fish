@@ -6,6 +6,7 @@ set -gx fish_term24bit 1.
 set -gx EDITOR code
 set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 set -gx BAT_THEME Dracula
+set -gx MODULAR_HOME /Users/ksandvik/.modular
 
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
@@ -217,4 +218,3 @@ function __auto_source_venv --on-variable PWD --description "Activate/Deactivate
     deactivate
   end
 end
-set -gx MODULAR_HOME /Users/ksandvik/.modular
