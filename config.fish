@@ -137,7 +137,7 @@ end
 # NOTES
 # search through all notes for entries - note rg dependency
 function no
-    rg -i -C 4 -N -I $argv  ~/notes
+    rg --heading -i -C 4 -N -I $argv  ~/notes
 end
 
 # Only search rust notes
@@ -151,11 +151,11 @@ function rne
 end
 
 # Convert Fahrenheit to Celcius
-function f2c 
+function f2c
     set -l fahrenheit $argv[1]
     set -l celsius (math "($fahrenheit - 32) * 5 / 9")
     echo $celsius
-end 
+end
 
 # show info about the functions I have addded to config.fish
 function myfunctions
@@ -205,7 +205,7 @@ function __auto_source_venv --on-variable PWD --description "Activate/Deactivate
     # virtualenv starting from the current directory.
     while string match "$gitdir*" "$cwd" &>/dev/null
       if test -e "$cwd/.venv/bin/activate.fish"
-        source "$cwd/.venv/bin/activate.fish" &>/dev/null 
+        source "$cwd/.venv/bin/activate.fish" &>/dev/null
         return
       else
         set cwd (path dirname "$cwd")
