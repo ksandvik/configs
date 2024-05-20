@@ -39,11 +39,13 @@ abbr -a ze 'zellij -l ~/code/configs/zellij/kslayout.kdl'
 # GIT
 abbr -a gd 'git diff'
 abbr -a g git
-abbr -a gc 'git commit -am '
+abbr -a gc 'git commit -am'
 abbr -a gp 'git push'
-abbr -a gg 'git pull'
+abbr -a gg 'git pull --rebase'
 abbr -a gf 'git diff --color-words=.'
 abbr -a gs 'git status'
+abbr -a gr 'git reset HEAD'
+abbr -a gcl 'git clean -df'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 abbr -a gitlocation 'git config --get remote.origin.url'
 
