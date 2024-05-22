@@ -167,9 +167,9 @@ end
 # concert all rtf files to text in dir and delete the rtf(d) files (MAC)
 function convertRTFtoText
     echo "converting RTF to txt...."
-    textutil -convert txt *.rtfd
+    textutil -convert txt *.rtf
     echo "removing rtf(d) files..."
-    rm -rf *.rtfd
+    rm -rf *.rtf
     echo "Done!"
 end
 
