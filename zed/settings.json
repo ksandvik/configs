@@ -25,7 +25,17 @@
       "format_on_save": {
         "external": {
           "command": "black",
-          "arguments": ["-"]
+          "arguments": [
+            "-"
+          ]
+        }
+      }
+    },
+    {
+      "JSON": {
+        "prettier": {
+          "allowed": true,
+          "parser": "json"
         }
       }
     }
