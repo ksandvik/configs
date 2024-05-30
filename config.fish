@@ -160,7 +160,7 @@ function f2c
 end
 
 # show info about the functions I have addded to config.fish
-function myfunctions
+function fishfunctions
     rg '^function' -B 1 -N ~/.config/fish/config.fish
 end
 
