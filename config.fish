@@ -164,30 +164,6 @@ function fishfunctions
     rg '^function' -B 1 -N ~/.config/fish/config.fish
 end
 
-# concert all rtf files to text in dir and delete the rtf(d) files (MAC)
-function convertRTFtoText
-    echo "converting RTF to txt...."
-    textutil -convert txt *.rtf
-    echo "removing rtf(d) files..."
-    rm -rf *.rtf
-    echo "Done!"
-end
-
-# concert all txt files to md (Markdown) files
-function convertTextToMD
-    echo "converting text (.txt) to MD (Markdown)...."
-    find . -iname "*.txt" -exec bash -c 'mv "$0" "${0%\.txt}.md"' {} \;
-    echo "Done!"
-end
-
-# Make a zip archive with today's date including hour and minute
-function makeziparchive
-    set archiveName $1
-    # echo -n "make archive:"" $1-(date +%Y-%m-%d-%H%M) ".zip
-    echo "make archive: " $archiveName
-    # zip -r $1-(date +%Y-%m-%d-%H%M).zip $1
-    echo "Done!"
-end
 
 function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
@@ -219,3 +195,17 @@ function __auto_source_venv --on-variable PWD --description "Activate/Deactivate
     deactivate
   end
 end
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /opt/homebrew/Caskroom/miniconda/base/bin/conda
+    eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish"
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/opt/homebrew/Caskroom/miniconda/base/bin" $PATH
+    end
+end
+# <<< conda initialize <<<
+
