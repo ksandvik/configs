@@ -6,37 +6,31 @@
 // To see all of Zed's default settings without changing your
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
+// "vim_mode": true
 {
-  "base_keymap": "VSCode",
   "theme": "Github Light",
-  "buffer_font_size": 15,
-  "vim_mode": true,
-  "assistant": {
-    "version": "1",
-    "provider": {
-      "name": "openai",
-      "type": "openai",
-      "default_model": "gpt-4-turbo-preview",
-      "api_url": "http://localhost:11434/v1"
-    }
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "buffer_font_family": "MonoLisa",
+  "telemetry": {
+    // Send debug info like crash reports.
+    "diagnostics": true,
+    // Send anonymized usage data like what languages you're using Zed with.
+    "metrics": false
   },
   "languages": {
     "Python": {
       "format_on_save": {
         "external": {
           "command": "black",
-          "arguments": [
-            "-"
-          ]
+          "arguments": ["-"]
         }
       }
     },
-    {
-      "JSON": {
-        "prettier": {
-          "allowed": true,
-          "parser": "json"
-        }
+    "JSON": {
+      "prettier": {
+        "allowed": true,
+        "parser": "json"
       }
     }
   }
