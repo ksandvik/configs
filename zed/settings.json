@@ -8,15 +8,30 @@
 // from the command palette or from `Zed` application menu.
 // "vim_mode": true
 {
-  "theme": "Github Light",
-  "ui_font_size": 14,
-  "buffer_font_size": 14,
+  "vim_mode": false,
+  "theme": "msun-dark-twilight",
+  "ui_font_size": 13,
+  "buffer_font_size": 13,
   "buffer_font_family": "MonoLisa",
+  "soft_wrap": true,
   "telemetry": {
     // Send debug info like crash reports.
     "diagnostics": true,
     // Send anonymized usage data like what languages you're using Zed with.
     "metrics": false
+  },
+  "assistant": {
+    "version": "1",
+    "provider": {
+      "default_model": {
+        "name": "llama3:latest",
+        "max_tokens": 2048,
+        "keep_alive": "10m"
+      },
+      "name": "ollama",
+      // Recommended setting to allow for model startup
+      "low_speed_timeout_in_seconds": null
+    }
   },
   "languages": {
     "Python": {
