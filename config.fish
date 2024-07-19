@@ -35,7 +35,8 @@ abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
 abbr -a prettier 'npx prettier --write .'
 abbr -a p python3
 abbr -a ze 'zellij -l ~/code/configs/zellij/kslayout.kdl'
-abbr -a f 'fortune'
+abbr -a f 'open "$(fzf)"'
+abbr -a fo 'fortune'
 
 # GIT
 abbr -a gd 'git diff'
