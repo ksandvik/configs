@@ -19,6 +19,9 @@ export PATH=$PATH:~/wbin
 # GOLANG
 export PATH=$PATH:$HOME/go/bin
 
+# MODULAR/MOJO
+export PATH=$PATH:$HOME/.modular/bin
+
 # RUST
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -76,4 +79,3 @@ complete -o nospace -C /usr/local/bin/bit bit
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 . "$HOME/.cargo/env"
-export PATH=$PATH:/Users/ksandvik/.modular/bin
