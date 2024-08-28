@@ -1,8 +1,11 @@
 
 command_timeout = 2000
 
+
 [directory]
-style = "bold white"
+style = "bg:#DA627D"
+format = "[ $path ]($style)"
+truncation_length = 6
 
 
 [hostname]
@@ -10,4 +13,3 @@ ssh_only = false
 format = "[$ssh_symbol](bold blue) on [$hostname](bold red) "
 trim_at = ".companyname.com"
 disabled = false
-

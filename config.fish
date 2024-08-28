@@ -212,4 +212,4 @@ end
 # <<< conda initialize <<<
 
 # fish
-fzf --fish | source
+# fzf --fish | source
