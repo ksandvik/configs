@@ -73,8 +73,8 @@ function fish_prompt
     set_color -b blue
     echo -n '📁  '
     echo -n (pwd)
-#    echo -n '  '
-#    ~/ksbin/ttr.py
+    echo -n '  '
+   ~/ksbin/ttr.py
     set_color normal
     echo ""
     set_color purple
