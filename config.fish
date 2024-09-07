@@ -71,7 +71,7 @@ function fish_prompt
     echo " "
    #set_color darkblue
    # set_color -b grey
-    echo -n '📁  '
+    echo -n '📁 :  '
     echo -n (pwd)
     echo -n '  '
    ~/ksbin/ttr.py
@@ -85,7 +85,7 @@ function fish_prompt
 
     # set_color green
     printf '%s' (__fish_git_prompt)
-    echo -n '➤ '
+    echo -n ' ➤'
     #set_color normal
     echo -n ' '
     echo ""
