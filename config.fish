@@ -74,19 +74,24 @@ function fish_prompt
     echo -n '📁 :  '
     echo -n (pwd)
     echo -n '  '
+    set_color yellow
    ~/ksbin/ttr.py
+    set_color normal
     #set_color normal
     echo ""
     #set_color purple
     #set_color -b yellow
+    if set -q VIRTUAL_ENV
+        echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
+    end
     printf '└── %s@%s' (hostname | cut -d . -f 1)
     #set_color yellow
     #set_color -b 7f3
 
-    # set_color green
+    set_color green
     printf '%s' (__fish_git_prompt)
     echo -n ' ➤'
-    #set_color normal
+    set_color normal
     echo -n ' '
     echo ""
 end
