@@ -20,6 +20,11 @@ abbr ct 'cd  "$(\ls -1dt ./* | head -n 1)"'
 abbr cz 'cd (fd -t directory | fzf)'
 abbr vz '$EDITOR (fd -t file | fzf)'
 
+# PHP
+abbr -a pa php artisan
+
+
+# OTHERS
 abbr -a v nvim
 abbr -a lvim '~/.local/bin/lvim'
 abbr -a e 'emacs --insecure'
