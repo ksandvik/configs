@@ -94,7 +94,10 @@ function fish_prompt
     if set -q VIRTUAL_ENV
         echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
     end
-    printf '└── %s@%s' (hostname | cut -d . -f 1)
+    printf '└──'
+    printf '[%d]' (task all | wc -l |  cut -d . -f 1)
+    printf ' %s@' (hostname | cut -d . -f 1)
+
     #set_color yellow
     #set_color -b 7f3
 
