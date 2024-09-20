@@ -65,7 +65,6 @@ abbr -a venvout 'deactivate'
 set -U fish_user_paths /usr/local/go/bin $fish_user_paths
 
 # TASKWARRIOR
-abbr -a tw task
 abbr -a ta task add
 abbr -a tl task list
 abbr -a twday 'task end.after:today completed'
