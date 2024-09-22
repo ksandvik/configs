@@ -42,7 +42,7 @@ abbr -a p python3
 abbr -a ze 'zellij -l ~/code/configs/zellij/kslayout.kdl'
 abbr -a f 'open "$(fzf)"'
 abbr -a fo 'fortune'
-abbr -a cfish 'zed $HOME/code/configs/config.fish'
+abbr -a configure-fish 'zed $HOME/code/configs/config.fish'
 
 # GIT
 abbr -a gd 'git diff'
@@ -73,6 +73,7 @@ abbr -a twday 'task end.after:today completed'
 abbr -a twweek 'task end.after:today-1wk completed'
 abbr -a twmonth 'task end.after:today-4wk completed'
 abbr -a twyear 'task end.after:today-52wk completed'
+
 
 # fish prompt
 function fish_prompt
