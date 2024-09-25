@@ -80,13 +80,13 @@ function fish_prompt
     echo " "
    #set_color darkblue
     set_color -b black
-    echo -n '📁 : '
+    echo -n '📁 :'
     set_color blue
     echo -n (pwd)
     echo -n ' '
-    set_color magenta
-    echo -n (date +%T)
-    echo -n '  '
+    # set_color magenta
+    # echo -n (date +%T)
+    # echo -n '  '
     set_color yellow
    ~/ksbin/ttr.py
     set_color normal
@@ -111,21 +111,30 @@ function fish_prompt
     echo ""
 end
 
-# fish title for the prompt
-function fish_title
-    switch $_
-        case fish
-            echo (pwd)
-        case vim
-            if test -d .git
-                echo vim \((basename $PWD)\)
-            else
-                echo vim
-            end
-        case '*'
-            echo $_
-    end
+function fish_right_prompt -d "Write out the right prompt"
+    set_color magenta
+    echo -n [
+    date '+%T'
+    echo -n ]
+     set_color normal
 end
+
+
+# fish title for the prompt
+# function fish_title
+#     switch $_
+#         case fish
+#             echo (pwd)
+#         case vim
+#             if test -d .git
+#                 echo vim \((basename $PWD)\)
+#             else
+#                 echo vim
+#             end
+#         case '*'
+#             echo $_
+#     end
+# end
 
 # Read environment variables
 function posix-source

@@ -93,3 +93,4 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/ksandvik/Library/Application Support/Her
 
 # Herd injected PHP binary.
 export PATH="/Users/ksandvik/Library/Application Support/Herd/bin/":$PATH
+export PATH="$PATH:/Users/ksandvik/.modular/bin"
