@@ -13,7 +13,7 @@ if [ -f $HOME/.localdev.fish ]
     source $HOME/.localdev.fish
 end
 
-# ABBREVIATIONS
+# FILE SYSTEM
 abbr l 'eza -l -g --icons'
 abbr lt 'eza -l -g --icons -r --color=always --sort=modified'
 abbr ct 'cd  "$(\ls -1dt ./* | head -n 1)"'
@@ -37,7 +37,7 @@ abbr -a el 'ls -tt | sed 1q | xargs $EDITOR'
 abbr -a today 'date '+%Y-%m-%d''
 abbr -a ri 'rg -i '
 abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
-abbr -a prettier 'npx prettier --write .'
+abbr -a pretty 'npx prettier -l --cache --write . | grep -v cached'
 abbr -a p python3
 abbr -a ze 'zellij -l ~/code/configs/zellij/kslayout.kdl'
 abbr -a f 'open "$(fzf)"'
