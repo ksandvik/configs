@@ -1,28 +1,354 @@
-OPTIONS=color
-OPTIONS=hilite_pet
-OPTIONS=hilite_status:characteristics/up/green
-OPTIONS=hilite_status:characteristics/down/yellow
-OPTIONS=hilite_status:hunger/always/yellow
-OPTIONS=hilite_status:condition/all/orange
-OPTIONS=hitpointbar
-OPTIONS=menucolors
-OPTIONS=statushilites=5
+OPTIONS=!bones
+
+#OPTIONS=blind
+#OPTIONS=nudist
+#OPTIONS=pettype:none
+
+#curses things
 OPTIONS=windowtype:curses
-MENUCOLOR="blessed"=green
-MENUCOLOR="cursed"=red
-MENUCOLOR="uncursed"=yellow
-SYMBOLS=S_boulder:0
-OPTIONS=align_status:bottom
-OPTIONS=align_message:top
-OPTIONS=guicolor
-
-OPTIONS=autodig
-OPTIONS=boulder:0
-OPTIONS=msghistory:100
-
+OPTIONS=windowborders:3
 OPTIONS=perm_invent
-OPTIONS=align_status:right
-# OPTIONS=statuslines:2
-OPTIONS=align_message:bottom
-# Reduce message window height
-OPTIONS=vary_msgcount:1
+
+OPTIONS=color,number_pad:1,suppress_alert:3.4.3,!cmdassist
+OPTIONS=showexp,time
+OPTIONS=hilite_pet,hilite_pile
+OPTIONS=lit_corridor,dark_room,use_darkgray
+OPTIONS=msg_window:reversed,msghistory:60
+OPTIONS=menu_objsyms,!implicit_uncursed
+OPTIONS=disclose:+i +a +v +g +c +o
+
+
+SYMBOLS=S_ghost:á
+OPTIONS=fruit:blueberry muffin,boulder:0
+OPTIONS=roguesymset:RogueIBM
+OPTIONS=catname:Oedipa,dogname:Meatball,horsename:Snake
+
+OPTIONS=paranoid_confirmation:Confirm quit attack pray wand Remove
+OPTIONS=!pickup_thrown,autopickup,pickup_types:$%?!"=/*
+OPTIONS=!autodig,autoquiver,!autoopen
+
+OPTIONS=pickup_burden:U
+OPTIONS=!sparkle
+
+OPTIONS=statushilites:10
+OPTIONS=hitpointbar
+
+# Hunger
+#OPTIONS=HILITE_STATUS: hunger/Satiated/yellow/Hungry/brown
+OPTIONS=HILITE_STATUS: hunger/Hungry/brown/Weak/red/Fainting/orange&blink
+
+# Burden
+OPTIONS=HILITE_STATUS: carrying-capacity/Burdened/brown/Stressed/red/Strained/orange/Overtaxed/bright-red/Overloaded/gray&inverse
+#OPTIONS=HILITE_STATUS: carrying-capacity/Strained/orange/
+#OPTIONS=HILITE_STATUS: carrying-capacity/Overtaxed/bright-red/Overloaded/gray&inverse
+
+# Conditions: Major Troubles
+OPTIONS=HILITE_STATUS: condition/stone/red&inverse/termill/red&inverse
+OPTIONS=HILITE_STATUS: condition/strngl/red&inverse
+OPTIONS=HILITE_STATUS: condition/foodpois/red&inverse/slime/red&inverse
+
+# Conditions: Minor Troubles
+OPTIONS=HILITE_STATUS: condition/blind/yellow/deaf/yellow
+OPTIONS=HILITE_STATUS: condition/stun/yellow
+OPTIONS=HILITE_STATUS: condition/conf/yellow/hallu/bright-magenta
+#OPTIONS=HILITE_STATUS: condition/blind/white&underline/deaf/brown
+#OPTIONS=HILITE_STATUS: condition/stun/yellow
+#OPTIONS=HILITE_STATUS: condition/conf/orange/hallu/bright-magenta
+
+# Conditions: Movement
+#OPTIONS=HILITE_STATUS: condition/movement/bright-cyan
+
+# HP / PW
+OPTIONS=HILITE_STATUS: hitpoints/<=100%/bright-green/<=99%/green
+OPTIONS=HILITE_STATUS: hitpoints/<=80%/yellow/<=60%/brown/<=40%/orange/<=20%/bright-red&inverse
+##OPTIONS=HILITE_STATUS: hitpoints/<=80%/yellow/<=60%/brown/<=40%/orange/<=20%/red
+##OPTIONS=HILITE_STATUS: hitpoints/<=10%/bright-red/<5/bright-red&inverse
+OPTIONS=HILITE_STATUS: power/<=100%/bright-cyan/<=80%/cyan
+OPTIONS=HILITE_STATUS: power/<=60%/bright-blue/<=40%/blue/<=20%/magenta
+##OPTIONS=HILITE_STATUS: power/<=60%/bright-blue/<=40%/blue/<=20%/magenta/<4/inverse
+OPTIONS=HILITE_STATUS: hitpoints-max/always/green/up/bright-green/down/orange
+OPTIONS=HILITE_STATUS: power-max/always/cyan/up/bright-cyan/down/bright-blue
+
+OPTIONS=menucolors
+
+# Enhance
+MENUCOLOR="^ *[a-z] - +[a-z -]+ +\[(Unskilled|Basic|Skilled|Expert|Master|Grand Master)\]$"=white
+
+# Random items with known BUC status
+MENUCOLOR="blessed"=green
+MENUCOLOR="blessed clear potion"=lightcyan
+MENUCOLOR="blessed clear potions"=lightcyan
+MENUCOLOR="blessed potion called water"=lightcyan
+MENUCOLOR="blessed potions called water"=lightcyan
+MENUCOLOR="holy"=lightcyan
+MENUCOLOR=" cursed"=red
+MENUCOLOR="cursed clear potion"=magenta
+MENUCOLOR="cursed clear potions"=magenta
+MENUCOLOR="cursed potion called water"=magenta
+MENUCOLOR="cursed potions called water"=magenta
+MENUCOLOR="unholy"=magenta
+MENUCOLOR="uncursed"=white
+#MENUCOLOR="\+0"=white
+
+#kludge for implicit_ucnursed option
+MENUCOLOR="implicit_uncursed"=gray
+
+# Tools and unused items with known enchantments and charges
+MENUCOLOR="\([0-9]:.*\)"=yellow
+MENUCOLOR="\([0-9]:0\)"=brown
+MENUCOLOR="\(-1:0\)"=brown&underline
+#MENUCOLOR="\+[1-9]"=yellow
+MENUCOLOR="-[1-9]"=magenta
+MENUCOLOR="worthless"=brown
+MENUCOLOR="named empty"=brown
+
+#markers
+MENUCOLOR="blessed .*marker"=lightgreen
+MENUCOLOR="blessed .*marker.*1:"=green
+MENUCOLOR=" cursed .*marker"=orange
+MENUCOLOR=" cursed .*marker.*1:"=red
+
+
+# Items in use.
+MENUCOLOR="\(weapon in .*\)"=white&underline
+MENUCOLOR="\(wielded.*\)"=white&underline
+MENUCOLOR="\(alternate weapon\)"=white&underline
+MENUCOLOR="\(in quiver\)"=white&underline
+MENUCOLOR="\(at the ready\)"=white&underline
+MENUCOLOR="\(being worn\)"=white&underline
+MENUCOLOR="\(embedded in your skin\)"=white&underline
+MENUCOLOR="\(on left .*\)"=white&underline
+MENUCOLOR="\(on right .*\)"=white&underline
+MENUCOLOR="\(in use\)"=white&underline
+MENUCOLOR="tethered"=white&underline
+
+# Blessed items in use
+MENUCOLOR="blessed .* \(weapon in .*\)"=lightgreen&underline
+MENUCOLOR="blessed .* \(wielded.*\)"=lightgreen&underline
+MENUCOLOR="blessed .* \(alternate weapon\)"=lightgreen&underline
+MENUCOLOR="blessed .* \(in quiver\)"=lightgreen&underline
+MENUCOLOR="blessed .* \(at the ready\)"=lightgreen&underline
+MENUCOLOR="blessed .* \(being worn\)"=lightgreen&underline
+MENUCOLOR="blessed .* \(embedded in your skin\)"=lightgreen&underline
+MENUCOLOR="blessed .* \(on left .*\)"=lightgreen&underline
+MENUCOLOR="blessed .* \(on right .*\)"=lightgreen&underline
+MENUCOLOR="blessed .* \(in use\)"=lightgreen&underline
+MENUCOLOR="blessed .* tethered"=lightgreen&underline
+
+# Cursed items in use
+MENUCOLOR=" cursed .* \(weapon in .*\)"=orange&underline
+MENUCOLOR=" cursed .* \(wielded.*\)"=orange&underline
+MENUCOLOR=" cursed .* \(alternate weapon\)"=orange&underline
+MENUCOLOR=" cursed .* \(in quiver\)"=orange&underline
+MENUCOLOR=" cursed .* \(at the ready\)"=orange&underline
+MENUCOLOR=" cursed .* \(being worn\)"=orange&underline
+MENUCOLOR=" cursed .* \(embedded in your skin\)"=orange&underline
+MENUCOLOR=" cursed .* \(on left .*\)"=orange&underline
+MENUCOLOR=" cursed .* \(on right .*\)"=orange&underline
+MENUCOLOR=" cursed .* \(in use\)"=orange&underline
+MENUCOLOR=" cursed .* tethered"=orange&underline
+
+# Mark potentially dangerous things (and a kludge for BoH looting prompts)
+MENUCOLOR=" holding"=lightmagenta
+MENUCOLOR="Put .* holding"=gray
+MENUCOLOR="Take .* holding"=gray
+MENUCOLOR="holding .* empty"=gray
+MENUCOLOR="Do what with your .* holding"=gray
+MENUCOLOR="Do what with the bag .* holding"=gray
+MENUCOLOR="Look inside the .* holding"=gray
+MENUCOLOR="stash one item into the .* holding"=gray
+MENUCOLOR="tricks"=lightmagenta
+MENUCOLOR="cancel"=lightmagenta
+MENUCOLOR="vanish"=lightmagenta
+
+# Spell failure rates
+MENUCOLOR=" 0% "=lightcyan
+MENUCOLOR=" [1-9]% "=lightgreen
+MENUCOLOR=" 1[0-9]% "=green
+MENUCOLOR=" 2[0-4]% "=green
+MENUCOLOR=" 2[5-9]% "=brown
+MENUCOLOR=" [34][0-9]% "=brown
+MENUCOLOR=" [56][0-9]% "=red
+MENUCOLOR=" 7[0-4]% "=red
+MENUCOLOR=" 7[5-9]% "=orange
+MENUCOLOR=" [89][0-9]% "=orange
+MENUCOLOR=" 100% "=orange&underline
+MENUCOLOR="[a-zA-Z] - [a-zA-Z ]+ [0-9]\*   [a-z]+ +[0-9]+%"=magenta
+
+#lamps
+MENUCOLOR="magic lamp"=blue&bold
+MENUCOLOR=" \(lit\)"=white&underline
+MENUCOLOR="magic lamp \(lit\)"=lightblue&underline
+MENUCOLOR="lamp called magic \(lit\)"=lightblue&underline
+
+#food
+MENUCOLOR="corpse"=brown
+#MENUCOLOR=" tin"=cyan  ##Need exceptions for tin wand, tin opener, tin whistle
+MENUCOLOR="(meatball|meat ring|meat stick|egg|tripe ration|huge chunk of meat)"=brown
+
+# vegan
+MENUCOLOR="(food |cram |K-|C-)ration|gunyoki"=lightgreen
+MENUCOLOR="lembas wafer|melon|carrot|tins? .* spinach"=lightgreen
+MENUCOLOR=" oranges?( named.*)?$"=lightgreen
+MENUCOLOR=" pears?( named.*)?$"=lightgreen
+MENUCOLOR=" (apple|banana|kelp|eucalyptus|garlic|wolfsbane)"=lightgreen
+MENUCOLOR=" (slime mold|loadboulder)"=lightgreen
+MENUCOLOR="(tins? of )?(gelatinous cube|acid blob|quivering blob)( corpse)?"=lightgreen
+MENUCOLOR="(tins? of )?(blue|spotted|ochre) jelly( corpse)?"=lightgreen
+MENUCOLOR="(tins? of )?lichen|shrieker|violet fungus|(brown|yellow|green|red) mold( corpse)?"=lightgreen
+
+# vegetarian
+MENUCOLOR="egg|pancake|fortune cookie|candy bar|royal jelly|cream pie|candle"=green
+MENUCOLOR="(tin of )?brown pudding|gray ooze( corpse)?"=green
+
+#Items of interest
+MENUCOLOR="blessed unicorn horn"=blue&bold
+MENUCOLOR="blessed .* unicorn horn"=blue&bold
+MENUCOLOR="blessed stone called luck.*"=blue&bold
+MENUCOLOR="blessed luckstone"=blue&bold
+MENUCOLOR="lizard corpse"=blue&bold
+MENUCOLOR="wand .* wishing"=blue&bold
+
+MENUCOLOR="blessed scroll .* scare monster"=blue&bold
+MENUCOLOR="uncursed scroll .* scare monster"=blue
+MENUCOLOR=" cursed scroll .* scare monster"=orange
+
+#invocation items
+MENUCOLOR=" (Bell of Opening\|silver bell\|Candelabrum of Invocation\|candelabrum\|Book of the Dead\|papyrus spellbook)"=magenta
+
+#money
+MENUCOLOR=" gold piece"=yellow
+
+## Autopickup exceptions
+
+# empty wands
+AUTOPICKUP_EXCEPTION=">.*:0).*"
+AUTOPICKUP_EXCEPTION=">.* named empty"
+
+AUTOPICKUP_EXCEPTION=">scroll of scare monster"
+AUTOPICKUP_EXCEPTION=">scroll called scare monster"
+
+# Ammunition (double-hashed are included with more general description)
+#AUTOPICKUP_EXCEPTION="<.*arrow"
+## AUTOPICKUP_EXCEPTION="<.*elven arrow"
+## AUTOPICKUP_EXCEPTION="<.*orcish arrow"
+## AUTOPICKUP_EXCEPTION="<.*silver arrow"
+## AUTOPICKUP_EXCEPTION="<.*runed arrow"
+## AUTOPICKUP_EXCEPTION="<.*crude arrow"
+#AUTOPICKUP_EXCEPTION="<.*ya"
+## AUTOPICKUP_EXCEPTION="<.*bamboo arrow"
+#AUTOPICKUP_EXCEPTION="<.*crossbow bolt"
+#AUTOPICKUP_EXCEPTION="<.*dart"
+#AUTOPICKUP_EXCEPTION="<.*shuriken"
+#AUTOPICKUP_EXCEPTION="<.*throwing star"
+#AUTOPICKUP_EXCEPTION="<.*dagger"
+## AUTOPICKUP_EXCEPTION="<.*elven dagger"
+## AUTOPICKUP_EXCEPTION="<.*orcish dagger"
+## AUTOPICKUP_EXCEPTION="<.*runed dagger"
+## AUTOPICKUP_EXCEPTION="<.*crude dagger"
+## AUTOPICKUP_EXCEPTION="<.*silver dagger"
+#AUTOPICKUP_EXCEPTION="<.*knife"
+
+
+#pick up items whose individual name ends with ammo or autopickup
+AUTOPICKUP_EXCEPTION="<.* named ammo"
+AUTOPICKUP_EXCEPTION="<.* named autopickup"
+
+#never pick up globs
+AUTOPICKUP_EXCEPTION=">.*glob.*"
+
+#corpses - lichen only
+AUTOPICKUP_EXCEPTION=">a corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">b corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">c corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">d corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">e corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">f corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">g corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">h corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">i corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">j corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">k corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">l corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">m corpse[^<]*$"
+AUTOPICKUP_EXCEPTION="<lichen corpse"
+AUTOPICKUP_EXCEPTION=">[^e]n corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">[^h]en corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">o corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">p corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">q corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">r corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">s corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">t corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">u corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">v corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">w corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">x corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">y corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">z corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">' corpse[^<]*$"
+
+#gems
+AUTOPICKUP_EXCEPTION="> stone[^<]*$"
+AUTOPICKUP_EXCEPTION="> gray stone[^<]*$"
+AUTOPICKUP_EXCEPTION="> loadstone[^<]*$"
+AUTOPICKUP_EXCEPTION="> rock[^<]*$"
+AUTOPICKUP_EXCEPTION="> flint[^<]*$"
+AUTOPICKUP_EXCEPTION="> glass[^<]*$"
+#AUTOPICKUP_EXCEPTION="< luckstone"
+#AUTOPICKUP_EXCEPTION="< stone called luck"
+
+
+#Messages
+MSGTYPE=stop "You descend the stairs."
+MSGTYPE=stop "You climb up the stairs."
+MSGTYPE=stop "The couatl swings itself around you!"
+MSGTYPE=stop "The electric eel swings itself around you!"
+MSGTYPE=stop "The giant eel swings itself around you!"
+MSGTYPE=stop "The kraken swings itself around you!"
+MSGTYPE=stop "The python grabs you!"
+MSGTYPE=stop "The .* (grabs|swings itself around) you!"
+MSGTYPE=stop "You don't feel very well."
+MSGTYPE=stop "You are turning a little green."
+MSGTYPE=stop "Your limbs are getting oozy."
+MSGTYPE=stop "Your skin begins to peel away."
+MSGTYPE=stop "You are turning into a green slime."
+MSGTYPE=stop "You are slowing down."
+MSGTYPE=stop "Your limbs are stiffening."
+MSGTYPE=stop "It constricts your throat!"
+MSGTYPE=stop "You find it hard to breathe."
+MSGTYPE=stop "You're gasping for air."
+MSGTYPE=stop "Your blood is having trouble reaching your brain."
+MSGTYPE=stop "You can no longer breathe."
+MSGTYPE=stop "You're turning blue."
+MSGTYPE=stop "Your consciousness is fading."
+MSGTYPE=stop "You feel deathly sick."
+MSGTYPE=stop "You feel much worse."
+MSGTYPE=stop "You feel even worse."
+MSGTYPE=stop "You feel (much|even) worse."
+MSGTYPE=stop "You are turning a little .*"
+
+MSGTYPE=stop "You feel feverish*"
+
+MSGTYPE=stop "You see here a cockatrice corpse."
+MSGTYPE=stop "You see here a chickatrice corpse."
+MSGTYPE=stop "You are beginning to feel weak."
+MSGTYPE=stop "You fail to cast the spell correctly."
+MSGTYPE=stop "Your wielded * rots away."
+
+MSGTYPE=stop "You find a*"
+MSGTYPE=stop "You feel more confident in your*skills."
+MSGTYPE=stop "You feel a strange vibration*"
+MSGTYPE=stop "You have a .* feeling for a moment, then it passes."
+MSGTYPE=stop "You sense a faint wave of psychic energy"
+MSGTYPE=stop "You are beginning to feel weak."
+MSGTYPE=stop "The scroll turns to dust as you pick it up."
+MSGTYPE=stop "You see here a c(hi|o)ckatrice corpse."
+
+MSGTYPE=stop "You wrest .*"
+
+MSGTYPE=stop ".*Vorpal Blade.*"
+
+#Hide Messages
+MSGTYPE=hide "You swap places with your .*"
+MSGTYPE=hide "With great effort you move the boulder."
