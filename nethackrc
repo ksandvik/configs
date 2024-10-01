@@ -6,7 +6,7 @@ OPTIONS=!bones
 
 #curses things
 OPTIONS=windowtype:curses
-OPTIONS=windowborders:3
+OPTIONS=windowborders:2
 OPTIONS=perm_invent
 
 OPTIONS=color,number_pad:0,suppress_alert:3.4.3,!cmdassist
