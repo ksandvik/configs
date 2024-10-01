@@ -42,3 +42,6 @@ include dark-blue-256.theme
 news.version=3.1.0
 nag=
 dateformat=y-M-D
+
+# Set the default date format for reports to include time
+dateformat.report=Y-M-D H:N
