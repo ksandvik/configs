@@ -15,3 +15,7 @@ SYMBOLS=S_boulder:0
 OPTIONS=align_status:bottom
 OPTIONS=align_message:top
 OPTIONS=guicolor
+
+OPTIONS=autodig
+OPTIONS=boulder:0
+OPTIONS=msghistory:100
