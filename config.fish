@@ -97,7 +97,7 @@ function fish_prompt
         echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
     end
     printf '└──'
-    printf '[%d]' (task all | rg ' - ' | wc -l |  cut -d . -f 1)
+    printf '[%d]' (task status:completed count)
     printf ' %s@' (hostname | cut -d . -f 1)
 
     #set_color yellow
