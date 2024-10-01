@@ -43,6 +43,7 @@ abbr -a ze 'zellij -l ~/code/configs/zellij/kslayout.kdl'
 abbr -a f 'open "$(fzf)"'
 abbr -a fo 'fortune'
 abbr -a configure-fish 'zed $HOME/code/configs/config.fish'
+abbr -a cl 'clear; task list'
 
 # GIT
 abbr -a gd 'git diff'
