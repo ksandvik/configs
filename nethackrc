@@ -9,7 +9,7 @@ OPTIONS=windowtype:curses
 OPTIONS=windowborders:3
 OPTIONS=perm_invent
 
-OPTIONS=color,number_pad:1,suppress_alert:3.4.3,!cmdassist
+OPTIONS=color,number_pad:0,suppress_alert:3.4.3,!cmdassist
 OPTIONS=showexp,time
 OPTIONS=hilite_pet,hilite_pile
 OPTIONS=lit_corridor,dark_room,use_darkgray
