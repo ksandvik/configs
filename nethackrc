@@ -19,3 +19,8 @@ OPTIONS=guicolor
 OPTIONS=autodig
 OPTIONS=boulder:0
 OPTIONS=msghistory:100
+
+OPTIONS=perm_invent
+OPTIONS=align_status:right
+# OPTIONS=statuslines:2
+OPTIONS=align_message:bottom
