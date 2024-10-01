@@ -21,7 +21,7 @@ OPTIONS=disclose:+i +a +v +g +c +o
 SYMBOLS=S_ghost:á
 OPTIONS=fruit:blueberry muffin,boulder:0
 OPTIONS=roguesymset:RogueIBM
-OPTIONS=catname:Oedipa,dogname:Meatball,horsename:Snake
+OPTIONS=catname:Miau,dogname:Fido,horsename:Thunder
 
 OPTIONS=paranoid_confirmation:Confirm quit attack pray wand Remove
 OPTIONS=!pickup_thrown,autopickup,pickup_types:$%?!"=/*
