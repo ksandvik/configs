@@ -9,6 +9,7 @@ OPTIONS=windowtype:curses
 OPTIONS=windowborders:2
 OPTIONS=perm_invent
 
+OPTIONS=UTF8graphics
 OPTIONS=color,number_pad:0,suppress_alert:3.4.3,!cmdassist
 OPTIONS=showexp,time
 OPTIONS=hilite_pet,hilite_pile
@@ -19,6 +20,7 @@ OPTIONS=disclose:+i +a +v +g +c +o
 
 
 SYMBOLS=S_ghost:á
+SYMBOLS=S_player:■
 OPTIONS=fruit:blueberry muffin,boulder:0
 OPTIONS=roguesymset:RogueIBM
 OPTIONS=catname:Miau,dogname:Fido,horsename:Thunder
