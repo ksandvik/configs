@@ -43,7 +43,7 @@ abbr -a ze 'zellij -l ~/code/configs/zellij/kslayout.kdl'
 abbr -a f 'open "$(fzf)"'
 abbr -a fo 'fortune'
 abbr -a configure-fish 'zed $HOME/code/configs/config.fish'
-abbr -a cl 'clear; task list'
+abbr -a zz 'clear; task list'
 
 # GIT
 abbr -a gd 'git diff'
@@ -68,7 +68,7 @@ set -U fish_user_paths /usr/local/go/bin $fish_user_paths
 
 # TASKWARRIOR
 abbr -a ta task add
-abbr -a tt task long
+abbr -a t task long
 abbr -a td task done
 abbr -a twday 'task end.after:today completed'
 abbr -a twweek 'task end.after:today-1wk completed'
