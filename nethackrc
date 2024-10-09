@@ -20,7 +20,7 @@ OPTIONS=disclose:+i +a +v +g +c +o
 
 
 SYMBOLS=S_ghost:á
-SYMBOLS=S_player:■
+SYMBOLS=S_human:■
 OPTIONS=fruit:blueberry muffin,boulder:0
 OPTIONS=roguesymset:RogueIBM
 OPTIONS=catname:Miau,dogname:Fido,horsename:Thunder
