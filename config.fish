@@ -81,7 +81,7 @@ function fish_prompt
     echo " "
    #set_color darkblue
     set_color -b black
-    echo -n '📁 :'
+    echo -n '📁'
     set_color blue
     echo -n (pwd)
     echo -n ' '
