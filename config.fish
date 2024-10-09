@@ -89,6 +89,7 @@ function fish_prompt
     # echo -n (date +%T)
     # echo -n '  '
     set_color yellow
+    set_color --bold
    ~/ksbin/ttr.py
     set_color normal
     echo ""
