@@ -120,6 +120,7 @@ function fish_prompt
     set_color yellow
     set_color --bold
    ~/ksbin/ttr.py
+    print_out_date
     set_color normal
     echo ""
     #set_color purple
@@ -146,10 +147,10 @@ function fish_prompt
     echo ""
 end
 
-function fish_right_prompt -d "Write out the right prompt"
+function print_out_date
     set_color magenta
     echo -n [
-    date '+%T'
+    echo -n (date '+%T')
     echo -n ]
      set_color normal
 end
