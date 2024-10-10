@@ -142,7 +142,7 @@ function print_out_date
     set_color magenta
     set_color -b black
     set_color --bold
-    echo -n [⏰
+    echo -n '[⏰ '
     echo -n (date '+%T')
     echo -n '] '
     set_color normal
