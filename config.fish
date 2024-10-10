@@ -128,7 +128,7 @@ function fish_prompt
     end
     printf '└──'
 
-    printf ' %s' (hostname | cut -d . -f 1)
+    printf '%s' (hostname | cut -d . -f 1)
     printf '🐠'
 
     set_color green
