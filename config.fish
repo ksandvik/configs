@@ -8,6 +8,9 @@ set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 set -gx BAT_THEME Dracula
 set -gx MODULAR_HOME /Users/ksandvik/.modular
 
+# disable right side conda state, remove if you want it back.
+set -g CONDA_LEFT_PROMPT 1
+
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
     source $HOME/.localdev.fish
