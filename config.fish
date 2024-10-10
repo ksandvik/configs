@@ -75,6 +75,32 @@ abbr -a twweek 'task end.after:today-1wk completed'
 abbr -a twmonth 'task end.after:today-4wk completed'
 abbr -a twyear 'task end.after:today-52wk completed'
 
+# Prompt settings
+
+set __fish_git_prompt_show_informative_status
+set __fish_git_prompt_showcolorhints
+set __fish_git_prompt_showupstream "informative"
+
+set __fish_git_prompt_color_branch magenta --bold
+set __fish_git_prompt_color_dirtystate white
+set __fish_git_prompt_color_invalidstate red
+set __fish_git_prompt_color_merging yellow
+set __fish_git_prompt_color_stagedstate yellow
+set __fish_git_prompt_color_upstream_ahead green
+set __fish_git_prompt_color_upstream_behind red
+
+set __fish_git_prompt_char_cleanstate ' 👍  '
+set __fish_git_prompt_char_conflictedstate ' ⚠️  '
+set __fish_git_prompt_char_dirtystate ' 💩  '
+set __fish_git_prompt_char_invalidstate ' 🤮  '
+set __fish_git_prompt_char_stagedstate ' 🚥  '
+set __fish_git_prompt_char_stashstate ' 📦  '
+set __fish_git_prompt_char_stateseparator ' | '
+set __fish_git_prompt_char_untrackedfiles ' 🔍  '
+set __fish_git_prompt_char_upstream_ahead ' ☝️  '
+set __fish_git_prompt_char_upstream_behind ' 👇  '
+set __fish_git_prompt_char_upstream_diverged ' 🚧  '
+set __fish_git_prompt_char_upstream_equal ' 💯 '
 
 # fish prompt
 function fish_prompt
@@ -103,7 +129,8 @@ function fish_prompt
     printf '[T:%d|' (task status:completed count)
     printf '%d]' (task status:completed end.after:today count)
     set_color -b normal
-    printf ' %s@' (hostname | cut -d . -f 1)
+    printf ' %s' (hostname | cut -d . -f 1)
+    printf '🐠'
 
     #set_color yellow
     #set_color -b 7f3
