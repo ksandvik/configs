@@ -119,7 +119,6 @@ function fish_prompt
     set_color --bold
    ~/ksbin/ttr.py
     print_out_date
-    print_task_data
     set_color normal
     echo ""
 
@@ -127,8 +126,8 @@ function fish_prompt
         echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
     end
     printf '└──'
-
-    printf '%s' (hostname | cut -d . -f 1)
+    print_task_data
+    printf ' %s' (hostname | cut -d . -f 1)
     printf '🐠'
 
     set_color green
@@ -150,7 +149,7 @@ function print_out_date
 end
 
 function print_task_data
-    set_color yellow
+    set_color red
     set_color -b black
     set_color --bold
     printf '[T:%d|' (task status:completed count)
