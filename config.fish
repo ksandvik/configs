@@ -114,30 +114,22 @@ function fish_prompt
     set_color blue
     echo -n (pwd)
     echo -n ' '
-    # set_color magenta
-    # echo -n (date +%T)
-    # echo -n '  '
+
     set_color yellow
     set_color --bold
    ~/ksbin/ttr.py
     print_out_date
+    print_task_data
     set_color normal
     echo ""
-    #set_color purple
-    #set_color -b yellow
+
     if set -q VIRTUAL_ENV
         echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
     end
     printf '└──'
-    set_color yellow
-    printf '[T:%d|' (task status:completed count)
-    printf '%d]' (task status:completed end.after:today count)
-    set_color -b normal
+
     printf ' %s' (hostname | cut -d . -f 1)
     printf '🐠'
-
-    #set_color yellow
-    #set_color -b 7f3
 
     set_color green
     printf '%s' (__fish_git_prompt)
@@ -149,12 +141,22 @@ end
 
 function print_out_date
     set_color magenta
+    set_color -b black
+    set_color --bold
     echo -n [
     echo -n (date '+%T')
-    echo -n ]
-     set_color normal
+    echo -n '] '
+    set_color normal
 end
 
+function print_task_data
+    set_color yellow
+    set_color -b black
+    set_color --bold
+    printf '[T:%d|' (task status:completed count)
+    printf '%d]' (task status:completed end.after:today count)
+    set_color -b normal
+end
 
 # fish title for the prompt
 # function fish_title
