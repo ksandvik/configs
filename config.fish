@@ -125,7 +125,7 @@ function fish_prompt
     if set -q VIRTUAL_ENV
         echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
     end
-    printf '└─'
+    printf '└'
     print_task_data
     printf ' %s' (hostname | cut -d . -f 1)
     printf '🐠'
@@ -142,7 +142,7 @@ function print_out_date
     set_color magenta
     set_color -b black
     set_color --bold
-    echo -n [
+    echo -n [⏰
     echo -n (date '+%T')
     echo -n '] '
     set_color normal
