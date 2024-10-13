@@ -77,6 +77,7 @@ abbr -a twday 'task end.after:today completed'
 abbr -a twweek 'task end.after:today-1wk completed'
 abbr -a twmonth 'task end.after:today-4wk completed'
 abbr -a twyear 'task end.after:today-52wk completed'
+abbr -a ttom 'task waiting | rg (date -v+1d +%Y-%m-%d)'
 
 # Prompt settings
 
