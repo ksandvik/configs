@@ -94,3 +94,7 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/ksandvik/Library/Application Support/Her
 # Herd injected PHP binary.
 export PATH="/Users/ksandvik/Library/Application Support/Herd/bin/":$PATH
 export PATH="$PATH:/Users/ksandvik/.modular/bin"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/ksandvik/Library/Application Support/Herd/config/php/84/"
