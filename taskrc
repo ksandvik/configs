@@ -29,8 +29,8 @@ data.location=/Users/ksandvik/.task
 #include dark-16.theme
 #include dark-256.theme
 #include dark-red-256.theme
-#include dark-green-256.theme
-include dark-blue-256.theme
+include dark-green-256.theme
+#include dark-blue-256.theme
 #include dark-violets-256.theme
 #include dark-yellow-green.theme
 #include dark-gray-256.theme
@@ -38,6 +38,8 @@ include dark-blue-256.theme
 #include solarized-dark-256.theme
 #include solarized-light-256.theme
 #include no-color.theme
+
+color.overdue=bold white on red
 
 news.version=3.1.0
 nag=
