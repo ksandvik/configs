@@ -47,3 +47,6 @@ dateformat=y-M-D
 
 # Set the default date format for reports to include time
 dateformat.report=Y-M-D H:N
+
+# Ignore case
+search.case.sensitive=no
