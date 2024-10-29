@@ -30,7 +30,7 @@ abbr -a pa php artisan
 # OTHERS
 abbr -a v nvim
 abbr -a lvim '~/.local/bin/lvim'
-abbr -a e 'emacs --insecure'
+abbr -a e 'zed'
 abbr -a c clear
 abbr -a k 'code .'
 abbr -a m make
