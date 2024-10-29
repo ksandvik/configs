@@ -1,8 +1,8 @@
 set nocompatible            " disable compatibility to old-time vi
 set mouse=v                 " middle-click paste with 
 
+
 " Search
-"
 set hlsearch                " highlight search 
 set incsearch               " incremental search
 set showmatch               " show matching 
@@ -34,8 +34,8 @@ set ttyfast                 " Speed up scrolling in Vim
 set scrolloff=2		    " keep lines below cursor when scrolling
 set sidescrolloff=5         " keep lines below cursor when scrolling
 set encoding=utf-8          " for foreign languages
-inoremap jk <Esc>        " jk as ESC
-vnoremap jk <Esc>         " jk as ESC
+inoremap jj <Esc>        " jk as ESC
+vnoremap jj <Esc>         " jk as ESC
 set shell=/bin/zsh          " can't use fish from nvim just now (not POSIX compliant)
 " set spell                 " enable spell check (may need to download language package)
 " set noswapfile            " disable creating swap file
@@ -47,6 +47,7 @@ nmap <leader>; :buffers<CR>  " show buffers
 
 
 " GUI
+set termguicolors            " activate color
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 set colorcolumn=80 " colored column
 set noshowmode
