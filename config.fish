@@ -47,6 +47,8 @@ abbr -a f 'open "$(fzf)"'
 abbr -a fo 'fortune'
 abbr -a configure-fish 'zed $HOME/code/configs/config.fish'
 abbr -a zz 'clear; task list'
+abbr -a saf 'open /Applications/Safari.app'
+
 
 # GIT
 abbr -a gd 'git diff'
