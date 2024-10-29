@@ -9,6 +9,7 @@ set softtabstop=3           " see multiple spaces as tabstops so <BS> does the r
 set expandtab               " converts tabs to white space
 set shiftwidth=3            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
+set smartindent             " smart indenting
 set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
 set cc=80                  " set an 80 column border for good coding style
