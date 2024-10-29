@@ -47,9 +47,10 @@ nmap <leader>; :buffers<CR>  " show buffers
 
 
 " GUI
+colorscheme lunaperche       " use colorscheme <tab> to see all colorschemes
 set termguicolors            " activate color
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
-set colorcolumn=80 " colored column
+set colorcolumn=80           " colored column
 set noshowmode
 
 
