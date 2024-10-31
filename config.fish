@@ -76,10 +76,10 @@ set -U fish_user_paths /usr/local/go/bin $fish_user_paths
 abbr -a ta task add
 abbr -a t task
 abbr -a td task done
-abbr -a twday 'task end.after:today completed'
-abbr -a twweek 'task end.after:today-1wk completed'
-abbr -a twmonth 'task end.after:today-4wk completed'
-abbr -a twyear 'task end.after:today-52wk completed'
+abbr -a tday 'task end.after:today completed'
+abbr -a tweek 'task end.after:today-1wk completed'
+abbr -a tmonth 'task end.after:today-4wk completed'
+abbr -a tyear 'task end.after:today-52wk completed'
 abbr -a ttom 'task waiting | rg (date -v+1d +%Y-%m-%d)'
 
 # Prompt settings
