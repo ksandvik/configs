@@ -31,6 +31,7 @@ set confirm
 set visualbell
 set t_vb=
 set mouse=a
+set clipboard+=unnamedplus
 
 " COLORING
 "colo evening
