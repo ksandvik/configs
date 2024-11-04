@@ -28,9 +28,10 @@ vim.opt.smartcase = true				-- all searches are case insensitive unless there's 
 vim.opt.hlsearch = false				-- disable all highlighted search results
 vim.opt.incsearch = true				-- enable incremental searching
 vim.opt.wrap = true						-- enable text wrapping
-vim.opt.tabstop = 4						-- tabs=4spaces
-vim.opt.shiftwidth = 4
-vim.opt.fileencoding = "utf-8"				-- encoding set to utf-8
+vim.opt.tabstop = 3						-- tabs=4spaces
+vim.opt.softtabstop = 3				-- set multiple spaces as tabstops so <BS> does the right thing
+vim.opt.shiftwidth = 3
+vim.opt.fileencoding = "utf-8"		-- encoding set to utf-8
 vim.opt.pumheight = 10					-- number of items in popup menu
 vim.opt.showtabline = 2					-- always show the tab line
 vim.opt.laststatus = 2					-- always show statusline
@@ -107,6 +108,10 @@ end
 -- reload config
 map("n", "<leader>r", ":source ~/.config/nvim/init.lua<CR>")	-- reload neovim config
 
+-- leader general
+map("n", "<leader>w", ":w<CR>")			-- space+t creates new tab
+
+
 -- Tab bindings 
 map("n", "<leader>t", ":tabnew<CR>")			-- space+t creates new tab
 map("n", "<leader>x", ":tabclose<CR>")			-- space+x closes current tab
@@ -127,6 +132,8 @@ map("n", "<C-k>", "<C-w>k")						-- control+k switches to top split
 map("n", "<Tab>", ":bnext <CR>")				-- Tab goes to next buffer
 map("n", "<S-Tab>", ":bprevious <CR>")			-- Shift+Tab goes to previous buffer
 map("n", "<leader>d", ":bd! <CR>")				-- Space+d delets current buffer
+map("n", "<leader>;", ":buffers <CR>")				-- Space+d delets current buffer
+
 
 -- adjust split sizes easier
 map("n", "<C-Left>", ":vertical resize +3<CR>")		-- Control+Left resizes vertical split +
@@ -141,7 +148,7 @@ map("n", "<leader>c", "icase \"$@\" in <CR><CR> @)   <CR>;; <CR><CR> esac <ESC>5
 map("n", "<leader>f", "i@() {<CR><CR> } <ESC>2kI<ESC>/@<CR>")
 
 -- Easy way to get back to normal mode from home row
-map("i", "kj", "<Esc>")					-- kj simulates ESC
+map("i", "jj", "<Esc>")					-- kj simulates ESC
 map("i", "jk", "<Esc>")					-- jk simulates ESC
 
 -- Automatically close brackets, parethesis, and quotes
