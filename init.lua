@@ -1,3 +1,14 @@
+-- Plugins
+
+local Plug = vim.fn['plug#']
+
+vim.call('plug#begin')
+Plug('catppuccin/nvim', {as = 'catppuccin'})
+vim.call('plug#end')
+
+
+-- The rest
+
 vim.g.mapleader = " "					-- sets leader key
 vim.g.netrw_banner = 0					-- gets rid of the annoying banner for netrw
 vim.g.netrw_browse_split=4				-- open in prior window
@@ -37,7 +48,7 @@ vim.opt.completeopt= { "menuone", "noselect" }
 vim.opt.splitbelow = true				-- split go below
 vim.opt.splitright = true				-- vertical split to the right
 vim.opt.termguicolors = true			-- terminal gui colors
-vim.cmd('colorscheme darkblue')			-- set colorscheme
+vim.cmd('colorscheme catppuccin-macchiato')	-- set colorscheme
 vim.cmd('filetype plugin on')			-- set filetype 
 vim.cmd('set wildmenu')					-- enable wildmenu
 
