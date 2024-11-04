@@ -37,7 +37,7 @@ vim.opt.completeopt= { "menuone", "noselect" }
 vim.opt.splitbelow = true				-- split go below
 vim.opt.splitright = true				-- vertical split to the right
 vim.opt.termguicolors = true			-- terminal gui colors
-vim.cmd('colorscheme gruvbox')			-- set colorscheme
+vim.cmd('colorscheme darkblue')			-- set colorscheme
 vim.cmd('filetype plugin on')			-- set filetype 
 vim.cmd('set wildmenu')					-- enable wildmenu
 
@@ -154,7 +154,7 @@ map("v", "J", ":m '>+1<CR>gv=gv")								-- Move current line down
 map("v", "K", ":m '>-2<CR>gv=gv")								-- Move current line up 
 
 -- automatically generate a template when a new bash script or markdown document is opened.
-vim.cmd(':autocmd BufNewFile *.sh 0r ~/.config/nvim/skeleton.sh')
-vim.cmd(':autocmd BufNewFile *.md 0r ~/.config/nvim/skeleton.md')
+-- vim.cmd(':autocmd BufNewFile *.sh 0r ~/.config/nvim/skeleton.sh')
+-- vim.cmd(':autocmd BufNewFile *.md 0r ~/.config/nvim/skeleton.md')
 
 
