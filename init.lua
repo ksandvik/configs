@@ -9,6 +9,9 @@ vim.call('plug#end')
 
 -- The rest
 
+
+vim.cmd('filetype plugin indent on')			-- set filetype 
+
 vim.g.mapleader = " "					-- sets leader key
 vim.g.netrw_banner = 0					-- gets rid of the annoying banner for netrw
 vim.g.netrw_browse_split=4				-- open in prior window
@@ -17,7 +20,7 @@ vim.g.netrw_liststyle=3					-- tree style view in netrw
 --vim.cmd("let g:netrw_list_hide=netrw_gitignore#Hide()")
 vim.opt.title = true					-- show title
 vim.cmd('set path+=**')					-- search current directory recursively
-vim.opt.syntax = "ON"
+-- vim.opt.syntax = "ON"
 vim.opt.backup = false
 vim.opt.compatible = false				-- turn off vi compatibility mode
 vim.opt.number = true					-- turn on line numbers
@@ -50,7 +53,6 @@ vim.opt.splitbelow = true				-- split go below
 vim.opt.splitright = true				-- vertical split to the right
 vim.opt.termguicolors = true			-- terminal gui colors
 vim.cmd('colorscheme catppuccin-macchiato')	-- set colorscheme
-vim.cmd('filetype plugin on')			-- set filetype 
 vim.cmd('set wildmenu')					-- enable wildmenu
 
 --statusline
@@ -143,9 +145,9 @@ map("n", "<C-Right>", ":vertical resize -3<CR>")	-- Control+Right resizes vertic
 map("n", "<leader>e", ":25Lex<CR>")			-- space+e toggles netrw tree view 
 
 -- Automatically create if, case, and function templates
-map("n", "<leader>i", "iif [ @ ]; then <CR><CR> else <CR><CR> fi <ESC>/@ <CR>")
-map("n", "<leader>c", "icase \"$@\" in <CR><CR> @)   <CR>;; <CR><CR> esac <ESC>5kI<ESC>/@<CR>")
-map("n", "<leader>f", "i@() {<CR><CR> } <ESC>2kI<ESC>/@<CR>")
+-- map("n", "<leader>i", "iif [ @ ]; then <CR><CR> else <CR><CR> fi <ESC>/@ <CR>")
+-- map("n", "<leader>c", "icase \"$@\" in <CR><CR> @)   <CR>;; <CR><CR> esac <ESC>5kI<ESC>/@<CR>")
+-- map("n", "<leader>f", "i@() {<CR><CR> } <ESC>2kI<ESC>/@<CR>")
 
 -- Easy way to get back to normal mode from home row
 map("i", "jj", "<Esc>")					-- kj simulates ESC
