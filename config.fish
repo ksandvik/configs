@@ -158,7 +158,7 @@ function print_task_data
     set_color -b black
     set_color --bold
     printf '[T:%d|' (task status:completed count)
-    printf '%d' (task status:completed end.after:today count)
+    printf '%d]' (task status:completed end.after:today count)
     set_color -b normal
 end
 
