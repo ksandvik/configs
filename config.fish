@@ -154,7 +154,6 @@ function print_out_date
 end
 
 function print_task_data
-    echo ""
     set_color green
     set_color -b black
     set_color --bold
