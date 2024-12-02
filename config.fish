@@ -48,7 +48,7 @@ abbr -a fo 'fortune'
 abbr -a configure-fish 'zed $HOME/code/configs/config.fish'
 abbr -a zz 'clear; task list'
 abbr -a saf 'open /Applications/Safari.app'
-abbr -a rddn 'random-markdown-file.py ddn'
+abbr -a rd 'random-markdown-file.py ddn'
 abbr -a ra 'random-markdown-file.py'
 
 
