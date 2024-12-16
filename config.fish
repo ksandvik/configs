@@ -83,6 +83,7 @@ abbr -a tweek 'task end.after:today-1wk completed'
 abbr -a tmonth 'task end.after:today-4wk completed'
 abbr -a tyear 'task end.after:today-52wk completed'
 abbr -a ttom 'task waiting | rg (date -v+1d +%Y-%m-%d)'
+abbr -a tb 'task waiting'
 
 # Prompt settings
 

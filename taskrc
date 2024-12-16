@@ -53,8 +53,8 @@ search.case.sensitive=no
 
 # Monthly report
 report.monthly.description=Monthly completed tasks report
-report.monthly.columns=end.age,description
-report.monthly.labels=Completed,Age,Description
+report.monthly.columns=end,description
+report.monthly.labels=Completed,Description
 report.monthly.sort=end+
 report.monthly.filter=status:completed
 
