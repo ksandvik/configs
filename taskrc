@@ -41,7 +41,7 @@ include dark-green-256.theme
 
 color.overdue=bold white on red
 
-news.version=3.1.0
+news.version=3.3.0
 nag=
 dateformat=y-M-D
 
