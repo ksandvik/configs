@@ -1,0 +1,54 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+// "vim_mode": true
+{
+  "language_models": {
+    "ollama": {}
+  },
+  "vim_mode": false,
+  "theme": "Xcode Default Light",
+  "ui_font_size": 12,
+  "buffer_font_size": 13,
+  "buffer_font_family": "MonoLisa",
+  "soft_wrap": "editor_width",
+  "preferred_line_length": 80,
+  "telemetry": {
+    // Send debug info like crash reports.
+    "diagnostics": true,
+    // Send anonymized usage data like what languages you're using Zed with.
+    "metrics": false
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "llama3.1:latest"
+    },
+    "version": "2",
+    "provider": null
+  },
+  "languages": {
+    "Python": {
+      "format_on_save": {
+        "external": {
+          "command": "black",
+          "arguments": ["-"]
+        }
+      }
+    },
+    "JSON": {
+      "prettier": {
+        "allowed": true,
+        "parser": "json"
+      }
+    },
+    "Markdown": {
+      "soft_wrap": "editor_width"
+    }
+  }
+}
