@@ -20,12 +20,14 @@
   "ui_font_features": {
     "calt": true
   },
+  "soft_wrap": "editor_width",
+  "preferred_line_length": 80,
   "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
   "ui_font_family": "JetBrainsMonoNL Nerd Font Mono",
   "cursor_blink": false,
   "vertical_scroll_margin": 6,
   "vim_mode": true,
-  "cursor_shape": "block",
+  "cursor_shape": "underline",
   "ui_font_size": 13,
   "buffer_font_size": 14,
   "theme": {
