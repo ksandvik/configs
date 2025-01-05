@@ -136,8 +136,10 @@ function fish_prompt
         echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
     end
     printf '└'
+	 set_color red
     printf ' %s' (hostname | cut -d . -f 1)
     printf '🐠'
+	 set_color normal
 
     set_color green
     printf '%s' (__fish_git_prompt)
