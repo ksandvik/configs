@@ -17,9 +17,9 @@ if [ -f $HOME/.localdev.fish ]
 end
 
 # FILE SYSTEM
-abbr l 'eza -l -g --icons'
+abbr l 'eza -l -g'
 abbr ls 'eza'
-abbr lt 'eza -l -g --icons -r --color=always --sort=modified | sed 10q'
+abbr lt 'eza -l -g -r --color=always --sort=modified | sed 10q'
 abbr ct 'cd  "$(\ls -1dt ./* | head -n 1)"'
 abbr cz 'cd (fd -t directory | fzf)'
 abbr vz '$EDITOR (fd -t file | fzf)'
