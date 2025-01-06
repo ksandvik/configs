@@ -137,13 +137,13 @@ function fish_prompt
     end
     printf '└'
 	 set_color red
-    printf ' %s' (hostname | cut -d . -f 1)
+    printf '%s' (hostname | cut -d . -f 1)
     printf '🐠'
 	 set_color normal
 
     set_color green
     printf '%s' (__fish_git_prompt)
-    echo -n ' ➤'
+    echo -n '➤ '
     set_color normal
     echo -n ' '
     echo ""
