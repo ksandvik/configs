@@ -80,6 +80,7 @@ set -U fish_user_paths /usr/local/go/bin $fish_user_paths
 abbr -a ta task add
 abbr -a t task
 abbr -a td task done
+abbr -a tl task log
 abbr -a tday 'task end.after:today completed'
 abbr -a tweek 'task end.after:today-1wk completed'
 abbr -a tmonth 'task end.after:today-4wk completed'
