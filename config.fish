@@ -252,6 +252,10 @@ function fishfunctions
     rg '^function' -B 1 -N ~/.config/fish/config.fish
 end
 
+# log annotator
+function lag
+	 log-annotator -format=html -log=$argv[1] -filter > $argv[1].html
+end
 
 function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
