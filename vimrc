@@ -83,8 +83,6 @@ abbr #d #define
   map <D-0> :Explore  <CR>
   " cinkeys to handle perl better
   set cinkeys=0{,0},:,!^F,o,O,e
-  " Perforce checkout
-  map <C-c> :!/cygdrive/c/bin/p4 edit %<CR>
 
 "==== gvimrc ====
   " set the font to use
