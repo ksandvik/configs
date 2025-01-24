@@ -14,6 +14,8 @@ set ch=2
 set backspace=indent,eol,start
 set autoindent
 set nocompatible
+set number
+set numberwidth=4
 
 " MISC
 set viminfo='20,\"50
