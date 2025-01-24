@@ -29,7 +29,7 @@ abbr -a pa php artisan
 
 
 # OTHERS
-abbr -a v vim
+abbr -a nvim
 abbr -a lvim '~/.local/bin/lvim'
 abbr -a e 'zed'
 abbr -a c clear
