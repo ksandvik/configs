@@ -34,6 +34,7 @@ set visualbell
 set t_vb=
 set mouse=a
 set clipboard+=unnamedplus
+set ttyfast
 
 " COLORING
 "colo morning
@@ -97,7 +98,7 @@ abbr #d #define
   set mousehide
 
 " cursor hilight
-" highlight Cursor guibg=Red guifg=NONE
+highlight Cursor guibg=Green guifg=NONE
 
 
 " default window size and position
