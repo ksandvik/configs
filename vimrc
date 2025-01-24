@@ -34,11 +34,12 @@ set mouse=a
 set clipboard+=unnamedplus
 
 " COLORING
-"colo evening
 "colo morning
 "colo blue
-"colo morning
+" my color
+colo evening
 "colo peachpuff
+"colo taqua
 
 " SEARCH
 set hlsearch
@@ -96,10 +97,6 @@ abbr #d #define
 " cursor hilight
 " highlight Cursor guibg=Red guifg=NONE
 
-" my color
-colo evening
-"colo peachpuff
-"colo taqua
 
 " default window size and position
 
