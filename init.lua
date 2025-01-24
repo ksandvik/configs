@@ -62,6 +62,8 @@ vim.o.number = true
 -- Cursor
 vim.o.cursorline = true
 -- vim.opt.guicursor = "n-v-i-c:block-Cursor"
+-- vim.opt.guicursor = { 'a:ver25' }
+vim.opt.guicursor = { 'a:hor25' }
 
 --statusline
 vim.cmd "highlight StatusType guibg=#b16286 guifg=#1d2021"
