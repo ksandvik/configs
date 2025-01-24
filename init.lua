@@ -56,8 +56,12 @@ vim.cmd('colorscheme catppuccin-macchiato')	-- set colorscheme
 vim.cmd('set wildmenu')					-- enable wildmenu
 
 vim.o.termguicolors = true				-- three lines to highight number 
-vim.o.cursorline = true
 vim.o.number = true
+
+
+-- Cursor
+vim.o.cursorline = true
+-- vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
 --statusline
 vim.cmd "highlight StatusType guibg=#b16286 guifg=#1d2021"
