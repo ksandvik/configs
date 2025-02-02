@@ -98,3 +98,6 @@ export PATH="$PATH:/Users/ksandvik/.modular/bin"
 
 # Herd injected PHP 8.4 configuration.
 export HERD_PHP_84_INI_SCAN_DIR="/Users/ksandvik/Library/Application Support/Herd/config/php/84/"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/ksandvik/.lmstudio/bin"

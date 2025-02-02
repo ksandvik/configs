@@ -8,6 +8,9 @@ set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 set -gx BAT_THEME Dracula
 set -gx MODULAR_HOME /Users/ksandvik/.modular
 
+# Various dirs
+set -gx DHARMANOTES ~/ic/__dharma/Dharmanotes/
+
 # disable right side conda state, remove if you want it back.
 set -g CONDA_LEFT_PROMPT 1
 
@@ -304,3 +307,6 @@ end
 
 # fish
 # fzf --fish | source
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/ksandvik/.lmstudio/bin
