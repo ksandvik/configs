@@ -6,13 +6,16 @@ set -gx fish_term24bit 1.
 set -gx EDITOR code
 set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 set -gx BAT_THEME Dracula
+
+# PATHS
+
 set -gx MODULAR_HOME /Users/ksandvik/.modular
+
+# Set Local PATHS
+set -gx PATH /opt/homebrew/bin /opt/homebrew/opt/ruby/bin  $PATH
 
 # Various dirs
 set -gx DHARMANOTES ~/ic/__dharma/Dharmanotes/
-
-# disable right side conda state, remove if you want it back.
-set -g CONDA_LEFT_PROMPT 1
 
 ## PER DEV UNIT
 if [ -f $HOME/.localdev.fish ]
@@ -29,7 +32,6 @@ abbr vz '$EDITOR (fd -t file | fzf)'
 
 # PHP
 abbr -a pa php artisan
-
 
 # OTHERS
 abbr -a v nvim
@@ -71,13 +73,23 @@ abbr -a gcl 'git clean -df'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 abbr -a gitlocation 'git config --get remote.origin.url'
 
-# Python
+# GOLANG
+set -gx GITGET_ROOT ~/ic/Programming/Go/src
+set -U fish_user_paths /usr/local/go/bin $fish_user_paths
+
+# JAI
+
+# MOJO
+set -gx MODULAR_HOME /Users/ksandvik/.modular
+set -gx PATH ~/.modular/pkg/packages.modular.com_mojo/bin $PATH
+
+# PYTHON
 abbr -a venvcreate 'python3 -m venv .venv'
 abbr -a venvin 'source .venv/bin/activate.fish'
 abbr -a venvout 'deactivate'
 
-# GO
-set -U fish_user_paths /usr/local/go/bin $fish_user_paths
+# disable right side conda state, remove if you want it back.
+set -g CONDA_LEFT_PROMPT 1
 
 # TASKWARRIOR
 abbr -a ta task add
@@ -91,6 +103,20 @@ abbr -a tyear 'task end.after:today-52wk completed'
 abbr -a ttom 'task waiting | rg (date -v+1d +%Y-%m-%d)'
 abbr -a tb 'task waiting'
 abbr -a tui 'taskwarrior-tui'
+
+# ZOXIDE
+/opt/homebrew/bin/zoxide init fish | source
+
+# DIRENV HOOK
+# direnv hook fish | source
+
+# 1AND1
+abbr -a 1and1 ssh 'u35697510@home92371126.1and1-data.host'
+abbr -a aws ssh 'ksandvik@10.228.210.60'
+
+# MISC PRIVATE
+abbr -a ksdictwords ' ls /Volumes/Work/TibWorkspace/KSDict/ | wc -l'
+set -gx KSNOTES /Users/ksandvik/ic/KSNotes
 
 # Prompt settings
 
@@ -127,7 +153,7 @@ function fish_prompt
     echo -n '📁'
     set_color blue
     echo -n (pwd)
-    echo -n ' '
+    echo -n ''
 
     set_color yellow
     set_color --bold
