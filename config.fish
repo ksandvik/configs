@@ -24,7 +24,6 @@ end
 
 # FILE SYSTEM
 abbr l 'eza -Tlahmo -L1 --no-permissions --total-size --no-user --git'
-abbr ls 'eza'
 abbr lt 'eza -l -g -r --color=always --sort=modified | sed 10q'
 abbr ct 'cd  "$(\ls -1dt ./* | head -n 1)"'
 abbr cz 'cd (fd -t directory | fzf)'
