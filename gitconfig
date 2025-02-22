@@ -1,38 +1,64 @@
+# This is Git's per-user configuration file.
 [user]
-	name = K Sandvik
+# Please adapt and uncomment the following lines:
+	name = Kent Sandvik
 	email = sandvik@gmail.com
+[core]
+	excludesfile = /Users/ksandvik/.gitignore
+	editor = vim
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/ksandvik/.stCommitMsg
+[column]
+        ui = auto
+[branch]
+        sort = -committerdate
+[tag]
+        sort = version:refname
+[init]
+        defaultBranch = main
+[diff]
+        algorithm = histogram
+        colorMoved = plain
+        mnemonicPrefix = true
+        renames = true
+[push]
+        default = simple
+        autoSetupRemote = true
+        followTags = true
+[fetch]
+        prune = true
+        pruneTags = true
+        all = true
+[help]
+        autocorrect = prompt
+[commit]
+        verbose = true
+[rerere]
+        enabled = true
+        autoupdate = true
+[core]
+        excludesfile = ~/.gitignore
+[rebase]
+        autoSquash = true
+        autoStash = true
+        updateRefs = true
 
 [core]
-	excludesfile = ~/.gitignore_global
-	autocrlf = input
-	safecrlf = false
-
-[alias]
-	c = commit
-	s = status
-	st = status
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	last = log -1 HEAD
-	f = push --force-with-lease
-	# https://stackoverflow.com/a/11688523/472927
-	ss = "!f() { git stash show stash^{/$*} -p; }; f"
-	sa = "!f() { git stash apply stash^{/$*}; }; f"
-	sl = stash list
-	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-
-[push]
-	default = simple
-
-[help]
-	autocorrect = 1
-
-[diff]
-	algorithm = patience
-	compactionHeuristic = true
-
-[color]
-	ui = true
+        # fsmonitor = true
+        # untrackedCache = true
+[merge]
+        # (just 'diff3' if git version < 2.3)
+        # conflictstyle = zdiff3
 [pull]
-	rebase = false
-[init]
-	defaultBranch = main
+        # rebase = true

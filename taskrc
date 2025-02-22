@@ -12,10 +12,12 @@
 #   variable=$HOME/task
 #   variable=$VALUE
 
-# Use the command 'task show' to see all defaults and overrides
+#  Use the command 'task show' to see all defaults and overrides
 
 # Files
-data.location=/Users/ksandvik/.task
+
+# data.location=.taskrc
+# data.location=$HOME/"Library/Mobile Documents/com~apple~CloudDocs/TaskWarrior/"
 
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
@@ -28,8 +30,8 @@ data.location=/Users/ksandvik/.task
 #include light-256.theme
 #include dark-16.theme
 #include dark-256.theme
-#include dark-red-256.theme
-include dark-green-256.theme
+include dark-red-256.theme
+#include dark-green-256.theme
 #include dark-blue-256.theme
 #include dark-violets-256.theme
 #include dark-yellow-green.theme
@@ -43,7 +45,7 @@ color.overdue=bold white on red
 
 news.version=3.4.0
 nag=
-dateformat=y-M-D
+dateformat=Y-M-D
 
 # Set the default date format for reports to include time
 dateformat.report=Y-M-D H:N
