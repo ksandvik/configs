@@ -57,7 +57,7 @@ abbr -a saf 'open /Applications/Safari.app'
 abbr -a rd 'random-markdown-file.py ddn'
 abbr -a ra 'random-markdown-file.py'
 abbr -a filesize 'du -hcd2 .'
-
+abbr -a j 'just'
 
 # GIT
 abbr -a gd 'git diff'
