@@ -152,7 +152,7 @@ function fish_prompt
    #set_color darkblue
     set_color -b black
     echo -n '📁'
-    set_color blue
+    set_color yellow
     echo -n (pwd)
     echo -n ''
 
