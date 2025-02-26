@@ -27,7 +27,7 @@
 
 # Color theme (uncomment one to use)
 #include light-16.theme
-include light-256.theme
+#include light-256.theme
 #include dark-16.theme
 #include dark-256.theme
 #include dark-red-256.theme
@@ -39,7 +39,7 @@ include light-256.theme
 #include dark-gray-blue-256.theme
 #include solarized-dark-256.theme
 #include solarized-light-256.theme
-#include no-color.theme
+include no-color.theme
 
 color.overdue=bold white on red
 
