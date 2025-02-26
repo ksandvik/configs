@@ -218,8 +218,6 @@ function no
     rg --heading -i -C 4 -N -I $argv  ~/notes
 end
 
-
-
 # Convert Fahrenheit to Celcius
 function f2c
     set -l fahrenheit $argv[1]
@@ -269,21 +267,6 @@ function __auto_source_venv --on-variable PWD --description "Activate/Deactivate
   end
 end
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-if test -f /opt/homebrew/Caskroom/miniconda/base/bin/conda
-    eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish"
-        . "/opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/opt/homebrew/Caskroom/miniconda/base/bin" $PATH
-    end
-end
-# <<< conda initialize <<<
 
 # fish
 # fzf --fish | source
-
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /Users/ksandvik/.lmstudio/bin
