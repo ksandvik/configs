@@ -7,6 +7,9 @@ set -gx EDITOR code
 set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
 set -gx BAT_THEME Dracula
 
+# COLORS
+ set fish_color_autosuggestion green
+
 # PATHS
 
 set -gx MODULAR_HOME /Users/ksandvik/.modular
