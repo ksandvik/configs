@@ -119,32 +119,6 @@ abbr -a aws ssh 'ksandvik@10.228.210.60'
 abbr -a ksdictwords ' ls /Volumes/Work/TibWorkspace/KSDict/ | wc -l'
 set -gx KSNOTES /Users/ksandvik/ic/KSNotes
 
-# Prompt settings
-
-set __fish_git_prompt_show_informative_status
-set __fish_git_prompt_showcolorhints
-set __fish_git_prompt_showupstream "informative"
-
-set __fish_git_prompt_color_branch magenta --bold
-set __fish_git_prompt_color_dirtystate white
-set __fish_git_prompt_color_invalidstate red
-set __fish_git_prompt_color_merging yellow
-set __fish_git_prompt_color_stagedstate yellow
-set __fish_git_prompt_color_upstream_ahead green
-set __fish_git_prompt_color_upstream_behind red
-
-set __fish_git_prompt_char_cleanstate '👍'
-set __fish_git_prompt_char_conflictedstate '⚠️'
-set __fish_git_prompt_char_dirtystate '💩'
-set __fish_git_prompt_char_invalidstate '🤮'
-set __fish_git_prompt_char_stagedstate '🚥'
-set __fish_git_prompt_char_stashstate '📦'
-set __fish_git_prompt_char_stateseparator '|'
-set __fish_git_prompt_char_untrackedfiles '🔍'
-set __fish_git_prompt_char_upstream_ahead '☝️'
-set __fish_git_prompt_char_upstream_behind '👇'
-set __fish_git_prompt_char_upstream_diverged '🚧'
-set __fish_git_prompt_char_upstream_equal '💯'
 
 # fish prompt
 function fish_prompt
@@ -155,7 +129,6 @@ function fish_prompt
     set_color yellow
     echo -n (pwd)
     echo -n ''
-
     set_color yellow
     set_color --bold
    # ~/ksbin/ttr.py
@@ -208,22 +181,6 @@ function print_quote
 	set_color -b normal
 end
 
-# fish title for the prompt
-# function fish_title
-#     switch $_
-#         case fish
-#             echo (pwd)
-#         case vim
-#             if test -d .git
-#                 echo vim \((basename $PWD)\)
-#             else
-#                 echo vim
-#             end
-#         case '*'
-#             echo $_
-#     end
-# end
-
 # Read environment variables
 function posix-source
     for i in (cat $argv)
@@ -261,15 +218,7 @@ function no
     rg --heading -i -C 4 -N -I $argv  ~/notes
 end
 
-# Only search rust notes
-function rn
-    rg $argv -I -L -C 3 -N ~/notes/ksnotes/rust/
-end
 
-# Edit rust notes
-function rne
-    $EDITOR ~/notes/ksnotes/rust/
-end
 
 # Convert Fahrenheit to Celcius
 function f2c
