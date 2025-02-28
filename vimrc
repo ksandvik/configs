@@ -40,8 +40,8 @@ set ttyfast
 "colo morning
 "colo blue
 " my color
-colo evening
-"colo peachpuff
+" colo evening
+" colo peachpuff
 "colo taqua
 
 " SEARCH
