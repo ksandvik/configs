@@ -88,6 +88,8 @@ abbr #d #define
   " cinkeys to handle perl better
   set cinkeys=0{,0},:,!^F,o,O,e
 
+  set rtp+=/opt/homebrew/opt/fzf
+
 "==== gvimrc ====
   " set the font to use
   " set guifont=-adobe-courier-medium-r-*-*-12-*-*-*-*-*-*-*
