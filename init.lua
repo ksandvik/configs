@@ -6,9 +6,7 @@ vim.call('plug#begin')
 Plug('catppuccin/nvim', {as = 'catppuccin'})
 vim.call('plug#end')
 
-
 -- The rest
-
 
 vim.cmd('filetype plugin indent on')			-- set filetype 
 
@@ -49,11 +47,20 @@ vim.opt.sidescrolloff = 8				-- scroll page when cursor is 8 spaces from left/ri
 vim.opt.guifont = "monospace:h17"		
 vim.opt.clipboard = unnamedplus
 vim.opt.completeopt= { "menuone", "noselect" }
+
 vim.opt.splitbelow = true				-- split go below
 vim.opt.splitright = true				-- vertical split to the right
-vim.opt.termguicolors = true			-- terminal gui colors
-vim.cmd('colorscheme catppuccin-macchiato')	-- set colorscheme
 vim.cmd('set wildmenu')					-- enable wildmenu
+
+-- vim.opt.termguicolors = true			-- terminal gui colors
+
+vim.g.catppuccin_flavour = "latte" -- latte, frappe, macchiato, mocha
+require("catppuccin").setup({
+   	transparent_background = true,
+      term_colors = false,
+})
+vim.cmd [[colorscheme catppuccin]]
+
 
 vim.o.termguicolors = true				-- three lines to highight number 
 vim.o.number = true
@@ -185,5 +192,3 @@ map("v", "K", ":m '>-2<CR>gv=gv")								-- Move current line up
 -- automatically generate a template when a new bash script or markdown document is opened.
 -- vim.cmd(':autocmd BufNewFile *.sh 0r ~/.config/nvim/skeleton.sh')
 -- vim.cmd(':autocmd BufNewFile *.md 0r ~/.config/nvim/skeleton.md')
-
-
