@@ -49,7 +49,6 @@ abbr -a ri 'rg -i '
 abbr -a ytaudio 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg "'
 abbr -a pretty 'npx prettier -l --cache --write . | grep -v cached'
 abbr -a p python3
-abbr -a ze 'zellij -l ~/code/configs/zellij/kslayout.kdl'
 abbr -a f 'open "$(fzf)"'
 abbr -a fo 'fortune'
 abbr -a configure-fish 'zed $HOME/code/configs/config.fish'
