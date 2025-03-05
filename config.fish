@@ -51,7 +51,7 @@ abbr -a pretty 'npx prettier -l --cache --write . | grep -v cached'
 abbr -a p python3
 abbr -a f 'open "$(fzf)"'
 abbr -a fo 'fortune'
-abbr -a configure-fish 'zed $HOME/code/configs/config.fish'
+abbr -a configure-fish 'vim $HOME/code/configs/config.fish'
 abbr -a zz 'clear; task list'
 abbr -a q 'task end.after:today completed ; task list'
 abbr -a saf 'open /Applications/Safari.app'
