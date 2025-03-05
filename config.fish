@@ -134,8 +134,8 @@ function fish_prompt
     set_color yellow
     set_color --bold
    # ~/ksbin/ttr.py
-	#  print_quote
     print_task_data
+	 print_minutes
     print_out_date
     set_color normal
     echo ""
@@ -171,15 +171,15 @@ function print_task_data
     set_color green
     set_color -b black
     set_color --bold
-    printf '[T:%d|' (task status:completed count)
+    printf ' [T:%d|' (task status:completed count)
     printf '%d]' (task status:completed end.after:today count)
     set_color -b normal
 end
 
-function print_quote
-	set_color blue
+function print_minutes
 	set_color white
-	printf '%s' (fortune rumi)
+	set_color -b black
+	printf ' [%s] ' (minutesuntil)
 	set_color -b normal
 end
 
