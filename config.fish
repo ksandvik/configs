@@ -233,7 +233,10 @@ end
 
 # log annotator
 function lag
-	 log-annotator -format=html -log=$argv[1] -filter > $argv[1].html
+    for file in $argv
+        log-annotator -format=html -log=$file -filter > $file.html
+        echo "Generated HTML for $file"
+    end
 end
 
 function multicd
