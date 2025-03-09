@@ -160,7 +160,7 @@ function fish_prompt
     set_color --bold
    # ~/ksbin/ttr.py
 	#  print_quote
-    print_task_data
+  #  print_task_data
     print_out_date
     set_color normal
     echo ""
