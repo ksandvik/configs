@@ -101,3 +101,4 @@ export HERD_PHP_84_INI_SCAN_DIR="/Users/ksandvik/Library/Application Support/Her
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/ksandvik/.lmstudio/bin"
+export PATH="$HOME/.local/bin:$PATH"

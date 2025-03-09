@@ -134,7 +134,7 @@ function fish_prompt
     set_color --bold
    # ~/ksbin/ttr.py
     print_task_data
-	 print_minutes
+   # print_minutes
     print_out_date
     set_color normal
     echo ""
@@ -207,9 +207,9 @@ function mkcd
     cd $argv
 end
 
-# cd to dir and code open it
-function cdcode
-    cd $argv
+# z to dir and open it with code
+function zo
+    z $argv
     code .
 end
 
