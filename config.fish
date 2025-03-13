@@ -35,7 +35,7 @@ abbr vz '$EDITOR (fd -t file | fzf)'
 abbr -a pa php artisan
 
 # OTHERS
-abbr -a v nvim
+abbr -a v vim
 abbr -a lvim '~/.local/bin/lvim'
 abbr -a e 'zed'
 abbr -a c clear
