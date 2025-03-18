@@ -76,6 +76,10 @@ map L $
 abbr #i #include
 abbr #d #define
 
+" OTHER CONFIGS
+" Use rg instead of grep inside vim
+set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+
 " FUNCTION KEY BINDINGS
   " results of perl -cw into a new window
   map <D-1> :!/usr/bin/perl -cw % > ~/.vimtmp 2>&1<CR>:new<CR>:edit ~/.vimtmp<CR><CR>
