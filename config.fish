@@ -1,16 +1,17 @@
 # ENVIROMENT
-## GLOBAL
 
+# GLOBAL
 set -gx TERM xterm-256color
 set -gx fish_term24bit 1.
 set -gx EDITOR code
-set -gx FZF_DEFAULT_OPTS --height 40% --layout=reverse --border
+
+set -gx FZF_DEFAULT_COMMAND rg --files
+set -gx FZF_DEFAULT_OPTS= -m --height 50% --border --layout=reverse
 
 # COLORS
- set fish_color_autosuggestion green
+set fish_color_autosuggestion green
 
 # PATHS
-
 set -gx MODULAR_HOME /Users/ksandvik/.modular
 
 # Set Local PATHS
