@@ -6,6 +6,7 @@ call plug#begin()
 " List your plugins here
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf'
+Plug 'https://github.com/adelarsq/vim-matchit'
 
 call plug#end()
 
