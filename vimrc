@@ -2,12 +2,10 @@
 
 " VIM PLUG PLUGINS
 call plug#begin()
-
-" List your plugins here
 Plug 'tpope/vim-sensible'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/adelarsq/vim-matchit'
-
 call plug#end()
 
 " FORMATTING
