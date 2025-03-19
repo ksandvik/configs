@@ -6,7 +6,7 @@ set -gx fish_term24bit 1.
 set -gx EDITOR code
 
 set -gx FZF_DEFAULT_COMMAND rg --files
-set -gx FZF_DEFAULT_OPTS= -m --height 50% --border --layout=reverse
+set -gx FZF_DEFAULT_OPTS -m --height 50% --border --layout=reverse
 
 # COLORS
 set fish_color_autosuggestion green
@@ -233,6 +233,12 @@ end
 function fishfunctions
     rg '^function' -B 1 -N ~/.config/fish/config.fish
 end
+
+# git commit and push at the same time
+function gi
+    git commit -am "$argv" && git push
+end
+
 
 # log annotator
 function lag
