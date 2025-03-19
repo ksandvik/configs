@@ -165,7 +165,7 @@ function print_out_date
     set_color --bold
     echo -n '['
     echo -n (date '+%T')
-    echo -n '] '
+    echo -n ']'
     set_color normal
 end
 
