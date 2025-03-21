@@ -82,18 +82,20 @@ set -gx GITGET_ROOT ~/ic/Programming/Go/src
 set -U fish_user_paths /usr/local/go/bin $fish_user_paths
 
 # JAI
+set -U fish_user_paths ~/jai/bin $fish_user_paths
+
 
 # MOJO
-set -gx MODULAR_HOME /Users/ksandvik/.modular
-set -gx PATH ~/.modular/pkg/packages.modular.com_mojo/bin $PATH
+# set -gx MODULAR_HOME /Users/ksandvik/.modular
+# set -gx PATH ~/.modular/pkg/packages.modular.com_mojo/bin $PATH
 
 # PYTHON
-abbr -a venvcreate 'python3 -m venv .venv'
-abbr -a venvin 'source .venv/bin/activate.fish'
-abbr -a venvout 'deactivate'
+# abbr -a venvcreate 'python3 -m venv .venv'
+# abbr -a venvin 'source .venv/bin/activate.fish'
+# abbr -a venvout 'deactivate'
 
 # disable right side conda state, remove if you want it back.
-set -g CONDA_LEFT_PROMPT 1
+# set -g CONDA_LEFT_PROMPT 1
 
 # TASKWARRIOR
 abbr -a ta task add
@@ -117,7 +119,7 @@ abbr -a tdata 'task history.weekly && task history.monthly'
 
 # 1AND1
 abbr -a 1and1 ssh 'u35697510@home92371126.1and1-data.host'
-abbr -a aws ssh 'ksandvik@10.228.210.60'
+# abbr -a aws ssh 'ksandvik@10.228.210.60'
 
 # MISC PRIVATE
 abbr -a ksdictwords ' ls /Volumes/Work/TibWorkspace/KSDict/ | wc -l'
