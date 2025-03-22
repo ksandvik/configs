@@ -241,6 +241,11 @@ function gi
     git commit -am "$argv" && git push
 end
 
+# jai compile and autorun
+function jr
+    jai "$argv" -plug Autorun
+end
+
 
 # log annotator
 function lag
