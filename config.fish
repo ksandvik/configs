@@ -238,7 +238,7 @@ end
 
 # git commit and push at the same time
 function gi
-    git commit -am "$argv" && git push
+    git commit -am "$argv" && git -q push
 end
 
 # jai compile and autorun
