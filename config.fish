@@ -238,7 +238,11 @@ end
 
 # git commit and push at the same time
 function gi
-    git commit -am "$argv" && git push --quiet
+    # git commit -am "$argv" && git push --quiet
+
+    # testing this just now 25-03-26 
+    git commit -am "$*" && git push
+
 end
 
 # jai compile and autorun
