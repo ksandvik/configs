@@ -22,7 +22,7 @@ vim.cmd('set path+=**')					-- search current directory recursively
 vim.opt.backup = false
 vim.opt.compatible = false				-- turn off vi compatibility mode
 vim.opt.number = true					-- turn on line numbers
-vim.opt.relativenumber = false				-- turn on relative line numbers
+vim.opt.relativenumber = false   	-- turn on relative line numbers
 vim.opt.mouse = 'a'						-- enable the mouse in all modes
 vim.opt.ignorecase = true				-- enable case insensitive searching
 vim.opt.smartcase = true				-- all searches are case insensitive unless there's a capital letter
@@ -62,12 +62,12 @@ require("catppuccin").setup({
 vim.cmd [[colorscheme catppuccin]]
 
 
-vim.o.termguicolors = true				-- three lines to highight number 
+vim.o.termguicolors = true				-- three lines to hilight number 
 vim.o.number = true
 
 
 -- Cursor
-vim.o.cursorline = true
+-- vim.o.cursorline = true
 -- vim.opt.guicursor = "n-v-i-c:block-Cursor"
 -- vim.opt.guicursor = { 'a:ver25' }
 vim.opt.guicursor = { 'a:hor25' }
