@@ -39,7 +39,8 @@ set confirm
 set visualbell
 set t_vb=
 set mouse=a
-set clipboard+=unnamedplus
+" odd behavior, yy not working, disabling this 25-03-28 #BUG
+" set clipboard+=unnamedplus
 set ttyfast
 
 " COLORING
