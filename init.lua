@@ -2,9 +2,17 @@
 
 local Plug = vim.fn['plug#']
 
+-- 25-04-01 disable catpuccin, use the default iterm colors instead.
 vim.call('plug#begin')
 -- Plug('catppuccin/nvim', {as = 'catppuccin'})
 vim.call('plug#end')
+
+-- vim.g.catppuccin_flavour = "latte" -- latte, frappe, macchiato, mocha
+-- require("catppuccin").setup({
+--  	transparent_background = true,
+--   term_colors = false,
+-- })
+-- vim.cmd [[colorscheme catppuccin]]
 
 -- The rest
 
@@ -54,12 +62,6 @@ vim.cmd('set wildmenu')					-- enable wildmenu
 
 -- vim.opt.termguicolors = true			-- terminal gui colors
 
-vim.g.catppuccin_flavour = "latte" -- latte, frappe, macchiato, mocha
-require("catppuccin").setup({
-   	transparent_background = true,
-      term_colors = false,
-})
-vim.cmd [[colorscheme catppuccin]]
 
 
 vim.o.termguicolors = true				-- three lines to hilight number 

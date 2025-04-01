@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "JetBrains Icons Light",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -15,7 +16,7 @@
   "use_autoclose": true,
   "current_line_highlight": "none",
   "indent_guides": {
-    "enabled": false
+    "enabled": true
   },
   "ui_font_features": {
     "calt": true
@@ -32,7 +33,18 @@
   "buffer_font_size": 14,
   "theme": {
     "mode": "system",
-    "light": "Fleet Light",
+    "light": "Catppuccin Frappé",
     "dark": "Tokyo Night"
+  },
+  "experimental.theme_overrides": {
+    "editor.background": "#073B3A",
+    "syntax": {
+      "comment": {
+        "font_style": "italic"
+      },
+      "keyword": {
+        "font_weight": 600
+      }
+    }
   }
 }
