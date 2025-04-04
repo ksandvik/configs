@@ -71,11 +71,15 @@ abbr -a gg 'git pull --rebase'
 abbr -a gf 'git diff --color-words=.'
 abbr -a gs 'git status -s'
 abbr -a gr 'git checkout'
-abbr -a gl 'git log --pretty=format:"%ad - %s" --date=short | more'
+
 abbr -a gll 'git log --pretty=format:"%ad - %s" --date=short --name-only | more'
 abbr -a gcl 'git clean -df'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 abbr -a gitlocation 'git config --get remote.origin.url'
+
+function gl
+    git log --name-only --pretty=format:"%ad - %s" --date=short | awk 'BEGIN{first=1} NF==1{file=$0; first=1} NF>1 && first==1{print $0, "- " file; first=0}' | more
+end
 
 # GOLANG
 set -gx GITGET_ROOT ~/ic/Programming/Go/src
