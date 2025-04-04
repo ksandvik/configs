@@ -14,7 +14,8 @@
   },
   "redact_private_values": false,
   "use_autoclose": true,
-  "current_line_highlight": "none",
+  "current_line_highlight": "gutter",
+  "base_keymap": "Emacs",
   "indent_guides": {
     "enabled": true
   },
@@ -26,11 +27,11 @@
   },
   "soft_wrap": "editor_width",
   "preferred_line_length": 80,
-  "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
-  "ui_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "buffer_font_family": "Hack",
+  "ui_font_family": "Hack",
   "cursor_blink": false,
   "vertical_scroll_margin": 6,
-  "vim_mode": true,
+  "vim_mode": false,
   "cursor_shape": "underline",
   "ui_font_size": 13,
   "buffer_font_size": 14,
@@ -39,6 +40,30 @@
     "light": "Catppuccin Frappé",
     "dark": "Tokyo Night"
   },
+  "active_pane_modifiers": {
+    "magnification": 1.1,
+    "border_size": 0.0,
+    "inactive_opacity": 1.0
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "min_column": 80
+    }
+  },
+  "search": {
+    "whole_word": false,
+    "case_sensitive": false,
+    "include_ignored": false,
+    "regex": false,
+    "use_smartcase_search": true
+  },
+
   "experimental.theme_overrides": {
     "editor.background": "#073B3A",
     "syntax": {
