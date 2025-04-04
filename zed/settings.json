@@ -21,6 +21,9 @@
   "ui_font_features": {
     "calt": true
   },
+  "file_types": {
+    "Odin": ["odin", "jai"]
+  },
   "soft_wrap": "editor_width",
   "preferred_line_length": 80,
   "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
