@@ -1,0 +1,8 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-J": "workspace::ToggleBottomDock"
+    }
+  }
+]
