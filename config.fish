@@ -78,7 +78,20 @@ abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 abbr -a gitlocation 'git config --get remote.origin.url'
 
 function gl
-    git log --name-only --pretty=format:"%ad - %s" --date=short | awk 'BEGIN{first=1} NF==1{file=$0; first=1} NF>1 && first==1{print $0, "- " file; first=0}' | more
+    git log --name-only --pretty=format:"%ad - %s" --date=short | awk '
+    BEGIN { print_next = 0 }
+    /^[0-9]{4}-[0-9]{2}-[0-9]{2}/ {
+      commit = $0
+      print_next = 1
+      next
+    }
+    print_next == 1 && NF == 1 {
+      split(commit, parts, " - ")
+      print parts[1] " - " $0 " - " parts[2]
+      print_next = 0
+      next
+    }
+    ' | more
 end
 
 # GOLANG
