@@ -37,7 +37,7 @@
   "buffer_font_size": 14,
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Frappé",
+    "light": "Fleet Light",
     "dark": "Tokyo Night"
   },
   "active_pane_modifiers": {
@@ -65,7 +65,7 @@
   },
 
   "experimental.theme_overrides": {
-    "editor.background": "#073B3A",
+ //   "editor.background": "#073B3A",
     "syntax": {
       "comment": {
         "font_style": "italic"
