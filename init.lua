@@ -37,7 +37,7 @@ vim.opt.smartcase = true				-- all searches are case insensitive unless there's 
 vim.opt.hlsearch = false				-- disable all highlighted search results
 vim.opt.incsearch = true				-- enable incremental searching
 vim.opt.wrap = true						-- enable text wrapping
-vim.opt.tabstop = 3						-- tabs=4spaces
+vim.opt.tabstop = 3						-- tabs 3 spaces
 vim.opt.softtabstop = 3				-- set multiple spaces as tabstops so <BS> does the right thing
 vim.opt.shiftwidth = 3
 vim.opt.fileencoding = "utf-8"		-- encoding set to utf-8
@@ -102,19 +102,14 @@ vim.o.statusline = " "
 				.. "%#StatusNorm#"
 				.. "%="
 				.. "%#StatusBuffer#"
-				.. "<< "
+				.. "["
 				.. "﬘ "
 				.. "%n"
-				.. " >>"
-				.. "%#StatusLocation#"
-				.. "<< "
-				.. "燐 "
-				.. "%l,%c"
-				.. " >>"
+				.. "]"
 				.. "%#StatusPercent#"
-				.. "<< "
-				.. "%p%% "
-				.. " >> "
+				.. "["
+				.. "%p%%"
+				.. "]"
 
 -- Functional wrapper for mapping custom keybindings
 function map(mode, lhs, rhs, opts)

@@ -34,10 +34,10 @@
   "vim_mode": false,
   "cursor_shape": "underline",
   "ui_font_size": 13,
-  "buffer_font_size": 14,
+  "buffer_font_size": 12,
   "theme": {
     "mode": "system",
-    "light": "Fleet Light",
+    "light": "Xcode High Contrast Light",
     "dark": "Tokyo Night"
   },
   "active_pane_modifiers": {
@@ -65,7 +65,7 @@
   },
 
   "experimental.theme_overrides": {
- //   "editor.background": "#073B3A",
+    //   "editor.background": "#073B3A",
     "syntax": {
       "comment": {
         "font_style": "italic"
