@@ -60,7 +60,7 @@ vim.opt.splitbelow = true				-- split go below
 vim.opt.splitright = true				-- vertical split to the right
 vim.cmd('set wildmenu')					-- enable wildmenu
 
--- vim.opt.termguicolors = true			-- terminal gui colors
+vim.opt.termguicolors = true			-- terminal gui colors
 
 
 
@@ -88,13 +88,13 @@ vim.o.statusline = " "
 				.. "%l"
 				.. " "
 				.. " %#StatusType#"
-				.. "<< "
+				.. "["
 				.. "%Y" 
-				.. " >>"
+				.. "]"
 				.. "%#StatusFile#"
-				.. "<< "
+				.. "["
 				.. "%F"
-				.. " >>"
+				.. "]"
 				.. "%#StatusModified#"
 				.. " "
 				.. "%m"
