@@ -23,7 +23,7 @@
     "calt": true
   },
   "file_types": {
-    "Odin": ["odin", "jai"]
+    "C++": ["c", "jai"]
   },
   "terminal": {
     "toolbar": {
