@@ -19,27 +19,29 @@
   "indent_guides": {
     "enabled": true
   },
+  "ui_font_family": "Arial",
   "ui_font_features": {
     "calt": true
   },
   "file_types": {
     "Odin": ["odin", "jai"]
   },
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": false
+    }
+  },
   "soft_wrap": "editor_width",
   "preferred_line_length": 80,
   "buffer_font_family": "Hack",
-  "ui_font_family": "Hack",
+  "ui_font_family": "Geneva",
   "cursor_blink": false,
   "vertical_scroll_margin": 6,
   "vim_mode": false,
   "cursor_shape": "underline",
-  "ui_font_size": 13,
-  "buffer_font_size": 12,
-  "theme": {
-    "mode": "system",
-    "light": "Xcode High Contrast Light",
-    "dark": "Tokyo Night"
-  },
+  "ui_font_size": 14,
+  "buffer_font_size": 13,
+  "theme": "Jade",
   "active_pane_modifiers": {
     "magnification": 1.1,
     "border_size": 0.0,
@@ -65,7 +67,6 @@
   },
 
   "experimental.theme_overrides": {
-    //   "editor.background": "#073B3A",
     "syntax": {
       "comment": {
         "font_style": "italic"
