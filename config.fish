@@ -128,6 +128,10 @@ abbr -a tb 'task waiting'
 abbr -a tui 'taskwarrior-tui'
 abbr -a tdata 'task history.weekly && task history.monthly'
 
+function trev
+    task $$argv[1] mod status:pending
+end
+
 # ZOXIDE
 /opt/homebrew/bin/zoxide init fish | source
 
