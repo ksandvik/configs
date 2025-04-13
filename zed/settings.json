@@ -13,6 +13,7 @@
     "metrics": false
   },
   "redact_private_values": false,
+  "restore_on_startup": "none",
   "use_autoclose": true,
   "current_line_highlight": "gutter",
   "base_keymap": "Emacs",
@@ -38,11 +39,11 @@
   "vertical_scroll_margin": 6,
   "vim_mode": false,
   "cursor_shape": "underline",
-  "ui_font_size": 14,
+  "ui_font_size": 13,
   "buffer_font_size": 13,
   "theme": "Jade",
   "active_pane_modifiers": {
-    "magnification": 1.1,
+    "magnification": 1.2,
     "border_size": 0.0,
     "inactive_opacity": 1.0
   },
