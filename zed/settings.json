@@ -12,6 +12,7 @@
     "diagnostics": false,
     "metrics": false
   },
+  "tab_size": 3,
   "redact_private_values": false,
   "restore_on_startup": "none",
   "use_autoclose": true,
@@ -72,7 +73,7 @@
         "font_style": "italic"
       },
       "keyword": {
-        "font_weight": 600
+        "font_weight": 800
       }
     }
   }
