@@ -3,7 +3,7 @@
 # GLOBAL
 set -gx TERM xterm-256color
 set -gx fish_term24bit 1.
-set -gx EDITOR code
+set -gx EDITOR zed
 
 set -gx FZF_DEFAULT_COMMAND rg --files
 set -gx FZF_DEFAULT_OPTS -m --height 50% --border --layout=reverse
@@ -236,7 +236,7 @@ end
 # z to dir and open it with code
 function zo
     z $argv
-    code .
+    $EDITOR .
 end
 
 # NOTES
