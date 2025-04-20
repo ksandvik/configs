@@ -38,13 +38,13 @@
   "ui_font_family": "Geneva",
   "cursor_blink": false,
   "vertical_scroll_margin": 6,
-  "vim_mode": false,
+  "vim_mode": true,
   "cursor_shape": "underline",
   "ui_font_size": 13,
   "buffer_font_size": 13,
   "theme": "Jade",
   "active_pane_modifiers": {
-    "magnification": 1.2,
+    "magnification": 1.0,
     "border_size": 0.0,
     "inactive_opacity": 1.0
   },
