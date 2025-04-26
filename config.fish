@@ -15,7 +15,7 @@ set fish_color_autosuggestion green
 set -gx MODULAR_HOME /Users/ksandvik/.modular
 
 # Set Local PATHS
-set -gx PATH /opt/homebrew/bin /opt/homebrew/opt/ruby/bin  $PATH
+set -gx PATH /opt/homebrew/bin /opt/homebrew/opt/ruby/bin /Users/ksandvik/ksbin $PATH
 
 # Various dirs
 set -gx DHARMANOTES ~/ic/__dharma/Dharmanotes/
