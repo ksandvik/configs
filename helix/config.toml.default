@@ -13,7 +13,7 @@ theme = "dracula"
 [editor]
 mouse = true
 line-number = "absolute"
-cursorline = true
+cursorline = false
 # idle-timeout = 300
 color-modes = true
 true-color = true
@@ -33,7 +33,7 @@ display-messages = true
 
 [editor.cursor-shape]
 insert = "underline"
-select = "bar"
+select = "underline"
 
 [editor.whitespace]
 render = "none"
