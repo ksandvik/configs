@@ -22,11 +22,12 @@ auto-format = true
 # auto-info = false
 auto-pairs = false
 bufferline = "always"
+shell = ["bash", "-c"]
 
 [editor.statusline]
-left = ["mode", "spinner"]
+left = ["mode", "spinner", "version-control", "spacer"]
 center = ["file-name"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+right = ["file-name", "diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
 separator = "│"
 
 [editor.lsp] 
@@ -61,6 +62,7 @@ C-k = "kill_to_line_end"
 C-s = ":w"
 # left
 # right= { right= "goto_line_end"}
+"#" = "toggle_comments"
 
 [keys.normal.space]
 z = ":quit"
