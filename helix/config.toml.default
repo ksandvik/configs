@@ -33,9 +33,9 @@ separator = "│"
 display-messages = true
 
 [editor.cursor-shape]
-insert = "underline"
-select = "underline"
-normal = "underline"
+insert = "block"
+select = "block"
+normal = "block"
 
 [editor.whitespace]
 render = "none"
@@ -59,7 +59,6 @@ G = "goto_file_end"
 c = ["trim_selections", "change_selection"]
 C-k = "kill_to_line_end"
 C-s = ":w"
-d = { d = ["extend_line_below", "delete_selection"] }
 # left
 # right= { right= "goto_line_end"}
 
