@@ -59,7 +59,7 @@ G = "goto_file_end"
 c = ["trim_selections", "change_selection"]
 C-k = "kill_to_line_end"
 C-s = ":w"
-
+d = { d = ["extend_line_below", "delete_selection"] }:c
 # left
 # right= { right= "goto_line_end"}
 
@@ -85,4 +85,3 @@ left =  "move_char_left"
 right = "move_char_right"
 # left = { left = "goto_line_start"}
 # right= { right= "goto_line_end"}
-
