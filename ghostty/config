@@ -20,8 +20,22 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 font-family = Hack
-theme = catpuccin-frappe
-# window-padding-x = 2
+font-style = Regular
+font-size = 13
+font-thicken = true
+theme = Grey-green
+window-padding-x = 2
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration = fish
+shell-integration-features = no-cursor
+
+bold-is-bright = true
+link-url = true
+mouse-hide-while-typing = true
+
+
 #
 # # Spacing around the equals sign does not matter.
 # # All of these are identical:
