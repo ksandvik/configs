@@ -19,9 +19,12 @@
 # ==========================
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
+
+command = /opt/homebrew/bin/fish
+
 font-family = Hack
 font-style = Regular
-font-size = 13
+font-size = 14
 font-thicken = true
 theme = Grey-green
 window-padding-x = 2
