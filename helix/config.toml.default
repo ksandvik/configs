@@ -5,8 +5,8 @@
 # THEME
 #theme= "emacs"
 # theme = "ayu_dark"
-# theme = "dracula"
-theme = "material_oceanic"
+theme = "dracula"
+# theme = "material_oceanic"
 # theme = "onelight"
 
 # EDITOR
