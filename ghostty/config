@@ -26,7 +26,8 @@ font-family = Hack
 font-style = Regular
 font-size = 14
 font-thicken = true
-theme = Grey-green
+# theme = Grey-green
+theme = Dracula
 window-padding-x = 2
 
 cursor-style = block
