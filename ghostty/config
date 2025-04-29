@@ -27,7 +27,7 @@ font-style = Regular
 font-size = 14
 font-thicken = true
 # theme = Grey-green
-theme = Dracula
+theme = Draculas
 window-padding-x = 2
 
 cursor-style = block
@@ -38,6 +38,8 @@ shell-integration-features = no-cursor
 bold-is-bright = true
 link-url = true
 mouse-hide-while-typing = true
+
+split-divider-color = yellow
 
 
 #
