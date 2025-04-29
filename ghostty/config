@@ -40,6 +40,8 @@ link-url = true
 mouse-hide-while-typing = true
 
 split-divider-color = yellow
+window-save-state = always
+window-colorspace = "display-p3"
 
 
 #
