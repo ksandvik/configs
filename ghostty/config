@@ -27,7 +27,7 @@ font-style = Regular
 font-size = 14
 font-thicken = true
 # theme = Grey-green
-theme = Draculas
+theme = Dracula
 window-padding-x = 2
 
 cursor-style = block
