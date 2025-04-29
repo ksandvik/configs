@@ -23,8 +23,15 @@ true-color = true
 auto-format = true
 # auto-info = false
 auto-pairs = false
+continue-comments = false
 bufferline = "always"
 shell = ["bash", "-c"]
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "error" # Show inline diagnostics when the cursor is on the line
+other-lines = "disable" # Don't expand diagnostics unless the cursor is on the line
+
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "spacer"]
