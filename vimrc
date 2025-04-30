@@ -1,11 +1,11 @@
 " KS MAIN VIMRC FILE
 
 " VIM PLUG PLUGINS
-call plug#begin()
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'https://github.com/adelarsq/vim-matchit'
-call plug#end()
+"call plug#begin()
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
+"Plug 'https://github.com/adelarsq/vim-matchit'
+"call plug#end()
 
 " FORMATTING
 syntax on
@@ -65,8 +65,8 @@ highlight Search term=reverse
 autocmd BufRead *.txt set tw=78
 
 " MAPPINGS
-map Q qg
-inoremap jj <Esc>
+map Q qg "format current text
+inoremap jj <Esc> "out from exit mode
 
 " Jump to start and end of line using the home row keys
 map H ^
