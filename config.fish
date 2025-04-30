@@ -77,6 +77,13 @@ abbr -a gcl 'git clean -df'
 abbr -a gitlog 'git log --graph --decorate --pretty=oneline --abbrev-commit'
 abbr -a gitlocation 'git config --get remote.origin.url'
 
+set -g __fish_git_prompt_showdirtystate true
+set -g __fish_git_prompt_showuntrackedfiles true
+set -g __fish_git_prompt_showstashstate true
+set -g __fish_git_prompt_color green
+set -g __fish_git_prompt_color_flags red
+
+
 function gl
     git log --name-only --pretty=format:"%ad - %s" --date=short | awk '
     BEGIN { print_next = 0 }
@@ -165,9 +172,6 @@ function fish_prompt
     set_color normal
     echo ""
 
-    if set -q VIRTUAL_ENV
-        echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
-    end
     printf '└'
 	 set_color red
     printf '%s' (hostname | cut -d . -f 1)
@@ -175,6 +179,7 @@ function fish_prompt
 	 set_color normal
 
     set_color green
+
     printf '%s' (__fish_git_prompt)
     echo -n '➤ '
     set_color normal
