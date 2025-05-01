@@ -57,7 +57,7 @@ vim.opt.sidescrolloff = 8				-- scroll page when cursor is 8 spaces from left/ri
 vim.opt.guifont = "monospace:h17"		
 vim.opt.clipboard = unnamedplus
 vim.opt.completeopt= { "menuone", "noselect" }
-vim.opt.grepprg = "rg --files"
+vim.opt.grepprg = "rg --smart-case --vimgrep $*"
 vim.opt.grepformat = "%f:%l:%c:%m"
 
 vim.opt.splitbelow = true				-- split go below
