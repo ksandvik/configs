@@ -15,7 +15,7 @@ require("catppuccin").setup({
 })
 vim.cmd [[colorscheme catppuccin]]
 
--- The rest
+-- Config
 
 vim.cmd('filetype plugin indent on')			-- set filetype 
 
@@ -64,9 +64,9 @@ vim.opt.splitbelow = true				-- split go below
 vim.opt.splitright = true				-- vertical split to the right
 vim.cmd('set wildmenu')					-- enable wildmenu
 
-vim.opt.termguicolors = true			-- terminal gui colors
+-- vim.opt.termguicolors = true			-- terminal gui colors
 
-vim.o.termguicolors = true				-- three lines to hilight number 
+-- vim.o.termguicolors = true				-- three lines to hilight number 
 vim.o.number = true
 
 
@@ -74,7 +74,8 @@ vim.o.number = true
 -- vim.o.cursorline = true
 -- vim.opt.guicursor = "n-v-i-c:block-Cursor"
 -- vim.opt.guicursor = { 'a:ver25' }
-vim.opt.guicursor = { 'a:hor25' }
+-- vim.opt.guicursor = { 'a:hor25' }
+-- vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
 --statusline
 vim.cmd "highlight StatusType guibg=#b16286 guifg=#1d2021"
@@ -125,32 +126,32 @@ end
 -- reload config
 map("n", "<leader>r", ":source ~/.config/nvim/init.lua<CR>")	-- reload neovim config
 
--- leader general
+-- leader files
 map("n", "<leader>w", ":w<CR>")			-- space+t creates new tab
 
 
--- fzf
+-- leader fzf
 map("n", "<leader>b", ":Buffers!<CR>")
 map("n", "<leader>f", ":Files!<CR>")
 map("n", "<leader>g", ":Rg!<CR>")
 
--- Tab bindings 
+-- leader tab bindings 
 map("n", "<leader>t", ":tabnew<CR>")			-- space+t creates new tab
 map("n", "<leader>x", ":tabclose<CR>")			-- space+x closes current tab
 map("n", "<leader>j", ":tabprevious<CR>")		-- space+j moves to previous tab
 map("n", "<leader>k", ":tabnext<CR>")			-- space+k moves to next tab
 
--- easy split generation
+-- leader pane splits
 map("n", "<leader>v", ":vsplit")				   -- space+v creates a veritcal split
 map("n", "<leader>s", ":split")					-- space+s creates a horizontal split
 
--- easy split navigation
+-- leader pane split navigation
 map("n", "<C-h>", "<C-w>h")						-- control+h switches to left split
 map("n", "<C-l>", "<C-w>l")						-- control+l switches to right split
 map("n", "<C-j>", "<C-w>j")						-- control+j switches to bottom split
 map("n", "<C-k>", "<C-w>k")						-- control+k switches to top split
 
--- buffer navigation
+-- leader buffer navigation
 map("n", "<Tab>", ":bnext <CR>")				-- Tab goes to next buffer
 map("n", "<S-Tab>", ":bprevious <CR>")			-- Shift+Tab goes to previous buffer
 map("n", "<leader>d", ":bd! <CR>")				-- Space+d deletes current buffer
