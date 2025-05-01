@@ -28,6 +28,7 @@ vim.g.netrw_liststyle=3					-- tree style view in netrw
 --vim.cmd("let g:netrw_list_hide=netrw_gitignore#Hide()")
 vim.opt.title = true					-- show title
 vim.cmd('set path+=**')					-- search current directory recursively
+vim.opt.shell = 'fish'
 -- vim.opt.syntax = "ON"
 vim.opt.backup = false
 vim.opt.compatible = false				-- turn off vi compatibility mode
