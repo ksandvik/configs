@@ -20,7 +20,8 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 
-command = /opt/homebrew/bin/fish
+# Comment out this for the time being as zsh starts fish 25-05-01
+# command = /opt/homebrew/bin/fish
 
 font-family = Hack
 font-style = Regular

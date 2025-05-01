@@ -39,3 +39,7 @@ function psman { man -t $@ | open -f -a Preview; }
 
 # If automjump is installed via brew
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# Start fish from zsh
+fish 
+
