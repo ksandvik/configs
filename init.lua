@@ -146,8 +146,8 @@ map("n", "<C-k>", "<C-w>k")						-- control+k switches to top split
 -- buffer navigation
 map("n", "<Tab>", ":bnext <CR>")				-- Tab goes to next buffer
 map("n", "<S-Tab>", ":bprevious <CR>")			-- Shift+Tab goes to previous buffer
-map("n", "<leader>d", ":bd! <CR>")				-- Space+d delets current buffer
-map("n", "<leader>;", ":buffers <CR>")				-- Space+d delets current buffer
+map("n", "<leader>d", ":bd! <CR>")				-- Space+d deletes current buffer
+map("n", "<leader>;", ":buffers <CR>")		    -- Space+; shows current buffers
 
 
 -- adjust split sizes easier
