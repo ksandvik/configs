@@ -1,11 +1,11 @@
 " KS MAIN VIMRC FILE
 
 " VIM PLUG PLUGINS
-"call plug#begin()
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
-"Plug 'https://github.com/adelarsq/vim-matchit'
-"call plug#end()
+call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'https://github.com/adelarsq/vim-matchit'
+call plug#end()
 
 " FORMATTING
 syntax on
@@ -100,6 +100,13 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --follow
   set cinkeys=0{,0},:,!^F,o,O,e
 
   set rtp+=/opt/homebrew/opt/fzf
+
+ " LEADER KEYS
+let mapleader = " " 
+nnoremap <silent><leader>b :Buffers<CR>
+nnoremap <silent><leader>f :Files<CR>
+nnoremap <silent><leader>g :Rg<CR>
+
 
 "==== gvimrc ====
   " set the font to use
