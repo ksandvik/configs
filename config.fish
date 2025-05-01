@@ -147,7 +147,6 @@ end
 
 # 1AND1
 abbr -a 1and1 ssh 'u35697510@home92371126.1and1-data.host'
-# abbr -a aws ssh 'ksandvik@10.228.210.60'
 
 # MISC PRIVATE
 abbr -a ksdictwords ' ls /Volumes/Work/TibWorkspace/KSDict/ | wc -l'
