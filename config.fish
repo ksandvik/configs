@@ -26,7 +26,7 @@ if [ -f $HOME/.localdev.fish ]
 end
 
 # FILE SYSTEM
-abbr l 'eza -Tlahmo -L1 --no-permissions --total-size --no-user --git'
+abbr l  'eza -Tlahmo -L1 --no-permissions --total-size --no-user --git'
 abbr lt 'eza -l -g -r --color=always --sort=modified | sed 10q'
 abbr ct 'cd  "$(\ls -1dt ./* | head -n 1)"'
 abbr cz 'cd (fd -t directory | fzf)'
@@ -37,6 +37,7 @@ abbr -a pa php artisan
 
 # OTHERS
 abbr -a v vim
+abbr -a n nvim
 abbr -a lvim '~/.local/bin/lvim'
 abbr -a e 'zed'
 abbr -a c clear
@@ -64,7 +65,7 @@ abbr -a b bat
 
 # GIT
 abbr -a gd 'git diff'
-abbr -a g git
+abbr -a g   git
 abbr -a gc 'git commit -am'
 abbr -a gp 'git push'
 abbr -a gg 'git pull --rebase'
