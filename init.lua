@@ -5,6 +5,8 @@ local Plug = vim.fn['plug#']
 -- 25-04-01 disable catpuccin, use the default iterm colors instead.
 vim.call('plug#begin')
 -- Plug('catppuccin/nvim', {as = 'catppuccin'})
+    Plug('junegunn/fzf', { ['do'] = vim.fn['fzf#install()'] })
+    Plug('junegunn/fzf.vim')
 vim.call('plug#end')
 
 -- vim.g.catppuccin_flavour = "latte" -- latte, frappe, macchiato, mocha
@@ -55,14 +57,14 @@ vim.opt.sidescrolloff = 8				-- scroll page when cursor is 8 spaces from left/ri
 vim.opt.guifont = "monospace:h17"		
 vim.opt.clipboard = unnamedplus
 vim.opt.completeopt= { "menuone", "noselect" }
+vim.opt.grepprg = "rg --files"
+vim.opt.grepformat = "%f:%l:%c:%m"
 
 vim.opt.splitbelow = true				-- split go below
 vim.opt.splitright = true				-- vertical split to the right
 vim.cmd('set wildmenu')					-- enable wildmenu
 
 vim.opt.termguicolors = true			-- terminal gui colors
-
-
 
 vim.o.termguicolors = true				-- three lines to hilight number 
 vim.o.number = true
@@ -127,6 +129,11 @@ map("n", "<leader>r", ":source ~/.config/nvim/init.lua<CR>")	-- reload neovim co
 map("n", "<leader>w", ":w<CR>")			-- space+t creates new tab
 
 
+-- fzf
+map("n", "<leader>b", ":Buffers!<CR>")
+map("n", "<leader>f", ":Files!<CR>")
+map("n", "<leader>g", ":Rg!<CR>")
+
 -- Tab bindings 
 map("n", "<leader>t", ":tabnew<CR>")			-- space+t creates new tab
 map("n", "<leader>x", ":tabclose<CR>")			-- space+x closes current tab
@@ -134,7 +141,7 @@ map("n", "<leader>j", ":tabprevious<CR>")		-- space+j moves to previous tab
 map("n", "<leader>k", ":tabnext<CR>")			-- space+k moves to next tab
 
 -- easy split generation
-map("n", "<leader>v", ":vsplit")				-- space+v creates a veritcal split
+map("n", "<leader>v", ":vsplit")				   -- space+v creates a veritcal split
 map("n", "<leader>s", ":split")					-- space+s creates a horizontal split
 
 -- easy split navigation
