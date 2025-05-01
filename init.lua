@@ -77,7 +77,7 @@ vim.o.number = true
 -- vim.opt.guicursor = { 'a:hor25' }
 -- vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
---statusline
+-- statusline
 vim.cmd "highlight StatusType guibg=#b16286 guifg=#1d2021"
 vim.cmd "highlight StatusFile guibg=#fabd2f guifg=#1d2021"
 vim.cmd "highlight StatusModified guibg=#1d2021 guifg=#d3869b"
@@ -157,7 +157,6 @@ map("n", "<S-Tab>", ":bprevious <CR>")			-- Shift+Tab goes to previous buffer
 map("n", "<leader>d", ":bd! <CR>")				-- Space+d deletes current buffer
 map("n", "<leader>;", ":buffers <CR>")		    -- Space+; shows current buffers
 
-
 -- adjust split sizes easier
 map("n", "<C-Left>", ":vertical resize +3<CR>")		-- Control+Left resizes vertical split +
 map("n", "<C-Right>", ":vertical resize -3<CR>")	-- Control+Right resizes vertical split -
@@ -173,6 +172,14 @@ map("n", "<leader>e", ":25Lex<CR>")			-- space+e toggles netrw tree view
 -- Easy way to get back to normal mode from home row
 map("i", "jj", "<Esc>")					-- kj simulates ESC
 map("i", "jk", "<Esc>")					-- jk simulates ESC
+
+-- Marks
+map("n", "ma", "mA")
+map("n", "mb", "mB")
+map("n", "mc", "mC")
+map("n", "'a", "'A")
+map("n", "'b", "'B")
+map("n", "'c", "'C")
 
 -- Automatically close brackets, parethesis, and quotes
 --map("i", "'", "''<left>")
