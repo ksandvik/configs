@@ -2,19 +2,18 @@
 
 local Plug = vim.fn['plug#']
 
--- 25-04-01 disable catpuccin, use the default iterm colors instead.
 vim.call('plug#begin')
--- Plug('catppuccin/nvim', {as = 'catppuccin'})
+    Plug('catppuccin/nvim', {as = 'catppuccin'})
     Plug('junegunn/fzf', { ['do'] = vim.fn['fzf#install()'] })
     Plug('junegunn/fzf.vim')
 vim.call('plug#end')
 
--- vim.g.catppuccin_flavour = "latte" -- latte, frappe, macchiato, mocha
--- require("catppuccin").setup({
---  	transparent_background = true,
---   term_colors = false,
--- })
--- vim.cmd [[colorscheme catppuccin]]
+vim.g.catppuccin_flavour = "frappe" -- latte, frappe, macchiato, mocha
+require("catppuccin").setup({
+ 	transparent_background = true,
+  term_colors = false,
+})
+vim.cmd [[colorscheme catppuccin]]
 
 -- The rest
 
@@ -23,10 +22,10 @@ vim.cmd('filetype plugin indent on')			-- set filetype
 vim.g.mapleader = " "					-- sets leader key
 vim.g.netrw_banner = 0					-- gets rid of the annoying banner for netrw
 vim.g.netrw_browse_split=4				-- open in prior window
-vim.g.netrw_altv = 1					-- change from left splitting to right splitting
+vim.g.netrw_altv = 1					   -- change from left splitting to right splitting
 vim.g.netrw_liststyle=3					-- tree style view in netrw
 --vim.cmd("let g:netrw_list_hide=netrw_gitignore#Hide()")
-vim.opt.title = true					-- show title
+vim.opt.title = true					   -- show title
 vim.cmd('set path+=**')					-- search current directory recursively
 vim.opt.shell = 'fish'
 -- vim.opt.syntax = "ON"
@@ -41,7 +40,7 @@ vim.opt.hlsearch = false				-- disable all highlighted search results
 vim.opt.incsearch = true				-- enable incremental searching
 vim.opt.wrap = true						-- enable text wrapping
 vim.opt.tabstop = 3						-- tabs 3 spaces
-vim.opt.softtabstop = 3				-- set multiple spaces as tabstops so <BS> does the right thing
+vim.opt.softtabstop = 3				   -- set multiple spaces as tabstops so <BS> does the right thing
 vim.opt.shiftwidth = 3
 vim.opt.fileencoding = "utf-8"		-- encoding set to utf-8
 vim.opt.pumheight = 10					-- number of items in popup menu
