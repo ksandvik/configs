@@ -174,13 +174,13 @@ map("i", "jj", "<Esc>")					-- kj simulates ESC
 map("i", "jk", "<Esc>")					-- jk simulates ESC
 
 -- Automatically close brackets, parethesis, and quotes
-map("i", "'", "''<left>")
-map("i", "\"", "\"\"<left>")
-map("i", "(", "()<left>")
-map("i", "[", "[]<left>")
-map("i", "{", "{}<left>")
-map("i", "{;", "{};<left><left>")
-map("i", "/*", "/**/<left><left>")
+--map("i", "'", "''<left>")
+--map("i", "\"", "\"\"<left>")
+--map("i", "(", "()<left>")
+--map("i", "[", "[]<left>")
+--map("i", "{", "{}<left>")
+--map("i", "{;", "{};<left><left>")
+--map("i", "/*", "/**/<left><left>")
 
 -- Automatically create if, case, and function templates in insert mode
 map("i", ",i", "if [ @ ]; then <CR><CR> else <CR><CR> fi ")
