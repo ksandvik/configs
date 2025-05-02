@@ -44,7 +44,7 @@ split-divider-color = yellow
 window-save-state = always
 window-colorspace = "display-p3"
 macos-titlebar-style = tabs
-
+quick-terminal-position = bottom
 
 #
 # # Spacing around the equals sign does not matter.
