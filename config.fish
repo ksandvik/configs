@@ -72,6 +72,7 @@ abbr -a gg 'git pull --rebase'
 abbr -a gf 'git diff --color-words=.'
 abbr -a gs 'git status -s'
 abbr -a gr 'git checkout'
+abbr -a grr 'git reset --hard HEAD~1' # resets every change 
 
 abbr -a gll 'git log --pretty=format:"%ad - %s" --date=short --name-only | more'
 abbr -a gcl 'git clean -df'
