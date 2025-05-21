@@ -270,7 +270,7 @@ end
 
 # jai compile and autorun
 function jr
-    jai "$argv" -plug Autorun
+    jai "$argv" +Autorun
 end
 
 
