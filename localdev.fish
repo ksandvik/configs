@@ -13,4 +13,3 @@ abbr -a ms ssh -X ksandvik@10.3.248.180 -p 9022
 # SERIAL LOGS
 abbr -a ben-serial 'picocom --baud 460800 /dev/tty.usbserial-14400'
 
-# LUNARVIM
