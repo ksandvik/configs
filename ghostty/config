@@ -23,7 +23,8 @@
 # Comment out this for the time being as zsh starts fish 25-05-01
 # command = /opt/homebrew/bin/fish
 
-font-family = Hack
+# font-family = Hack  -- testing Atkinson see below 25-07-23 
+font-family = AtkinsonHyperlegibleMono
 font-style = Regular
 font-size = 17
 font-thicken = true
