@@ -26,7 +26,7 @@
 # font-family = Hack  -- testing Atkinson see below 25-07-23 
 font-family = AtkinsonHyperlegibleMono
 font-style = Regular
-font-size = 17
+font-size = 16
 font-thicken = true
 # theme = Grey-green
 theme = Dracula
