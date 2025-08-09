@@ -62,6 +62,7 @@ abbr -a ra 'random-markdown-file.py'
 abbr -a filesize 'du -hcd2 .'
 abbr -a j 'just'
 abbr -a b bat
+abbr -a keepalive 'while true; ping -c 1 www.apple.com; sleep 20; clear;  end;'
 
 # GIT
 abbr -a gd 'git diff'
