@@ -62,7 +62,6 @@ abbr -a ra 'random-markdown-file.py'
 abbr -a filesize 'du -hcd2 .'
 abbr -a j 'just'
 abbr -a b bat
-abbr -a keepalive 'while true; ping -c 1 www.apple.com; sleep 20; clear;  end;'
 
 # GIT
 abbr -a gd 'git diff'
@@ -85,6 +84,11 @@ set -g __fish_git_prompt_showuntrackedfiles true
 set -g __fish_git_prompt_showstashstate true
 set -g __fish_git_prompt_color green
 set -g __fish_git_prompt_color_flags red
+
+# JUST
+abbr -a ja 'just all'
+abbr -a jm 'just make'
+abbr -a jf 'just fmt'
 
 
 function gl
