@@ -87,6 +87,7 @@ set -g __fish_git_prompt_color_flags red
 # JUST
 abbr -a j 'just'
 abbr -a ja 'just all'
+abbr -a jc 'just clean'
 abbr -a jd 'just diff'
 abbr -a jm 'just make'
 abbr -a jf 'just fmt'
