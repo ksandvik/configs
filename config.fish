@@ -60,7 +60,6 @@ abbr -a saf 'open /Applications/Safari.app'
 abbr -a rd 'random-markdown-file.py ddn'
 abbr -a ra 'random-markdown-file.py'
 abbr -a filesize 'du -hcd2 .'
-abbr -a j 'just'
 abbr -a b bat
 
 # GIT
@@ -86,7 +85,9 @@ set -g __fish_git_prompt_color green
 set -g __fish_git_prompt_color_flags red
 
 # JUST
+abbr -a j 'just'
 abbr -a ja 'just all'
+abbr -a jd 'just diff'
 abbr -a jm 'just make'
 abbr -a jf 'just fmt'
 
