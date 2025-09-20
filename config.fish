@@ -61,6 +61,7 @@ abbr -a rd 'random-markdown-file.py ddn'
 abbr -a ra 'random-markdown-file.py'
 abbr -a filesize 'du -hcd2 .'
 abbr -a b bat
+abbr -a killfinder 'killall Finder'
 
 # GIT
 abbr -a gd 'git diff'
