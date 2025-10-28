@@ -63,7 +63,7 @@ abbr -a ra 'random-markdown-file.py'
 abbr -a filesize 'du -hcd2 .'
 abbr -a b bat
 abbr -a killfinder 'killall Finder'
-abbr -a mylog ' nvim /Users/ksandvik/ic/KSNotes/Log/Log.md'
+abbr -a ml ' nvim /Users/ksandvik/ic/KSNotes/Log/Log.md'
 
 # GIT
 abbr -a gd 'git diff'
