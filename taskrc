@@ -1,26 +1,9 @@
-# [Created by task 2.6.2 9/24/2023 16:01:40]
-# Taskwarrior program configuration file.
-# For more documentation, see https://taskwarrior.org or try 'man task', 'man task-color',
-# 'man task-sync' or 'man taskrc'
-
-# Here is an example of entries that use the default, override and blank values
-#   variable=foo   -- By specifying a value, this overrides the default
-#   variable=      -- By specifying no value, this means no default
-#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
-
-# You can also refence environment variables:
-#   variable=$HOME/task
-#   variable=$VALUE
-
-#  Use the command 'task show' to see all defaults and overrides
-
-# Files
-
-# data.location=.taskrc
-# data.location=$HOME/"Library/Mobile Documents/com~apple~CloudDocs/TaskWarrior/"
+# [Created by task 3.4.1 4/25/2025 15:22:05]
+data.location=/Users/ksandvik/.task
+news.version=3.4.1
 
 # To use the default location of the XDG directories,
-# move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
+# move this configuration file from ~/.taskrc to ~/.config/task/taskrc and update location config as follows:
 
 #data.location=~/.local/share/task
 #hooks.location=~/.config/task/hooks
@@ -28,41 +11,29 @@
 # Color theme (uncomment one to use)
 #include light-16.theme
 #include light-256.theme
+#include bubblegum-256.theme
 #include dark-16.theme
 #include dark-256.theme
 #include dark-red-256.theme
 #include dark-green-256.theme
-#include dark-blue-256.theme
+include dark-blue-256.theme
 #include dark-violets-256.theme
 #include dark-yellow-green.theme
 #include dark-gray-256.theme
 #include dark-gray-blue-256.theme
 #include solarized-dark-256.theme
 #include solarized-light-256.theme
-include no-color.theme
+#include no-color.theme
 
-color.overdue=bold white on red
-
-news.version=3.4.0
-nag=
-dateformat=Y-M-D
-
-# Set the default date format for reports to include time
-dateformat.report=Y-M-D H:N
-
-# Ignore case
-search.case.sensitive=no
-
-# Monthly report
-report.monthly.description=Monthly completed tasks report
-report.monthly.columns=end,description
-report.monthly.labels=Completed,Description
-report.monthly.sort=end+
-report.monthly.filter=status:completed
-
-uda.reviewed.type=date
-uda.reviewed.label=Reviewed
-report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
-report._reviewed.columns=uuid
-report._reviewed.sort=reviewed+,modified+
-report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
+_forcecolor=on
+color.keyword.watch=bold yellow
+color.keyword.read=bold green
+color.keyword.work=bold cyan
+color.keyword.music=bold cyan
+color.keyword.skoojin=bold red
+color.keyword.wiksand=bold red
+color.keyword.spectral=bold red
+color.keyword.pelto=bold red
+color.keyword.appleloops=bold red
+color.keyword.KSTibDict=bold blue
+color.keyword.glossary=bold blue
