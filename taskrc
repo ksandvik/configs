@@ -26,7 +26,7 @@ include dark-blue-256.theme
 #include no-color.theme
 
 _forcecolor=on
-color.keyword.watch=bold yellow
+color.keyword.watch=bold green
 color.keyword.read=bold green
 color.keyword.work=bold cyan
 color.keyword.music=bold cyan
