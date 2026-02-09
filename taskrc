@@ -26,8 +26,13 @@ include dark-16.theme
 #include no-color.theme
 
 _forcecolor=on
+color.active=white on blue
+
+# media 
 color.keyword.watch=bold yellow
 color.keyword.read=bold green
+
+# music
 color.keyword.work=bold cyan
 color.keyword.music=bold cyan
 color.keyword.skoojin=bold red
@@ -35,7 +40,10 @@ color.keyword.wiksand=bold red
 color.keyword.spectral=bold red
 color.keyword.pelto=bold red
 color.keyword.appleloops=bold red
+color.keyword.patches=bold red
+
+
+# tib study
 color.keyword.KSTibDict=bold blue
 color.keyword.glossary=bold blue
 color.keyword.anki=bold blue
-color.active=white on blue
