@@ -49,6 +49,8 @@ color.keyword.KSTibDict=bold blue
 color.keyword.glossary=bold blue
 color.keyword.anki=bold blue
 color.keyword.studies=bold blue
+color.keyword.kunga=bold blue
+color.keyword.sonam=bold blue
 
 # health
 color.keyword.pickleball=bold rgb515
