@@ -47,6 +47,7 @@ color.keyword.patches=bold red
 color.keyword.KSTibDict=bold blue
 color.keyword.glossary=bold blue
 color.keyword.anki=bold blue
+color.keyword.studies=bold blue
 
 # health
 color.keyword.pickleball=bold rgb515
