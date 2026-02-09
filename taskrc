@@ -42,7 +42,7 @@ color.keyword.pelto=bold red
 color.keyword.appleloops=bold red
 color.keyword.patches=bold red
 color.keyword.album=bold red
-
+color.keyword.ableton=bold red
 
 # tib study
 color.keyword.KSTibDict=bold blue
