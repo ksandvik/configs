@@ -51,6 +51,7 @@ color.keyword.anki=bold blue
 color.keyword.studies=bold blue
 color.keyword.kunga=bold blue
 color.keyword.sonam=bold blue
+color.keyword.markup=bold blue
 
 # health
 color.keyword.pickleball=bold rgb515
