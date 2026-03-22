@@ -44,7 +44,7 @@ color.keyword.patches=bold red
 color.keyword.album=bold red
 color.keyword.ableton=bold red
 color.keyword.mixing=bold red
-color.keyword.mastering=bold red
+color.keyword.master=bold red
 
 # tib study
 color.keyword.KSTibDict=bold blue
