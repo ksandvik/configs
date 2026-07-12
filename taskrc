@@ -48,6 +48,7 @@ color.keyword.master=bold red
 
 # tib study
 color.keyword.KSTibDict=bold blue
+color.keyword.KSDictionary=bold blue
 color.keyword.glossary=bold blue
 color.keyword.anki=bold blue
 color.keyword.studies=bold blue
@@ -58,3 +59,4 @@ color.keyword.markup=bold blue
 # health
 color.keyword.pickleball=bold rgb515
 color.keyword.diet=bold rgb515
+color.keyword.weight=bold rgb515

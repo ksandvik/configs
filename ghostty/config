@@ -32,6 +32,7 @@ font-thicken = true
 theme = Dracula
 window-padding-x = 2
 window-padding-y = 4
+window-decoration= client
 
 cursor-style = block
 cursor-style-blink = false
