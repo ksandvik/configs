@@ -48,6 +48,8 @@ color.keyword.album=bold red
 color.keyword.ableton=bold red
 color.keyword.mixing=bold red
 color.keyword.master=bold red
+color.keyword.track=bold red
+color.keyword.plugin=bold red
 
 # tib study
 color.keyword.KSTibDict=bold blue
