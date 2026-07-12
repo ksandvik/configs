@@ -63,9 +63,9 @@ color.keyword.tsok=bold blue
 color.keyword.dharma=bold blue
 
 # health
-color.keyword.pickleball=bold rgb515
-color.keyword.diet=bold rgb515
-color.keyword.weight=bold rgb515
+color.keyword.pickleball=bold green
+color.keyword.diet=bold green
+color.keyword.weight=bold green
 
 # admin
-color.keyword.backup=bold green
+color.keyword.backup=bold rgb515
