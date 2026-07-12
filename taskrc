@@ -30,7 +30,7 @@ color.active=white on blue
 
 # media 
 color.keyword.watch=bold yellow
-color.keyword.read=bold green
+color.keyword.read=bold yellow
 
 # music
 color.keyword.work=bold cyan
@@ -60,3 +60,6 @@ color.keyword.markup=bold blue
 color.keyword.pickleball=bold rgb515
 color.keyword.diet=bold rgb515
 color.keyword.weight=bold rgb515
+
+# admin
+color.keyword.backup=bold green
