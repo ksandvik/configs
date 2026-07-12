@@ -34,7 +34,10 @@ color.keyword.read=bold yellow
 
 # music
 color.keyword.work=bold cyan
-color.keyword.music=bold cyan
+color.keyword.record=bold red
+color.keyword.midi=bold red
+color.keyword.appleloops=bold red
+color.keyword.music=bold red
 color.keyword.skoojin=bold red
 color.keyword.wiksand=bold red
 color.keyword.spectral=bold red
@@ -56,6 +59,7 @@ color.keyword.studies=bold blue
 color.keyword.kunga=bold blue
 color.keyword.sonam=bold blue
 color.keyword.markup=bold blue
+color.keyword.tsok=bold blue
 
 # health
 color.keyword.pickleball=bold rgb515
