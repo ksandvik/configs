@@ -33,7 +33,6 @@ color.keyword.watch=bold yellow
 color.keyword.read=bold yellow
 
 # music
-color.keyword.work=bold cyan
 color.keyword.record=bold red
 color.keyword.midi=bold red
 color.keyword.appleloops=bold red
@@ -66,6 +65,7 @@ color.keyword.dharma=bold blue
 color.keyword.pickleball=bold green
 color.keyword.diet=bold green
 color.keyword.weight=bold green
+color.keyword.yard=bold green
 
 # admin
 color.keyword.backup=bold rgb515
