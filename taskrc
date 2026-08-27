@@ -1,6 +1,6 @@
 # [Created by task 3.4.1 4/25/2025 15:22:05]
 data.location=/Users/ksandvik/.task
-news.version=3.4.1
+news.version=3.5.0
 
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and update location config as follows:
@@ -30,7 +30,6 @@ color.active=white on blue
 
 # media 
 color.keyword.watch=bold yellow
-color.keyword.read=bold yellow
 
 # music
 color.keyword.record=bold red
@@ -68,6 +67,11 @@ color.keyword.pickleball=bold green
 color.keyword.diet=bold green
 color.keyword.weight=bold green
 color.keyword.yard=bold green
+
+# writing
+color.keyword.book=bold rgb515
+color.keyword.read=bold rgb515
+color.keyword.write=bold rgb515
 
 # admin
 color.keyword.backup=bold rgb515
