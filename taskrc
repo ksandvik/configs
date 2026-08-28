@@ -28,7 +28,7 @@ include dark-16.theme
 _forcecolor=on
 color.active=white on blue
 
-# media 
+# media
 color.keyword.watch=bold yellow
 
 # music
@@ -49,6 +49,7 @@ color.keyword.mixing=bold red
 color.keyword.master=bold red
 color.keyword.track=bold red
 color.keyword.plugin=bold red
+color.keyword.eon=bold red
 
 # tib study
 color.keyword.KSTibDict=bold blue
