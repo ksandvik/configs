@@ -65,9 +65,10 @@ abbr -a ra 'random-markdown-file.py'
 abbr -a filesize 'du -hcd2 .'
 abbr -a b bat
 abbr -a killfinder 'killall Finder'
-# abbr -a ml ' nvim /Users/ksandvik/ic/KSNotes/Log/Log.md'
-abbr -a ml 'open /Users/ksandvik/ic/KSNotes/Log/Log.md'
+# abbr -a ml ' open /Users/ksandvik/ic/KSNotes/Log/Log.md'
+abbr -a ml 'zed /Users/ksandvik/ic/KSNotes/Log/Log.md'
 abbr -a cl ' glow -p /Users/ksandvik/ic/KSNotes/Log/Log.md'
+abbr -a msf 'zed "/Users/ksandvik/Library/Mobile Documents/iCloud~md~obsidian/Documents/SF/ADM/Log.md"'
 
 # GIT
 abbr -a gd 'git diff'
@@ -78,7 +79,7 @@ abbr -a gg 'git pull --rebase'
 abbr -a gf 'git diff --color-words=.'
 abbr -a gs 'git status -s'
 abbr -a gr 'git checkout'
-abbr -a grr 'git reset --hard HEAD~1' # resets every change 
+abbr -a grr 'git reset --hard HEAD~1' # resets every change
 
 abbr -a gll 'git log --pretty=format:"%ad - %s" --date=short --name-only | more'
 abbr -a gcl 'git clean -df'
