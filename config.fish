@@ -7,6 +7,9 @@ set -gx EDITOR code
 set -gx BAT_THEME ansi
 set -gx fish_history fish
 
+# Writing
+set -gx SFIX "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/SF/PROJECTS/NEAR-FAR/BOOKS/Shadow Fix"
+
 set -gx FZF_DEFAULT_COMMAND rg --files
 set -gx FZF_DEFAULT_OPTS -m --height 50% --border --layout=reverse
 
