@@ -41,6 +41,7 @@ abbr vz '$EDITOR (fd -t file | fzf)'
 abbr -a pa php artisan
 
 # OTHERS
+abbr -a D 'date +"%y%m%d-%H%M" | pbcopy'
 abbr -a v vim
 abbr -a n nvim
 abbr -a lvim '~/.local/bin/lvim'
