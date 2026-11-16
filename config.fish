@@ -7,9 +7,6 @@ set -gx EDITOR code
 set -gx BAT_THEME ansi
 set -gx fish_history fish
 
-# Writing
-set -gx SFIX "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/SF/PROJECTS/NEAR-FAR/BOOKS/Shadow Fix"
-
 set -gx FZF_DEFAULT_COMMAND rg --files
 set -gx FZF_DEFAULT_OPTS -m --height 50% --border --layout=reverse
 
@@ -29,6 +26,10 @@ set -gx DHARMANOTES ~/ic/__dharma/Dharmanotes/
 if [ -f $HOME/.localdev.fish ]
     source $HOME/.localdev.fish
 end
+
+# Writing
+set -gx SFIX "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/SF/PROJECTS/NEAR-FAR/BOOKS/Shadow Fix/SFIX"
+set -gx AUTHOR "Kent Sandvik"
 
 # FILE SYSTEM
 abbr l  'eza -Tlahmo -L1 --no-permissions --total-size --no-user --git'
