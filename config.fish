@@ -28,7 +28,7 @@ if [ -f $HOME/.localdev.fish ]
 end
 
 # Writing
-set -gx SFIX "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/SF/PROJECTS/NEAR-FAR/BOOKS/Shadow Fix/SFIX"
+set -gx SFIX "/Volumes/Work/SF/PROJECTS/NEAR-FAR/BOOKS/Shadow Fix/SFIX"
 set -gx AUTHOR "Kent Sandvik"
 
 # FILE SYSTEM
