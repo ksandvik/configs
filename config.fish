@@ -42,7 +42,7 @@ abbr vz '$EDITOR (fd -t file | fzf)'
 abbr -a pa php artisan
 
 # OTHERS
-abbr -a D "date +"%y%m%d-%H%M" | tr -d '\n'"
+abbr -a D 'printf "%s" (date +"%y%m%d-%H%M")'
 abbr -a v vim
 abbr -a n nvim
 abbr -a lvim '~/.local/bin/lvim'
