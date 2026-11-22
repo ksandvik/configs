@@ -28,8 +28,9 @@ if [ -f $HOME/.localdev.fish ]
 end
 
 # Writing
-set -gx SFIX "/Volumes/Work/SF/PROJECTS/NEAR-FAR/BOOKS/Shadow Fix/SFIX"
 set -gx AUTHOR "Kent Sandvik"
+set -gx SF "/Volumes/Work/SF"
+set -gx SFIX "/Volumes/Work/SF/PROJECTS/NEAR-FAR/BOOKS/Shadow Fix/SFIX"
 
 # FILE SYSTEM
 abbr l  'eza -Tlahmo -L1 --no-permissions --total-size --no-user --git'
