@@ -74,7 +74,7 @@ abbr -a killfinder 'killall Finder'
 # abbr -a ml ' open /Users/ksandvik/ic/KSNotes/Log/Log.md'
 abbr -a ml 'zed /Users/ksandvik/ic/KSNotes/Log/Log.md'
 abbr -a cl ' glow -p /Users/ksandvik/ic/KSNotes/Log/Log.md'
-abbr -a msf 'zed "/Users/ksandvik/Library/Mobile Documents/iCloud~md~obsidian/Documents/SF/ADM/Log.md"'
+abbr -a msf 'zed /Volumes/Work/SF/GEN/ADM/Log.md'
 
 # GIT
 abbr -a gd 'git diff'
